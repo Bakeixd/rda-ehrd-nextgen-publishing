@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <title>농촌진흥청 농촌인적자원개발센터</title>
+</head>
+<body class="uid-body">
+  <header class="header-int-sign"> 
+    <h1> 
+      <a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터 로고"></a>
+    </h1>
+  </header>
+  <section>
+    <div class="int-sign-con int-sign-02">
+      <div class="int-sign-wrap">
+        <div class="int-sign-text-wrap">
+          <p class="int-sign-info-wait"><strong>홍길동</strong> 님의 계정을 통합중입니다.</p>
+          <p class="int-sign-info-wait2">잠시만 기다려주세요...</p>
+        </div>
+        <div class="int-sign-process-bar-container">
+          <div class="int-sign-progress-bar-wrap">
+            <div class="int-sign-progress-container">
+              <div class="int-sign-progress-bar" style="width:0%">
+              </div>
+              <img src="../images/login/int-process.png" alt="진행도표시" class="int-sign-icon">
+            </div>
+            <div class="int-progress-text">
+              <p class="int-percentage">0%</p>
+              <p class="int-status">열심히 달려가고 있어요!</p>
+            </div>
+          </div>
+        </div>
+        <div class="int-sign-acount-wrap">
+          <p class="int-sign-acount-tit"><strong>gildong01</strong> 계정으로 통합하고 있는 계정은 아래와 같습니다.</p>
+          <ul class="int-sign-acount">
+            <li>gildong01</li>
+            <li>gildong02</li>
+            <li>gildong03</li>
+
+
+          </ul>
+        </div>
+        <div class="int-sign-btn-wrap">
+          <button type="submit" class="btn gray-bg md int-cancle" onclick="location.href='./int-su01.html';">취소</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2021 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+
+  <script>
+    let progress = 0;
+    const progressBar = document.querySelector('.int-sign-progress-bar');
+    const percentageText = document.querySelector('.int-percentage');
+    const statusText = document.querySelector('.int-status');
+    const signIcon = document.querySelector('.int-sign-icon');
+
+    function updateProgress() {
+        if (progress <= 100) {
+
+            progressBar.style.width = progress + '%';
+            percentageText.textContent = progress + '%';
+            signIcon.style.left = (progress - 6) + '%';
+
+            if (progress === 0) {
+                statusText.textContent = '열심히 달려가고 있어요!';
+            } else if (progress === 40) {
+                statusText.textContent = '벌써 중간까지 왔자나?!';
+            } else if (progress === 80) {
+                statusText.textContent = '끝이보인다!';
+            } else if (progress === 100) {
+                statusText.textContent = '';
+            }
+
+            progress += 1;
+            setTimeout(updateProgress, 100); 
+        }
+    }
+
+    updateProgress();
+</script>
+  
+
+
+
+</body>
+</html>

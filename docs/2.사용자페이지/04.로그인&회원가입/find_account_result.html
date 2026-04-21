@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/mypage.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  
+  <title>아이디 및 비밀번호 찾기</title>
+</head>
+
+
+<body class="uid-body">
+  <header class="uid-header">
+    <h1><a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터"></a></h1>
+  </header>
+
+  <div class="uid-wrap">
+    <div class="join-container">
+      <h2>아이디 및 비밀번호 찾기</h2>
+      <div class="join-input-wrap">
+
+        <div class="find-result-box">
+          <p>회원님의 ID는</p>
+          <P><strong>asbc123</strong>입니다.</P>
+        </div>
+
+        <span class="inq-txt">회원님의 계정이 아닌가요? <a href="#" class="">문의하기</a></span>
+
+        <div class="btn-wrap-center btn_100 mt_40">
+          <button type="button" class="btn md primary">로그인하기</button>
+          <button type="button" class="btn md btn-darkgray-w">비밀번호 찾기</button>          
+        </div>
+
+      </div>
+    </div><!--//join-container-->
+  </div>
+  
+
+
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2024 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+
+
+<!--공무원 모달-->
+<!-- modal -->
+<section id="addInformationG" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-addInformationG">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-addInformationG" class="modal-title">추가정보</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+          <div class="member-modify">
+            <div class="form-group">
+              <div class="form-tit">
+                회원구분
+              </div>
+              <div class="chk-area modify-chk">
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd1" checked>
+                  <label for="pManageCd1" id="memdivi1">공무원</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd2">
+                  <label for="pManageCd2" id="memdivi2">농업인</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd3">
+                  <label for="pManageCd3" id="memdivi3">일반인</label>
+                </div>
+              </div>
+            </div><!--//회원구분-->
+            <div class="form-group">
+              <div class="form-tit">
+                소속
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="농촌진흥청 청장" disabled="">
+                <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                <button type=" button" class="btn md secondary">삭제</button>
+              </div>
+            </div><!--//소속-->
+            <div class="form-group">
+              <div class="form-tit">
+                직급
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="농업연구사" disabled="">
+                <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                <button type=" button" class="btn md secondary">삭제</button>
+              </div>
+            </div><!--//직급-->
+            <div class="form-group">
+              <div class="form-tit">
+                직위
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="농업관" disabled="">
+                <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                <button type=" button" class="btn md secondary">삭제</button>
+              </div>
+            </div><!--//직위-->
+            <div class="form-group">
+              <div class="form-tit">
+                현 담당업무
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="업무">
+              </div>
+            </div><!--//현 담당업무-->
+            <div class="form-group">
+              <div class="form-tit">
+                현 업무시작일
+              </div>
+              <div class="datepicker-input">
+                <div class="input-group range">
+                  <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+                </div>
+                <button type="button" class="form-btn-datepicker">
+                  <span class="none">달력 열기</span>
+                </button>
+              </div>
+            </div><!--//현 업무시작일-->
+            <div class="form-group">
+              <div class="form-tit">
+                임용일
+              </div>
+              <div class="datepicker-input">
+                <div class="input-group range">
+                  <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+                </div>
+                <button type="button" class="form-btn-datepicker">
+                  <span class="none">달력 열기</span>
+                </button>
+              </div>
+            </div><!--//임용일-->
+            <div class="form-group">
+              <div class="form-tit">
+                현재 비밀번호
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" placeholder="현재 비밀번호를 입력해주세요">
+              </div>
+            </div><!--//현재 비밀번호-->
+            
+          </div><!--//member-modify-->
+				</div>
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+				<button type="button" class="btn primary">저장</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back in"></div>
+</section>
+<!-- //modal -->
+
+
+<!--농업인 모달 -->
+
+<!-- modal -->
+<section id="addInformationN" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-addInformationN">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-addInformationN" class="modal-title">추가정보</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+          <div class="member-modify">
+            <div class="form-group">
+              <div class="form-tit">
+                회원구분
+              </div>
+              <div class="chk-area modify-chk">
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd1">
+                  <label for="pManageCd1" id="memdivi1">공무원</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd2" checked>
+                  <label for="pManageCd2" id="memdivi2">농업인</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pManageCd" id="pManageCd3">
+                  <label for="pManageCd3" id="memdivi3">일반인</label>
+                </div>
+              </div>
+            </div><!--//회원구분-->
+            <div class="form-group">
+              <div class="form-tit">
+                소속
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="12345678" disabled="">
+                <button type=" button" class="btn md btn-darkgray-w">인증</button>
+              </div>
+            </div><!--/농업인 발급번호-->
+            <div class="form-group">
+              <div class="form-tit">
+                시도 및 시군센터
+              </div>
+              <div class="input-group">
+                <input type="text" id="addr-input" class="form-control" value="농촌진흥청 국립농업과확원" disabled="">
+                <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                <button type=" button" class="btn md primary">삭제</button>
+              </div>
+            </div><!--//시도 및 시군센터-->
+            <div class="form-group">
+              <div class="form-tit">
+                학력
+              </div>
+              <div class="chk-area modify-chk">
+                <div class="form-check">
+                  <input type="radio" name="pAcademicCd" id="pAcademicCd1">
+                  <label for="pAcademicCd1">박사</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pAcademicCd" id="pAcademicCd2">
+                  <label for="pAcademicCd2">석사</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pAcademicCd" id="pAcademicCd3">
+                  <label for="pAcademicCd3">학사</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pAcademicCd" id="pAcademicCd4">
+                  <label for="pAcademicCd4">전문학사</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="pAcademicCd" id="pAcademicCd5">
+                  <label for="pAcademicCd5">고졸이하</label>
+                </div>
+              </div>
+            </div><!--//학력-->
+            <div class="form-group">
+              <div class="form-tit">
+                영농시작년도
+              </div>
+              <div class="datepicker-input">
+                <div class="input-group range">
+                  <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="영농시작년도">
+                </div>
+                <button type="button" class="form-btn-datepicker">
+                  <span class="none">달력 열기</span>
+                </button>
+              </div>
+            </div><!--//영농시작년도-->
+            <div class="form-group">
+              <div class="form-tit">
+                주작목
+              </div>
+              <div class="crop-input">
+                <div class="input-group ">
+                  <input type="text" id="" class="form-control" placeholder="주작목을 입력해주세요">
+                  <div class="mp-crop">
+                    <span>규모</span>
+                    <input type="text" id="" class="form-control" placeholder="10">㎡
+                    <input type="text" id="" class="form-control" placeholder="1">두
+                  </div>
+                </div>
+                <button type="button" class="btn md secondary">주작목추가</button>
+                <button type=" button" class="btn md primary">삭제</button>
+              </div><!--//crop-input-->
+              <div class="crop-input">
+                <div class="input-group ">
+                  <input type="text" id="" class="form-control" placeholder="주작목을 입력해주세요">
+                  <div class="mp-crop">
+                    <span>규모</span>
+                    <input type="text" id="" class="form-control" placeholder="10">㎡
+                    <input type="text" id="" class="form-control" placeholder="1">두
+                  </div>
+                </div>
+                <button type="button" class="btn md secondary">주작목추가</button>
+                <button type=" button" class="btn md primary">삭제</button>
+              </div><!--//crop-input-->
+            </div><!--//주작목-->
+  
+            <div class="form-group">
+              <div class="form-tit">
+                영농현황
+              </div>
+              <div class="chk-area modify-chk">
+                <div class="form-check">
+                  <input type="radio" name="farmType" id="farmType1">
+                  <label for="farmType1">후계농업경영인</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="farmType" id="farmType2">
+                  <label for="farmType2">창업농업인</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="farmType" id="farmType3">
+                  <label for="farmType3">전업농업인</label>
+                </div>
+                <div class="form-check form-etc">
+                  <input type="radio" name="farmType" id="farmType4">
+                  <label for="farmType4">기타</label>
+                  <input type="text" id="" class="form-control sm" placeholder="입력">
+                </div>
+              </div>
+            </div><!--//영농현황-->
+            <div class="form-group">
+              <div class="form-tit">
+                보유 농기계 수량
+              </div>
+              <div class="form-group-addr">
+                <div class="form-group addr-division">
+                  <div class="form-tit">
+                    <label for="select">경운기</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="form-select" id="select">
+                      <option value="">1대</option>
+                      <option value="">2대</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group addr-division">
+                  <div class="form-tit">
+                    <label for="select">트랙터</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="form-select" id="select">
+                      <option value="">1대</option>
+                      <option value="">2대</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group addr-division">
+                  <div class="form-tit">
+                    <label for="select">이양기</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="form-select" id="select">
+                      <option value="">1대</option>
+                      <option value="">2대</option>
+                    </select>
+                  </div>
+                </div>
+              </div><!--//1번째줄-->
+              <div class="form-group-addr">
+                <div class="form-group addr-division">
+                  <div class="form-tit">
+                    <label for="select">콘바인</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="form-select" id="select">
+                      <option value="">1대</option>
+                      <option value="">2대</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group addr-division">
+                  <div class="form-tit">
+                    <label for="select">기타</label>
+                  </div>
+                  <div class="form-conts">
+                    <select class="form-select" id="select">
+                      <option value="">1대</option>
+                      <option value="">2대</option>
+                    </select>
+                  </div>
+                </div>
+              </div><!--//2번째줄-->
+            </div><!--//영농현황-->
+            <div class="form-group">
+              <div class="form-tit">
+                기술수준
+              </div>
+              <div class="input-group">
+                <input type="text" id="" class="form-control" placeholder="기술수준 입력">
+              </div>
+            </div><!--//기술수준-->
+            <div class="form-group">
+              <div class="form-tit">
+                경영능력
+              </div>
+              <div class="input-group">
+                <input type="text" id="" class="form-control" placeholder="경영능력 입력">
+              </div>
+            </div><!--//경영능력-->
+            <div class="form-group">
+              <div class="form-tit">
+                소득수준
+              </div>
+              <div class="input-group">
+                <input type="text" id="" class="form-control" placeholder="소득수준 입력">
+              </div>
+            </div><!--//소득수준-->
+  
+            <div class="form-group">
+              <div class="form-tit">
+                현재 비밀번호
+              </div>
+              <div class="input-group">
+                <input type="text" id="" class="form-control" placeholder="현재 비밀번호를 입력해주세요">
+              </div>
+            </div><!--//현재비밀번호-->
+            
+          </div><!--//member-modify-->
+				</div>
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+				<button type="button" class="btn primary">저장</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back in"></div>
+</section>
+<!-- //modal -->
+
+
+
+<script>
+
+  /*** * modal * ***/
+const $modalTrigger = document.querySelectorAll('.open-modal');
+const $modalCloseTrigger = document.querySelectorAll('.close-modal');
+const $kds_body = document.querySelector('body');
+const kds_modal = {
+	init: () => {
+		kds_modal.open();
+		kds_modal.close();
+	},
+	open: () => {
+		$modalTrigger.forEach(e => {
+			e.addEventListener('click', ele => {
+				const id = e.getAttribute('data-target'); // id 가져오기
+				e.classList.add('modal-opened');
+				e.setAttribute('tabindex', '-1');
+				kds_modal.modalOpen(id);  // 모달 열기 함수 호출
+				ele.preventDefault();
+			});
+		});
+	},
+	modalOpen: (id) => {
+		const $idVal = document.getElementById(id);  // id에 해당하는 모달 가져오기
+		const $dialog = $idVal.querySelector('.modal-content');
+		const $modalBack = $idVal.querySelector('.modal-back');
+		const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+		const $modalOpenedLen = $modalOpened.length + 1;
+		$kds_body.classList.add('scroll-no');
+		$idVal.setAttribute('aria-hidden', 'false');
+		$modalBack.classList.add('in');  // 백그라운드 추가
+		$idVal.classList.add('shown');  // 모달 보이기
+		setTimeout(() => {
+			$idVal.classList.add('in');  // 애니메이션을 위한 클래스 추가
+		}, 150);
+
+		// 열린 팝업창 포커스
+		$dialog.setAttribute('tabindex', '0');
+
+		// 모달 여러 개 열린 경우 마지막 모달 z-index 높게 설정
+		if ($modalOpenedLen > 1) {
+			const openedLen = $modalOpenedLen;
+			const zIndexNew = 1010 + openedLen;
+			$idVal.setAttribute('style', 'z-index: ' + zIndexNew);
+		}
+
+		// 레이어 진입 시 포커스
+		setTimeout(() => {
+			$dialog.focus();
+		}, 350);
+	},
+	close: () => {
+		$modalCloseTrigger.forEach(e => {
+			e.addEventListener('click', ele => {
+				const id = e.closest('.modal').getAttribute('id');
+				kds_modal.modalClose(id);
+			});
+			e.addEventListener('keydown', ele => { // 닫기 버튼에서 탭 키 누르면 모달 내 첫번째 포커스로 키보드 이동
+				if (e.classList.contains('btn-close')) {
+					const keyCode = ele.keyCode || ele.which;
+					if (!ele.shiftKey && keyCode == 9) {
+						e.closest('.modal-content').focus(); // 첫 번째 링크로 이동
+						ele.preventDefault();
+					}
+				}
+			});
+		});
+	},
+	modalClose: (id) => {
+		const $idVal = document.getElementById(id);
+		const $dialog = $idVal.querySelector('.modal-content');
+		const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+		const $modalOpenedLen = $modalOpened.length;
+		if ($modalOpenedLen < 2) {
+			$kds_body.classList.remove('scroll-no');
+		}
+
+		$idVal.setAttribute('aria-hidden', 'true');
+		$idVal.classList.remove('in');
+
+		$dialog.removeAttribute('tabindex');
+
+		setTimeout(() => {
+			$idVal.classList.remove('shown');
+		}, 150);
+
+		// 모달 창 연 버튼에 class 삭제 및 tabindex 0으로 조정 (포커스 영역 수정)
+		const $triggerBtn = document.querySelector('.modal-opened');
+		if ($triggerBtn != null) {
+			$triggerBtn.focus();
+			$triggerBtn.setAttribute('tabindex', '0');
+			$triggerBtn.classList.remove('modal-opened');
+		}
+	},
+};
+
+// 모달 초기화 실행
+kds_modal.init();
+
+/*비밀번호 보이기*/
+  document.querySelectorAll('.ico-pw-visible').forEach(button => {
+  button.addEventListener('click', function () {
+  const inputField = this.previousElementSibling;
+
+  if (inputField.type === 'password') {
+    inputField.type = 'text';
+  } else {
+    inputField.type = 'password'; 
+    this.classList.remove('active');
+  }
+  });
+});
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/search.css" rel="stylesheet" type="text/css">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+  <link href="../css/rs_index.css" rel="stylesheet" type="text/css">
+  <link href="../css/rs_sub.css" rel="stylesheet" type="text/css">
+  <title>토스트팝업</title>
+</head>
+<body>
+  
+  <!-- toast popup -->
+  <!-- 기본 info -->
+  <div class="t-popup-info-wrap" style="top:20%" >
+    <div class="t-popup-info">
+      <img src="../images/main-page/i_info.png" alt="정보">
+      <p>등록되었습니다. </p>
+    </div>
+  </div>
+  
+  <!-- 등롱 성공시 -->
+  <div class="t-popup-info-wrap sucsess" style="top:40%">
+    <div class="t-popup-info">
+      <img src="../images/main-page/i_info_sucess.png" alt="정보">
+      <p>등록 복사 성공</p>
+    </div>
+  </div>
+  
+  <!-- 오류시 -->
+  <div class="t-popup-info-wrap error" style="top:60%">
+    <div class="t-popup-info">
+      <img src="../images/main-page/i_info_error.png" alt="정보">
+      <p>등록 복사 실패 </p>
+    </div>
+  </div>
+  
+  <!-- toast popup -->
+
+    <!-- 등롱 성공시 -->
+    <div class="t-popup-info-wrap " style="top:80%">
+      <div class="t-popup-info t-ad-btn-ver1">
+        <div class="t-ico-text-wrap">
+          <img src="../images/main-page/i_info.png" alt="정보">
+          <p>수강 바구니에 추가되었습니다.</p>
+        </div>
+        <div class="t-pop-ad-btn-wrap">
+          <button class="btn sm btn-gray t-ad-btn">보러가기</button>
+          <button class="btn btn-close"></button>
+        </div>
+      </div>
+    </div>
+
+  <script>
+        // 토스트 팝업 표시 함수
+        function showToastPopup() {
+      const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+      popupInfoWrap.style.display = 'block'; // 토스트 팝업 보이기
+
+      // 3초 후에 토스트 팝업 숨기기
+      setTimeout(function () {
+        popupInfoWrap.style.display = 'none';
+      }, 3000);
+    }
+
+    // 등록하기 누르면 나오는 토스트 팝업
+    document.querySelectorAll('.rcs-register-btn').forEach(item => {
+      item.addEventListener('click', function () {
+        item.classList.toggle('selected');
+      });
+    });
+
+    document.querySelector('.rcs-register-btn').addEventListener('click', function () {
+      const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+
+      popupInfoWrap.style.display = 'block';
+
+      setTimeout(function () {
+        popupInfoWrap.style.display = 'none';
+      }, 3000);
+    });
+  </script>
+</body>
+
+</html>

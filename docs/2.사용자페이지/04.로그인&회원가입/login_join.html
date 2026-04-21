@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+
+  <title>농촌진흥청 농촌인적자원개발센터</title>
+</head>
+
+
+<body class="uid-body">
+  <header class="uid-header">
+    <h1><a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터"></a></h1>
+  </header>
+<section>
+  <div class="uid-wrap">
+    <div class="login-form-box">
+      <div class="login-form-area type-tab">
+        <div class="login-wrap">
+          <div class="in">
+            <div class="join-wrap">
+              <img src="../images/main-page/join-img01.svg" alt="회원가입">
+              <p class="join-tit">회원가입하고<br> 농촌진흥청 교육을 신청해봐요!</p>
+              <div class="form-group">
+                <button type="submit" class="btn primary lg">회원가입하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login-info-wrap">
+          <div class="in">
+            <p class="tit">간편 회원가입</p>
+            <div class="btn-wrap login-method">
+              <a href="#" class="btn tertiary btn-google"><img src="../images/main-page/i-google.png" alt="구글"></a>
+              <a href="#" class="btn tertiary btn-kakao"><img src="../images/main-page/i-kakao.png" alt="카카오"></a>
+              <a href="#" class="btn tertiary btn-naver"><img src="../images/main-page/i-naver.png" alt="네이버"></a>
+            </div>
+          </div>
+        </div>
+        <span class="join-link-txt">이미 계정이 있으신가요?<a href="#" class="join-link">로그인하기</a></span>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2021 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+
+
+  <!--회원가입 이용약관 모달-->
+  <!-- modal -->
+  <section id="addInformationG" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-addInformationG" style="opacity: 1
+  ; visibility: visible;  display: block; z-index: 99;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header join-terms-logo">
+          <h2><img src="../images/main-page/logo.png" alt="로고"></h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="agree-area">
+              <div class="terms-agree-all">
+                <div class="form-check">
+                  <input type="checkbox" id="check-agree-all">
+                  <label for="check-agree-all">전체 동의하기</label>
+                </div>
+                <div class="join-conts-desc">
+                  <p class="conts-desc">
+                    전체동의는 카카오 및 농촌진흥청 농촌인적자원개발센터 서비스 동의를 포함하고 있습니다. 
+                    전체동의는 선택목적에 대한 동의를 포함하고 있으며, 선택목적에 대한 동의를 거부해도 서비스 이용이 가능합니다.
+                  </p>
+                  <div class="">
+                    
+                  </div>
+                  <p class="conts-desc">
+                    농촌진흥청 농촌인적자원개발센터 서비스 제공을 위해 회원번호와 함께 개인정보가 제공됩니다. 
+                    보다 자세한 개인정보 제공항목은 동의 내용에서 확인하실 수 있습니다. 
+                    해당 정보는 동의 철회 또는 서비스 탈퇴 시 지체없이 파기됩니다.
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+       <!-- <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button> --> 
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+</body>
+</html>

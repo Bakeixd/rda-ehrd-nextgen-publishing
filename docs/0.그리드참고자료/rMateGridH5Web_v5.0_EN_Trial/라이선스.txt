@@ -1,0 +1,277 @@
+﻿알메이트-그리드에 대한 사용권 계약서
+(rMate Grid for HTML5 Software License Agreement)
+
+본 사용권 계약서는 "알메이트-그리드(rMate Grid for HTML5)"(이하 "제품"이라고 칭함)의 저작권자인 
+(주)리아모어소프트 (이하 "리아모어소프트") 및 귀하(개인 또는 단체를 의미함)간에 제품의 사용과 관련하여 체결되는 법적 계약입니다. 
+만약 귀하께서 본 제품을 귀하의 “PC혹은 서버 혹은 스마트기기(스마트폰, 태블릿PC등의 단말기)”(이하 “기기”로 칭함)등의 기기에 
+설치 혹은 복사한다면, 본 계약서에 동의하는 것으로 간주합니다. 
+만약 아래의 계약내용에 대하여 동의하지 않는다면 즉시 본 제품을 귀하의 기기에서 삭제하여 주십시오.
+
+1. 사용권 부여
+
+- 평가판 (Trial Version) : 리아모어소프트에서 제공하는 시험용 평가판은 사용기한에 제한이 있으며, 평가판 마크가 화면에 표시 됩니다. 
+   이 제품은 시험적인 사용을 위한 목적에 한해 귀하에게 사용권을 부여합니다. 
+   이 평가판은 원상태 그대로를 자유롭게 배포,설치하여 사용할 수 있으나 제품의 일부 혹은 전부에 대하여 수정이나 변형을 할 수 없으며, 
+   제품의 일부를 복제 혹은 추출하여 사용하거나, 대여, 배포, 판매하실 수 없습니다.
+
+- 정품 (Licensed Version) : 리아모어소프트로부터 정당한 제품의 가격을 지불하고 구입한 정품은 귀하에게 법적으로 허가된 사용권을 
+  부여합니다. 사용권의 범위는 제품구입시에 허가받은 기기에 한하여 영구적으로 사용하실 수 있습니다. 
+  정품은 귀하에게 허가된 기기에 한하여 사용권을 부여하는 것이며, 제품의 일부 혹은 전부를 복제 혹은 추출하여 허가받은 기기외의 
+  기기에 설치하거나, 대여 혹은 배포, 판매하실 수 없습니다.  
+  다만 제품을 내부적으로 백업하여 보관하기 위한 목적 만으로 제품의 복제가 수행된다면 귀하께서는 제품을 복제하여 타기기에 
+  보관하실 수 있습니다.
+
+본 제품은 저작권법으로 보호됩니다.  역 어셈블리, 역 엔지니어링, 디컴파일, 및 파생적 작업의 생성은 금지됩니다.
+
+
+2. 보증 및 보상
+
+귀하께서 구입한 정품을 귀하의 “기기”에 설치한 경우에는 제품의 환불이나, 제품의 사용에 따른 혹은 제품의 하자에 따른 보상을 
+받으실 수 없습니다. 이는 정품을 구입하기전에 평가판을 통해 시험적으로 사용을 한후 귀하에게 적합하다고 판단하여 정품을 구매한 것으로 
+간주하기 때문입니다.  
+따라서 정품구입전에 평가판을 통해 귀하에게 제품의 적합성을 검토한 후에 정품을 구입할 것을 권장하며, 
+이를 따르지 않았다고 하여, 정품구입후에 제품의 환불이나, 보상을 신청하실 수 없습니다.
+귀하께서 정품을 구입한 경우에 한하여 리아모어소프트는 정품구입시에 보증된 기술지원기간동안, 기술적인 문의 혹은 사용법에 대한 
+문의 혹은 장애에 대한 문의에 대한 응대가 보증됩니다. 
+또한 제품의 하자에 대하여는 정품구입시 보증된 기술지원기간동안 하자가 패치된 제품으로 교체받을 수 있습니다.
+귀하께서 평가판을 사용할 경우에는 리아모어소프트의 기술지원에 제약이 있을 수 있으며, 제품에 의해 파생되는 어떠한 보증이나 
+보상도 받으실 수 없습니다.
+
+
+3. 저작권
+
+리아모어소프트는 본 제품에 대한 저작권 및 소유권을 보유하고 있으며, 
+이는 대한민국 및 전세계의 저작권법에 의해 그 권리를 보호받고 있습니다.
+
+
+4. 책임의 제한 
+
+리아모어소프트는 제품의 사용 또는 사용 불능에서 유래되거나 이와 관련하여 여하한 방법으로 발생된(이익 또는 신용 또는 
+기타 정보상실, 영업중단, 손실된 보유물, 프라이버시 손상, 및 기타 금전손실등을 포함한) 특별한, 부수적, 간접적, 징벌적, 또는 
+파생적 손해배상에 대하여 책임 지지 않습니다. 
+
+
+5. 일반
+
+본 계약서는 리아모어 소프트 및 귀하간의 합의이며, 제공된 제품 및 문서와 관련한, 서면 또는 구두의 모든 이전 동의에 우선합니다. 
+본 계약서는 리아모어소프트의 정당하게 위임받은 대리인에 의해 서명된 서면에 의하지 않고는 변경 또는 수정되지 않습니다.
+
+
+6. 예외조항 (Third party software)
+
+본 제품에는 Apache License 2.0(http://www.apache.org/licenses/LICENSE-2.0)에 의해 보호받고 있는 
+"SheetJS(https://github.com/SheetJS/js-xlsx)"가 사용되고 있습니다. 
+이는 마이크로소프트사의 Excel 파일을 import 하기위해 제공되는 Third party software로서 
+본 제품의 rMateGridH5디렉토리의 JS내에 xlsx.min.js, shim.js, cpexcel.js 파일입니다.  
+이 파일은 Apache License 2.0에 의해서 보호되고 있는 라이선스이며, 이 파일의 사용과 관련하여서는 본 계약에 우선하여 
+Apache License 2.0이 적용됩니다.
+
+
+		  Apache License
+		                           Version 2.0, January 2004
+		                        http://www.apache.org/licenses/
+		
+		   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+		
+		   1. Definitions.
+		
+		      "License" shall mean the terms and conditions for use, reproduction,
+		      and distribution as defined by Sections 1 through 9 of this document.
+		
+		      "Licensor" shall mean the copyright owner or entity authorized by
+		      the copyright owner that is granting the License.
+		
+		      "Legal Entity" shall mean the union of the acting entity and all
+		      other entities that control, are controlled by, or are under common
+		      control with that entity. For the purposes of this definition,
+		      "control" means (i) the power, direct or indirect, to cause the
+		      direction or management of such entity, whether by contract or
+		      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+		      outstanding shares, or (iii) beneficial ownership of such entity.
+		
+		      "You" (or "Your") shall mean an individual or Legal Entity
+		      exercising permissions granted by this License.
+		
+		      "Source" form shall mean the preferred form for making modifications,
+		      including but not limited to software source code, documentation
+		      source, and configuration files.
+		
+		      "Object" form shall mean any form resulting from mechanical
+		      transformation or translation of a Source form, including but
+		      not limited to compiled object code, generated documentation,
+		      and conversions to other media types.
+		
+		      "Work" shall mean the work of authorship, whether in Source or
+		      Object form, made available under the License, as indicated by a
+		      copyright notice that is included in or attached to the work
+		      (an example is provided in the Appendix below).
+		
+		      "Derivative Works" shall mean any work, whether in Source or Object
+		      form, that is based on (or derived from) the Work and for which the
+		      editorial revisions, annotations, elaborations, or other modifications
+		      represent, as a whole, an original work of authorship. For the purposes
+		      of this License, Derivative Works shall not include works that remain
+		      separable from, or merely link (or bind by name) to the interfaces of,
+		      the Work and Derivative Works thereof.
+		
+		      "Contribution" shall mean any work of authorship, including
+		      the original version of the Work and any modifications or additions
+		      to that Work or Derivative Works thereof, that is intentionally
+		      submitted to Licensor for inclusion in the Work by the copyright owner
+		      or by an individual or Legal Entity authorized to submit on behalf of
+		      the copyright owner. For the purposes of this definition, "submitted"
+		      means any form of electronic, verbal, or written communication sent
+		      to the Licensor or its representatives, including but not limited to
+		      communication on electronic mailing lists, source code control systems,
+		      and issue tracking systems that are managed by, or on behalf of, the
+		      Licensor for the purpose of discussing and improving the Work, but
+		      excluding communication that is conspicuously marked or otherwise
+		      designated in writing by the copyright owner as "Not a Contribution."
+		
+		      "Contributor" shall mean Licensor and any individual or Legal Entity
+		      on behalf of whom a Contribution has been received by Licensor and
+		      subsequently incorporated within the Work.
+		
+		   2. Grant of Copyright License. Subject to the terms and conditions of
+		      this License, each Contributor hereby grants to You a perpetual,
+		      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+		      copyright license to reproduce, prepare Derivative Works of,
+		      publicly display, publicly perform, sublicense, and distribute the
+		      Work and such Derivative Works in Source or Object form.
+		
+		   3. Grant of Patent License. Subject to the terms and conditions of
+		      this License, each Contributor hereby grants to You a perpetual,
+		      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+		      (except as stated in this section) patent license to make, have made,
+		      use, offer to sell, sell, import, and otherwise transfer the Work,
+		      where such license applies only to those patent claims licensable
+		      by such Contributor that are necessarily infringed by their
+		      Contribution(s) alone or by combination of their Contribution(s)
+		      with the Work to which such Contribution(s) was submitted. If You
+		      institute patent litigation against any entity (including a
+		      cross-claim or counterclaim in a lawsuit) alleging that the Work
+		      or a Contribution incorporated within the Work constitutes direct
+		      or contributory patent infringement, then any patent licenses
+		      granted to You under this License for that Work shall terminate
+		      as of the date such litigation is filed.
+		
+		   4. Redistribution. You may reproduce and distribute copies of the
+		      Work or Derivative Works thereof in any medium, with or without
+		      modifications, and in Source or Object form, provided that You
+		      meet the following conditions:
+		
+		      (a) You must give any other recipients of the Work or
+		          Derivative Works a copy of this License; and
+		
+		      (b) You must cause any modified files to carry prominent notices
+		          stating that You changed the files; and
+		
+		      (c) You must retain, in the Source form of any Derivative Works
+		          that You distribute, all copyright, patent, trademark, and
+		          attribution notices from the Source form of the Work,
+		          excluding those notices that do not pertain to any part of
+		          the Derivative Works; and
+		
+		      (d) If the Work includes a "NOTICE" text file as part of its
+		          distribution, then any Derivative Works that You distribute must
+		          include a readable copy of the attribution notices contained
+		          within such NOTICE file, excluding those notices that do not
+		          pertain to any part of the Derivative Works, in at least one
+		          of the following places: within a NOTICE text file distributed
+		          as part of the Derivative Works; within the Source form or
+		          documentation, if provided along with the Derivative Works; or,
+		          within a display generated by the Derivative Works, if and
+		          wherever such third-party notices normally appear. The contents
+		          of the NOTICE file are for informational purposes only and
+		          do not modify the License. You may add Your own attribution
+		          notices within Derivative Works that You distribute, alongside
+		          or as an addendum to the NOTICE text from the Work, provided
+		          that such additional attribution notices cannot be construed
+		          as modifying the License.
+		
+		      You may add Your own copyright statement to Your modifications and
+		      may provide additional or different license terms and conditions
+		      for use, reproduction, or distribution of Your modifications, or
+		      for any such Derivative Works as a whole, provided Your use,
+		      reproduction, and distribution of the Work otherwise complies with
+		      the conditions stated in this License.
+		
+		   5. Submission of Contributions. Unless You explicitly state otherwise,
+		      any Contribution intentionally submitted for inclusion in the Work
+		      by You to the Licensor shall be under the terms and conditions of
+		      this License, without any additional terms or conditions.
+		      Notwithstanding the above, nothing herein shall supersede or modify
+		      the terms of any separate license agreement you may have executed
+		      with Licensor regarding such Contributions.
+		
+		   6. Trademarks. This License does not grant permission to use the trade
+		      names, trademarks, service marks, or product names of the Licensor,
+		      except as required for reasonable and customary use in describing the
+		      origin of the Work and reproducing the content of the NOTICE file.
+		
+		   7. Disclaimer of Warranty. Unless required by applicable law or
+		      agreed to in writing, Licensor provides the Work (and each
+		      Contributor provides its Contributions) on an "AS IS" BASIS,
+		      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+		      implied, including, without limitation, any warranties or conditions
+		      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+		      PARTICULAR PURPOSE. You are solely responsible for determining the
+		      appropriateness of using or redistributing the Work and assume any
+		      risks associated with Your exercise of permissions under this License.
+		
+		   8. Limitation of Liability. In no event and under no legal theory,
+		      whether in tort (including negligence), contract, or otherwise,
+		      unless required by applicable law (such as deliberate and grossly
+		      negligent acts) or agreed to in writing, shall any Contributor be
+		      liable to You for damages, including any direct, indirect, special,
+		      incidental, or consequential damages of any character arising as a
+		      result of this License or out of the use or inability to use the
+		      Work (including but not limited to damages for loss of goodwill,
+		      work stoppage, computer failure or malfunction, or any and all
+		      other commercial damages or losses), even if such Contributor
+		      has been advised of the possibility of such damages.
+		
+		   9. Accepting Warranty or Additional Liability. While redistributing
+		      the Work or Derivative Works thereof, You may choose to offer,
+		      and charge a fee for, acceptance of support, warranty, indemnity,
+		      or other liability obligations and/or rights consistent with this
+		      License. However, in accepting such obligations, You may act only
+		      on Your own behalf and on Your sole responsibility, not on behalf
+		      of any other Contributor, and only if You agree to indemnify,
+		      defend, and hold each Contributor harmless for any liability
+		      incurred by, or claims asserted against, such Contributor by reason
+		      of your accepting any such warranty or additional liability.
+		
+		   END OF TERMS AND CONDITIONS
+		
+		   APPENDIX: How to apply the Apache License to your work.
+		
+		      To apply the Apache License to your work, attach the following
+		      boilerplate notice, with the fields enclosed by brackets "{}"
+		      replaced with your own identifying information. (Don't include
+		      the brackets!)  The text should be enclosed in the appropriate
+		      comment syntax for the file format. We also recommend that a
+		      file or class name and description of purpose be included on the
+		      same "printed page" as the copyright notice for easier
+		      identification within third-party archives.
+		
+		   Copyright (C) 2012-present   SheetJS LLC 
+		
+		   Licensed under the Apache License, Version 2.0 (the "License");
+		   you may not use this file except in compliance with the License.
+		   You may obtain a copy of the License at
+		
+		       http://www.apache.org/licenses/LICENSE-2.0
+		
+		   Unless required by applicable law or agreed to in writing, software
+		   distributed under the License is distributed on an "AS IS" BASIS,
+		   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+		   See the License for the specific language governing permissions and
+		   limitations under the License.
+
+본 제품에는 MIT License(http://opensource.org/licenses/MIT)에 의해 보호받고 있는 
+"JSZip(https://github.com/Stuk/jszip)"이 사용되고 있습니다. 
+이는 마이크로소프트사의 Excel 파일을 export 하기위해 제공되는 Third party software로서 
+본 제품의 rMateGridH5디렉토리의 JS내에 jszip.min.js 파일입니다.  
+이 파일은 MIT License에 의해서 보호되고 있는 라이선스이며, 이 파일의 사용과 관련하여서는 본 계약에 우선하여 
+MIT License이 적용됩니다.

@@ -1,0 +1,312 @@
+/* Overlay background when showing app drawer */
+.layout::before {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 0;
+	z-index: 99;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+	.header_inner .gnb-menu-wrap-center .menu-wrap {
+		gap: 0.1rem;
+	}
+	.header_inner .gnb-menu-wrap-center .menu-wrap li .gnb-2depth {
+		top: 4.5rem;
+	}
+	
+	.site--menu--popup--wrap {
+		flex-direction: column;
+	}
+
+	header .mian_icon-wrap {
+		margin-top: 1rem;
+		justify-content: right;
+	}
+
+	.menu-con-flex {
+		flex-direction: column;
+	}
+
+	.main_box.active {
+		max-width: 100%;
+	}
+
+	.h-visual > .h-visual-text-wrap {
+		padding: 2rem;
+	}
+
+	.tab-conts-wrap .con_search3 .m-search-wrap {
+		flex-direction: column;
+	}
+
+	form[name="searchFrm"] .m-search:has(#searchWrd) {
+		width: 90%;
+	}
+	
+	form[name="searchFrm"] li:has(.btn.primary),
+	form[name="searchFrm"] .btn.primary {
+		width: 90%;
+	}
+
+	.main-content .value_b_tit {
+		width: auto;
+	}
+
+	.main-content .v_icon_wrap.v_icon_wrap {
+		flex-direction: column;
+		transform: scale(1);
+	}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+	header .header_inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header .mian_icon-wrap {
+		margin-top: 2rem;
+		gap: 2rem;
+	}
+
+	.site--menu--popup--wrap .menu-popup-wrap > .site--menu--ul.site--menu--ul,
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex > .site--menu--ul.site--menu--ul {
+		grid-template-columns: 1fr;
+	}
+
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex.menu-con-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Hide collapse menu elements */
+	.site--all--menu--popup[style*="block"] .menu-tit:has(input:checked) + ul,
+	.site--all--menu--popup[style*="block"] .menu-tit:has(input:checked) + div {
+		display: none;
+	}
+	
+	.main_box:not(.active) {
+		display: none;
+	}
+
+	.h-visual .h-visual-text-wrap h2 {
+		font-size: 3rem;
+	}
+
+	.main-content .v_icon_wrap {
+		transform: scale(0.9);
+	}
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) {
+	.main_box:not(.active) {
+		width: 10rem;
+	}
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+	/* Show overlay background when showing app drawer */
+	.layout:has(.site--all--menu--popup[style*="block"])::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+		opacity: 1;
+		transition: opacity 1s;
+	}
+
+	.site--all--menu--popup {
+		width: min(344px, 100%);
+		z-index: 999;
+	}
+	
+	.site--all--menu--popup::after,
+	.main-content .v_tit_wrap p::before,
+	.main-content .v_tit_wrap p::after {
+		content: none;
+	}
+
+	.site--menu--popup--wrap {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.site--menu--popup--wrap .menu-tit {
+		width: 100%;
+	}
+	.site--menu--popup--wrap .menu-popup-wrap > .site--menu--ul,
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex > .site--menu--ul {
+    display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+	}
+	.site--menu--wrap ul li a:not(.ul--text--wrap li a) {
+		width: 100%;
+	}
+
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex {
+		display: block;
+	}
+
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex > ul:first-child {
+		margin-bottom: 2rem;
+	}
+
+	.site--all--menu--popup .haeder_logo,
+	header .gnb-menu-wrap-center,
+	.main-content .vision03--wrap--bg,
+	.main_box:not(.active) .main_box_in,
+	.main-content .vision_value_line,
+	.main-content .vision02--wrap .dot {
+		display: none;
+	}
+
+	.gnb-menu-wrap-center .menu-wrap li .gnb-2depth {
+		z-index: 100;
+	}
+
+	/* Collapse menu toggle checking element */
+	label.menu-tit > input {
+		display: none;
+	}
+
+	.layout > .main-content {
+		padding: 2rem;
+		width: auto;
+	}
+
+	.layout > .main-content > .container {
+		width: 100%;
+	}
+
+	.layout > .main-content .breadcrumb-wrap .breadcrumb {
+		justify-content: start;
+	}
+	
+	.layout > .main-content .sub-title-wrap .sub-name-wrap {
+		flex-direction: column;
+	}
+	
+	.layout > .main-content .intro-info-text-group {
+		flex-direction: column;
+	}
+	
+	.layout > .main-content .intro-info-text-group > .into-img-wrap {
+		align-items: center;
+	}
+
+	.layout > .main-content .intro-info-text-group > .into-img-wrap > img {
+		width: 100%;
+		max-width: 30rem;
+		height: auto;
+	}
+	
+	.layout > .main-content .intro-info-text-group > .info-text-wrap {
+		width: 100%;
+	}
+
+	.main_box:not(.active) {
+		width: 20rem;
+    overflow-x: hidden;
+	}
+
+	.main_box.active .main_box_in {
+		padding: 4rem;
+	}
+
+	.main_box p:not(.main_tag p),
+	.main_box.active p:not(.main_tag p) {
+		font-size: 3rem;
+		word-break: auto-phrase;
+	}
+
+	.main_box.active p:not(.main_tag p) {
+		margin-bottom: 4rem;
+	}
+
+	.main_box.active .main_box-tag {
+		width: 100%;
+		column-gap: 1.5rem;
+		row-gap: 1rem;
+	}
+
+	.main-content .into-img-wrap img {
+		height: auto;
+	}
+
+	.main-content .vision03_card-box-wrap,
+	.main-content .m-info-text {
+		flex-wrap: wrap;
+	}
+
+	.main-content .v_icon_wrap {
+		gap: 3rem;
+	}
+	
+	.main-content .value_b_tit {
+		padding: 1.4rem 5rem;
+	}
+
+	.main-content .sub_tab--wrap .tablist,
+	.main-content .tab-content li:has(table) {
+		overflow-x: auto;
+	}
+	.main-content .sub_tab--wrap ul li {
+		flex-basis: 18rem;
+		flex-shrink: 0;
+	}
+
+	/* table horizontal scroll */
+	.con_listcus2:has(table) {
+		overflow-x: auto;
+	}
+
+	.pagination,
+	.pagination .page-links {
+		flex-wrap: wrap;
+	}
+
+}
+
+/* X-Large devices (large desktops, over than 1200px) */
+@media screen and (min-width: 1200px) {
+	.site--menu--popup--wrap .menu-popup-wrap > .menu-con-flex > .site--menu--ul > li:first-child {
+		margin-bottom: 8.3rem;
+	}
+
+	.main-content {
+		flex: 1 1 960px;
+		margin: 0 80px;
+	}
+
+	.main-content .into-img-wrap img {
+		height: auto;
+	}
+
+	.pro-fir::before {
+		left: -80px;
+	}
+}
+/* No media query since the xxl breakpoint has no upper bound on its width */
+
+@media(max-width:1280px){
+  /*대표페이지  - footer*/
+  .f-link li:not(:first-child) a:before{
+    margin:0 1.2rem;
+  }
+}

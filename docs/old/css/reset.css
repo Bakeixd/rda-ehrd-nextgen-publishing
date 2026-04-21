@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: 'Pretendard', sans-serif;
+	letter-spacing: -0.05rem;
+	color: #222;
+	font-size: 1.7rem;
+}
+html {
+	width: 100%;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+ul li, ol{
+	list-style: none;
+}
+textarea {
+	resize: none;
+}
+a {
+	text-decoration: none; 
+	outline: none; 
+	cursor: pointer;
+}
+a:hover, a:active, a:link, a:visited {
+	text-decoration: none;
+}
+em, address, i {
+	font-style: normal;
+}
+button{
+	cursor: pointer; 
+	background: inherit; 
+	border:none;
+	padding:0; 
+	margin:0;
+}
+button, input, optgroup, select, textarea {
+	font-family: inherit;	
+	font-size: 100%;	
+	margin: 0;
+}
+
+/* table ----- */
+table{
+	table-layout: fixed;
+	max-width: none;
+	width: auto;
+	min-width: 100%;
+	border-collapse: collapse;
+	border-collapse: collapse;	
+	border-spacing: 0;
+}
+caption{
+	display: none;
+}
+
+img{
+	max-width: 100%; 
+	height: auto; 
+	border: 0 none; 
+	-webkit-tap-highlight-color: transparent;
+}
+label{
+	cursor: pointer;
+}
+.none {
+	display: none;
+}
+
+
+input[type=text], 
+input[type=tel], 
+input[type=password], 
+input[type=file], 
+input[type=number],
+input[type=email], 
+input[type=date], 
+input[type=search], 
+textarea {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select{
+	-webkit-appearance:none; /* 크롬 화살표 없애기 */
+	-moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+	appearance:none /* 화살표 없애기 */
+}
+
+button:focus-visible, 
+li:focus-visible, 
+a:focus-visible, 
+input:focus-visible, 
+div:focus-visible{
+	outline: 2px dashed #000;
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+
+
+

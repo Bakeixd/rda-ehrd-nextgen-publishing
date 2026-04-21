@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+	<link href="../css/mypage.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+
+	<title>마이페이지 > 지역특화과정선택</title>
+
+</head>
+
+<body>
+<section class="layout">
+	
+	
+	<section class="main-content sub-content">
+		<div class="container">
+			<!--서브페이지 공통-->
+			<div class="sub-title-wrap">
+				<div class="sub-name-wrap">
+					<div class="breadcrumb-wrap">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">지역특화과정</a></li>
+						</ol>
+					</div>
+					<h4>지역선택</h4>
+				</div>
+			</div>
+
+		<div class="sub-con-wrap">
+			<div class="my-item">
+				<div class="my-item-title">
+					<p class="my-title">지역검색</p>
+					<div class="input-wrap">
+						<span>지역선택</span>
+						<div class="input-group">
+							<select class="form-select sm" title="선택">
+								<option value="">전체</option>
+								<option value="">서울특별시</option>
+								<option value="">부산광역시</option>
+								<option value="">대구광역시</option>
+							</select>
+						</div>
+						<button type="button" class="btn btn-primary" data-target="sch-detail">검색</button>
+					</div>
+				</div>
+			</div>
+			<div class="helper-box refer mt_24">
+				<p class="helper-tit">참고</p>
+				<div class="helper-desc-wrap">
+					<p>지도에서 각 지역을 클릭하거나 지역 검색에서 도시 선택 후 검색버튼을 누르면 도원 및 특역센터 별 농업기술원과 농업기술센터를 검색할 수 있습니다.</p>
+				</div>
+			</div>
+
+			<div class="asp-select-area">
+				<div class="asp-map-area">
+					<div class="asp-cilck-bar">
+						<img src="../images/edu/ico_clickCursor.png" alt="클릭이미지">
+						지도를 클릭해주세요!
+					</div>
+					<div class="asp-mapzone">
+						<div class="map-container">
+							
+							<img id="mapImage" src="../images/edu/map_all.png" alt="전체 지도" usemap="#Map"/>
+								<map name="Map">
+									<area shape="poly" coords="72,27,78,37,86,42,96,44,103,54,101,62,101,71,101,80,116,85,115,92,113,109,111,115,98,122,86,133,61,133,49,109,58,90,69,91,81,84,71,70,44,77,40,66,70,30" href="#" alt="경기" data-img="../images/edu/map-gyeonggi.png">
+									<area shape="poly" coords="42,77,45,85,46,96,45,103,56,91,54,82,41,76" href="#" alt="인천" data-img="../images/edu/map-incheon.png">
+									<area shape="poly" coords="53,80,65,76,73,74,81,85,72,93,57,91,55,83" href="#" alt="서울" data-img="../images/edu/map-seoul.png">
+									<area shape="poly" coords="76,26,97,22,139,23,151,6,161,18,217,112,177,122,128,108,115,111,122,84,102,77,107,56,79,36,78,28" href="#" alt="강원" data-img="../images/edu/map-gangwon.png">
+									<area shape="poly" coords="89,141,78,130,59,138,55,125,35,125,20,138,25,156,39,178,50,202,72,193,88,194,108,202,93,186,82,181,81,171,75,150,86,148" href="#" alt="충남" data-img="../images/edu/map-chungnam.png">
+									<area shape="poly" coords="79,149,81,164,86,170,93,164,84,150,80,149" href="#" alt="세종" data-img="../images/edu/map-sejong.png">
+									<area shape="poly" coords="84,169,87,183,99,187,101,171,92,168" href="#" alt="대전" data-img="../images/edu/map-daejeon.png">
+									<area shape="poly" coords="87,138,108,119,136,113,171,119,158,138,138,140,123,154,124,165,122,185,131,187,122,201,103,186,97,165,88,151" href="#" alt="충북" data-img="../images/edu/map-chungbuk.png">
+									<area shape="poly" coords="214,114,206,120,172,122,162,136,144,142,124,154,126,182,131,185,126,201,136,215,154,229,154,183,168,177,189,188,181,204,172,226,188,232,222,226,227,201,214,153,217,126" href="#" alt="경북" data-img="../images/edu/map-gyeongbuk.png">
+									<area shape="poly" coords="157,224,157,207,165,203,167,192,156,184,169,183,188,187,178,197,181,209,162,228,154,232" href="#" alt="대구" data-img="../images/edu/map-daegu.png">
+									<area shape="poly" coords="54,205,41,207,49,215,56,212,44,223,47,234,37,246,39,253,52,248,62,243,72,246,75,253,95,252,105,256,111,245,106,228,116,214,126,205,110,198,86,199,87,193,66,195" href="#" alt="전북" data-img="../images/edu/map-jeonbuk.png">
+									<area shape="poly" coords="187,271,204,252,211,257,201,271,195,280,185,271" href="#" alt="부산" data-img="../images/edu/map-busan.png">
+									<area shape="poly" coords="207,251,195,239,202,227,212,227,224,229,217,242,215,251" href="#" alt="울산" data-img="../images/edu/map-ulsan.png">
+									<area shape="poly" coords="126,213,112,218,109,231,112,245,109,262,117,278,121,287,135,277,144,286,155,288,157,290,160,273,171,270,182,274,202,252,195,235,171,236,149,233,142,223" href="#" alt="경남" data-img="../images/edu/map-gyeongnam.png">
+									<area shape="poly" coords="67,274,53,274,46,266,52,258,65,261,70,266" href="#" alt="광주" data-img="../images/edu/map-gwangju.png">
+									<area shape="poly" coords="54,275,66,274,71,269,74,256,101,256,120,285,106,290,117,294,112,300,107,308,100,293,90,303,92,317,80,314,86,298,69,312,63,324,53,309,38,332,31,315,26,304,32,282,26,269,33,251,34,249,49,261,60,258,69,261,74,256,60,246,41,249" href="#" alt="전남" data-img="../images/edu/map-jeonnam.png">
+									<area shape="poly" coords="40,366,64,355,92,358,84,373,58,376,38,377,38,367" href="#" alt="제주" data-img="../images/edu/map-jeju.png">
+								</map>
+							
+						</div><!--//map-container-->
+					</div><!--//asp-mapzone-->
+				</div>
+				<div class="asp-tit-table-wrap">
+					<div class="table-wrap">
+						<p>도원 및 특역센터 농업기술원</p>
+						<div class="y-table-scroll">
+							<table class="table-type1">
+								<caption>도원 및 특역센터 농업기술원</caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<th>지역</th>
+									<th>기관명</th>
+									<th>바로가기</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>서울특별시</td>
+										<td>서울특별시 농업기술센터</td>
+										<td><a href="" class="btn sm btn-primary-w">바로가기</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="table-wrap">
+						<p>시, 군 농업기술센터</p>
+						<div class="y-table-scroll">
+							<table class="table-type1">
+								<caption>도원 및 특역센터 농업기술원</caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<th>지역</th>
+									<th>기관명</th>
+									<th>바로가기</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>서울특별시</td>
+										<td>서울특별시 농업기술센터</td>
+										<td><a href="" class="btn sm btn-primary-w">바로가기</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--//sub-con-wrap-->
+	</div>
+
+	</div><!--//container-->
+	</section><!--//main-content-->
+</section><!--//layout-->
+
+<section class="footer">
+	<div class="ft-in">
+		<div class="ft-nav-wrap">
+			<img src="../images/edu/logo_ft.png" alt="농촌진흥청 농촌인적자원개발센터">
+			<div class="ft-nav">
+				<a href="">
+					<span class="org">개인정보처리방침</span>
+				</a>
+				<a href="">
+					<span>이메일무단수집거부</span>
+				</a>
+				<a href="">
+					<span>자료이용 및 저작권보호</span>
+				</a>
+				<a href="">
+					<span>조직 및 기능</span>
+				</a>
+				<a href="">
+					<span>찾아오시는길</span>
+				</a>
+			</div>
+		</div>
+		<div class="ft-bottom">
+			<ul class="address">
+				<li><strong>주소</strong>(54874) 전북특별자치도 전주시 덕진구 농생명로 420 농촌인적자원개발센터  </li>
+				<li><strong>전화</strong>063-238-1800</li>
+			</ul>
+			<div class="familysite">
+				<button class="btn-family">관련사이트 바로가기</button>
+				<div class="family-list">
+					<div class="fl-in">
+						<a href="https://www.rda.go.kr" class="option" target="_blank">
+							<span>농촌진흥청</span>
+						</a>
+						<a href="https://www.naas.go.kr" class="option" target="_blank">
+							<span>국립농업과학원</span>
+						</a>
+						<a href="https://www.nics.go.kr" class="option" target="_blank">
+							<span>국립식량과학원</span>
+						</a>
+						<a href="https://www.nihhs.go.kr" class="option" target="_blank">
+							<span>국립원예특작과학원</span>
+						</a>
+						<a href="https://www.nias.go.kr" class="option" target="_blank">
+							<span>국립축산과학원</span>
+						</a>
+						<a href="https://www.nhi.go.kr/" class="option" target="_blank">
+							<span>국가공무원인재개발원</span>
+						</a>
+						<a href="https://www.ati.go.kr/" class="option" target="_blank">
+							<span>농식품공무원교육원</span>
+						</a>
+						<a href="https://www.nongsaro.go.kr" class="option" target="_blank">
+							<span>농사로</span>
+						</a>
+						<a href="http://www.returnfarm.com" class="option" target="_blank">
+							<span>귀농귀촌종합센터</span>
+						</a>
+						<a href="https://www.rda.go.kr:2360/kaesa/" class="option" target="_blank">
+							<span>전문지도연구회</span>
+						</a>
+						<a href="https://www.agriedu.net" class="option" target="_blank">
+							<span>농업교육포털</span>
+						</a>
+						<a href="https://astis.rda.go.kr" class="option" target="_blank">
+							<span>농업과학기술정보서비스</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-copy">
+			<span>COPYRIGHT(C) RURAL HUMAN RESOURCE DEVELOPMENT CENTER(RHRDC). ALL RIGHTS RESERVED</span>
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+// JavaScript로 이미지 변경 처리
+document.querySelectorAll('area').forEach(area => {
+	area.addEventListener('click', function (event) {
+		event.preventDefault(); // 기본 링크 동작 방지
+		const imgSrc = this.dataset.img; // data-img 속성에서 이미지 경로 가져오기
+		if (imgSrc) {
+				document.getElementById('mapImage').src = imgSrc;
+		}
+	});
+});
+
+</script>
+
+</body>
+</html>

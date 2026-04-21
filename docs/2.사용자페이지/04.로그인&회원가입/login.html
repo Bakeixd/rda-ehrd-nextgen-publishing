@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <title>농촌진흥청 농촌인적자원개발센터</title>
+</head>
+
+
+<body class="uid-body">
+  <header class="uid-header">
+    <h1><a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터"></a></h1>
+  </header>
+<section>
+  <div class="uid-wrap">
+    <div class="login-form-box">
+      <div class="login-form-area type-tab">
+        <div class="login-wrap">
+          <div class="in">
+            <fieldset>
+              <div class="fieldset">
+                <div class="form-group">
+                  <div class="form-tit">
+                    <label for="login_id">아이디</label>
+                  </div>
+                  <div class="form-conts">
+                    <input type="text" id="login_id" class="form-control lg" autocomplete="on" placeholder="아이디를 입력해주세요.">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-tit">
+                    <label for="login_pw">비밀번호</label>
+                  </div>
+                  <div class="form-conts btn-ico-wrap">
+                    <input type="password" id="login_pw" class="form-control lg" placeholder="비밀번호를 입력해주세요.">
+                    <button type="button" class="btn btn-ico ico-pw-invisible">
+                      <span class="sr-only">입력한 비밀번호 보기</span>
+                    </button>
+                    <button type="button" class="btn btn-ico ico-pw-visible"  style="display: none;">
+                      <span class="sr-only">입력한 비밀번호 숨기기</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="form-flex">
+                  <div class="form-group chk-area">
+                    <div class="form-check">
+                      <input type="checkbox" name="save_id" id="save_id">
+                      <label for="save_id">아이디 저장</label>
+                    </div>
+                  </div>
+                  <a class="btn-txt find-txt" href="" target="_blank">아이디 · 비밀번호찾기</a>
+                </div>
+                
+                <div class="form-group">
+                  <button type="submit" class="btn primary lg ">로그인</button>
+                </div>
+                <!--<div class="form-group">
+                  <ul class="link-group">
+                    <li><a href="#" class="btn md btn-txt">아이디 찾기</a></li>
+                    <li><a href="#" class="btn md btn-txt">비밀번호 찾기</a></li>
+                    <li><a href="#" class="btn md btn-txt">회원가입</a></li>
+                  </ul>
+                </div>-->
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="login-info-wrap">
+          <div class="in">
+            <p class="tit">SNS로 간편하게 시작하기</p>
+            <div class="btn-wrap login-method">
+              <a href="#" class="btn tertiary btn-kakao"><img src="../images/main-page/i-kakao.png" alt="카카오"></a>
+              <a href="#" class="btn tertiary btn-naver"><img src="../images/main-page/i-naver.png" alt="네이버"></a>
+              <a href="#" class="btn tertiary btn-google"><img src="../images/main-page/i-google.png" alt="구글"></a>
+            </div>
+          </div>
+        </div><!--//login-info-wrap-->
+        <span class="join-link-txt">아직 회원이 아니신가요?<a href="../04.로그인&회원가입/join.html" class="join-link">회원가입</a></span>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2021 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+</body>
+<script>
+    /*비밀번호 보이기*/
+    document.querySelectorAll('.ico-pw-visible').forEach(button => {
+  button.addEventListener('click', function () {
+    const inputField = this.previousElementSibling;
+
+    if (inputField.type === 'password') {
+      inputField.type = 'text';
+    } else {
+      inputField.type = 'password'; 
+      this.classList.remove('active');
+    }
+  });
+});
+</script>
+</html>

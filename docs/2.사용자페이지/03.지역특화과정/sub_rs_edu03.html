@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/search.css" rel="stylesheet" type="text/css">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+  <link href="../css/rs_index.css" rel="stylesheet" type="text/css">
+  <title>경기도 경기농업기술원</title>
+</head>
+
+<body>
+  <div class="layout">
+    <header>
+      <div class="header-wrap">
+        <h1><a href="#"><img src="../images/Regional-specialization/logo.png" alt="로고"></a></h1>
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#">온라인교육</a></li>
+            <li><a href="#">오프라인교육</a></li>
+            <li><a href="#">현장실습교육</a></li>
+            <li><a href="#">커뮤니티</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="header-menu-right">
+            <li><a href="#" class="open-modal" data-target="aspSearch" tabindex="0">
+                <img src="../images/Regional-specialization/rs_i_search.svg" alt="검색">통합검색
+              </a></li>
+            <li><a href="#"><img src="../images/Regional-specialization/rs_i_lock.svg" alt="로그인">로그인</a></li>
+          </ul>
+        </div>
+      </div><!--//header-wrap-->
+    </header>
+
+    <section class="h-visual">
+      <div class="h-visual-img sub01">
+        <div class="h-visual-text-wrap">
+          <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+              <li class="rs-home text"><a href="#">홈</a></li>
+              <li><a href="#" class="txt">현장실습교육</a></li>
+              <li><a href="#" class="txt">선도농가등록</a></li>
+            </ol>
+          </div>
+          <h2>현장실습교육</h2>
+        </div>
+      </div>
+
+    </section>
+    <section class="content">
+      <div class="sub-name-wrap lrn-title-tooltip">
+        <h3>
+          현장실습교육
+        </h3>
+        <button type="button" class="btn-tooltip right-tooltip " data-tooltip="현장실습교육은 선도해서 농업을 가르쳐줄 선도 농업인과 농업을 현장에서 배우고 싶은 연수생들이 사용하는 메뉴 입니다.">
+          <i class="i-tooltip"></i>
+        </button>
+      </div>
+      <div class="download-area mt_32">
+        <p>출근부 / 현장 실습 일지 다운로드</p>
+        <div class="btn-download-wrap">
+          <button class="btn md btn-darkgray-w btn-document-download">출근부 다운로드</button>
+          <button class="btn md btn-darkgray-w btn-document-download">현장실습일지 다운로드</button>
+        </div>
+      </div>
+      <div class="rs-con-tbl">
+
+        <div class="rc-tab-wrap">
+          <ul>
+            <li>
+              <a href="#">선도농가등록</a>
+            </li>
+            <li>
+              <a href="#">연수생등록</a>
+            </li>
+            <li  class="active">
+              <a href="#">현장실습보고서</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="rc-con">
+        <div class="rs-con-tab-01">
+          <div class="sub-name-wrap lrn-title-tooltip">
+            <h3>
+              현장실습보고서
+            </h3>
+            <button type="button" class="btn-tooltip right-tooltip" data-tooltip="현장 실습 후 최종적으로 작성하는 보고서 화면입니다. 
+            현장실습에 신청한 선도농가 및 연수생들만 사용가능 메뉴입니다.">
+              <i class="i-tooltip"></i>
+            </button>
+          </div>
+          <div class="rc-list-top mt_32">
+            <div class="rc-tbl-info">
+              전체
+              <span class="keyword">100</span>
+              건
+            </div>
+
+            <div class="input-group">
+							<select class="form-select sm" title="년 선택">
+								<option value="">전체</option>
+								<option value="">2024년</option>
+								<option value="">2023년</option>
+							</select>
+              <select class="form-select sm" title="월 선택">
+								<option value="">전체</option>
+								<option value="">12월</option>
+								<option value="">11월</option>
+							</select>
+						</div>
+
+
+
+          </div>
+          <div class=" mt_16">
+            <div class="table-wrap">
+              <table class="table-type1">
+                <caption>현장실습보고서 리스트</caption>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">년도/월</th>
+                    <th scope="col">도</th>
+                    <th scope="col">시군</th>
+                    <th scope="col">선도농업인</th>
+                    <th scope="col">연수생</th>
+                    <th scope="col">계약일</th>
+                    <th scope="col">작성</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2024/12</td>
+                    <td>강원도</td>
+                    <td>인제군</td>
+                    <td>홍길동</td>
+                    <td>김철수</td>
+                    <td>10.01 ~ 11.19</td>
+                    <td><button class="btn btn-primary sm"
+                        onclick="location.href='./sub_rs_edu03_edit.html'">신청하기</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2023/11</td>
+                    <td>강원도</td>
+                    <td>인제군</td>
+                    <td>홍길동</td>
+                    <td>김철수</td>
+                    <td>09.01 ~ 09.21</td>
+                    <td><button class="btn btn-primary-w sm"
+                        onclick="location.href='./'">수정하기</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>2023/12</td>
+                    <td>강원도</td>
+                    <td>인제군</td>
+                    <td>홍길동</td>
+                    <td>김철수</td>
+                    <td>09.01 ~ 09.21</td>
+                    <td><button class="btn btn-primary-w sm"
+                      onclick="location.href='./'">상세보기</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <footer>
+      <div class="f-top">
+        <div class="rs-container ft-container">
+          <ul class="f-link">
+            <li>
+              <a href="#">
+                <strong>개인정보처리방침</strong>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                이메일무단수집거부
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                자료이용 및 저작권 보호
+              </a>
+            </li>
+          </ul>
+          <div class="familysite">
+            <button class="btn-family">관련사이트 바로가기</button>
+            <div class="family-list">
+              <div class="fl-in">
+                <a href="https://www.rda.go.kr" class="option" target="_blank">
+                  <span>농촌진흥청</span>
+                </a>
+                <a href="https://www.naas.go.kr" class="option" target="_blank">
+                  <span>국립농업과학원</span>
+                </a>
+                <a href="https://www.nics.go.kr" class="option" target="_blank">
+                  <span>국립식량과학원</span>
+                </a>
+                <a href="https://www.nihhs.go.kr" class="option" target="_blank">
+                  <span>국립원예특작과학원</span>
+                </a>
+                <a href="https://www.nias.go.kr" class="option" target="_blank">
+                  <span>국립축산과학원</span>
+                </a>
+                <a href="https://www.nhi.go.kr/" class="option" target="_blank">
+                  <span>국가공무원인재개발원</span>
+                </a>
+                <a href="https://www.ati.go.kr/" class="option" target="_blank">
+                  <span>농식품공무원교육원</span>
+                </a>
+                <a href="https://www.nongsaro.go.kr" class="option" target="_blank">
+                  <span>농사로</span>
+                </a>
+                <a href="http://www.returnfarm.com" class="option" target="_blank">
+                  <span>귀농귀촌종합센터</span>
+                </a>
+                <a href="https://www.rda.go.kr:2360/kaesa/" class="option" target="_blank">
+                  <span>전문지도연구회</span>
+                </a>
+                <a href="https://www.agriedu.net" class="option" target="_blank">
+                  <span>농업교육포털</span>
+                </a>
+                <a href="https://astis.rda.go.kr" class="option" target="_blank">
+                  <span>농업과학기술정보서비스</span>
+                </a>
+              </div>
+            </div>
+          </div><!--//familysite-->
+        </div>
+      </div>
+
+      <div class="f-bottom">
+        <div class="rs-container ft-container">
+          <div class="f-logo">
+            <a href="#">
+              <img src="../images/main-page/footer_logo.png" alt="footer-logo">
+            </a>
+          </div>
+          <div class="f-info">
+            <p class="info-address">(54874) 전북특별자치도 전주시 덕진구 농생명로 420 농촌인적자원개발센터</p>
+            <p class="info-tel">TEL : 063-238-1800</p>
+            <p>COPYRIGHT(C) RURAL HUMAN RESOURCE DEVELOPMENT CENTER(RHRDC). ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </footer>
+  </div>
+
+  <div id="quickMenu">
+    <a href="#" class="quick-top">TOP</a>
+    <a href="#" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick01.png" alt="나의강의실">
+      <span class="txt">나의 강의실</span>
+    </a>
+    <a href="https://app.gather.town/app/xMHipOBWGF0TTD8C/RDA%20HRD" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick02.png" alt="메타버스교육장">
+      <span class="txt">메타버스 교육장</span>
+    </a>
+    <a href="https://hrd.rda.go.kr/ehrd_front/vr/index.html" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick03.png" alt="VR농기계견학관">
+      <span class="txt">VR농기계 견학관</span>
+    </a>
+  </div>
+
+
+
+  <!-- modal -->
+  <section id="aspSearch" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-eduSearch">
+    <div class="modal-dialog modal-xlg asp-modal">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header border-b-none">
+          <h2 id="tit-aspSearch" class="modal-title"></h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+
+          <div class="conts-area">
+            <div class="online-search-box">
+              <div class="inner">
+                <div class="">
+                  <form role="search" method="get" class="" id="" name="">
+                    <filedset class="online-sch-form">
+                      <legend class="none">검색</legend>
+                      <div class="sch-input top-sch">
+                        <input type="text" class="form-control md" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                        <button type="button" class="btn btn-ico ico-sch-or">
+                          <span class="none">검색</span>
+                        </button>
+                      </div>
+                      <button type="button" class="btn md ico-filter">상세검색</button>
+                    </filedset>
+                  </form>
+                </div><!--//div-->
+
+                <div class="detail-sch-form">
+
+                  <form>
+                    <fieldset>
+                      <legend class="none">수강신청 가능여부</legend>
+
+                      <div class="sch-group edu-detail-wrap">
+                        <span>수강신청 가능여부</span>
+                        <div class="form-chip sm">
+                          <input type="radio" class="radio" name="rdo_chip" id="ap_class_1">
+                          <label class="form-chip-outline" for="ap_class_1">수강신청 가능</label>
+                        </div>
+
+                        <div class="form-chip sm">
+                          <input type="radio" class="radio" name="rdo_chip" id="ap_class_2" checked>
+                          <label class="form-chip-outline" for="ap_class_2">수강신청 불가능</label>
+                        </div>
+                      </div>
+
+                    </fieldset>
+                  </form>
+
+                  <form>
+                    <fieldset>
+                      <legend class="none">교육기간</legend>
+
+                      <div class="sch-group edu-detail-wrap">
+                        <span>교육기간</span>
+                        <div class="datepicker-input">
+                          <div class="input-group range set">
+                            <div class="date-field">
+                              <label for="startDate" class="none">시작 날짜</label>
+                              <input type="number" id="startDate" class="form-control sm datepicker" placeholder="시작날짜"
+                                aria-label="시작 날짜 입력">
+                            </div>
+                            <div class="mark" aria-hidden="true">-</div>
+                            <div class="date-field">
+                              <label for="endDate" class="none">종료 날짜</label>
+                              <input type="number" id="endDate" class="form-control sm datepicker" placeholder="종료날짜"
+                                aria-label="종료 날짜 입력">
+                            </div>
+                          </div>
+                          <button type="button" class="form-btn-datepicker" aria-label="달력 열기">
+                            <span class="none">달력 열기</span>
+                          </button>
+                        </div>
+                      </div>
+
+                    </fieldset>
+                  </form>
+
+                  <form>
+                    <fieldset>
+                      <legend class="none">신청기간</legend>
+
+                      <div class="sch-group edu-detail-wrap">
+                        <span>신청기간</span>
+                        <div class="datepicker-input">
+                          <div class="input-group range set">
+                            <div class="date-field">
+                              <label for="startDate" class="none">시작 날짜</label>
+                              <input type="number" id="startDate" class="form-control sm datepicker" placeholder="시작날짜"
+                                aria-label="시작 날짜 입력">
+                            </div>
+                            <div class="mark" aria-hidden="true">-</div>
+                            <div class="date-field">
+                              <label for="endDate" class="none">종료 날짜</label>
+                              <input type="number" id="endDate" class="form-control sm datepicker" placeholder="종료날짜"
+                                aria-label="종료 날짜 입력">
+                            </div>
+                          </div>
+                          <button type="button" class="form-btn-datepicker" aria-label="달력 열기">
+                            <span class="none">달력 열기</span>
+                          </button>
+                        </div>
+                      </div>
+
+                    </fieldset>
+                  </form>
+
+                  <div class="modal-btn btn-wrap">
+                    <button type="button" class="btn sm btn-darkgray-w">
+                      <img src="../images/edu/i_refresh.png" alt="검색 초기화">
+                    </button>
+                    <button type="button" class="btn sm btn-primary close-modal">검색</button>
+                  </div>
+
+                </div><!--//detail-sch-form-->
+
+
+              </div>
+            </div>
+
+            <div class="int-search-wrap">
+              <div class=" int-search right">
+                <div class="recent-searches-box">
+                  <div class="recent-searches-wrap">
+                    <p class="int-search-tit">최근검색어</p>
+                  </div>
+                  <ul class="recent-searches">
+                    <li>
+                      <a class="btn-txt" href="#">여성</a>
+                      <button class="btn closed"></button>
+                    </li>
+                    <li>
+                      <a class="btn-txt" href="#">사과</a>
+                      <button class="btn closed"></button>
+                    </li>
+                    <li>
+                      <a class="btn-txt" href="#">벼농사</a>
+                      <button class="btn closed"></button>
+                    </li>
+                    <li>
+                      <a class="btn-txt" href="#">이러닝</a>
+                      <button class="btn closed"></button>
+                    </li>
+                    <li>
+                      <a class="btn-txt" href="#">농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술농업기술</a>
+                      <button class="btn closed"></button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn recent-searches-btn">
+                  <div class="recnet-all-remove ">최근 검색어 전체 삭제</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <!-- <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w int-sign-later-btn">닫기</button>
+          <button type="button" class="btn btn-primary">확인하러가기</button>
+        </div> -->
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+
+  </section>
+  <!-- //modal -->
+
+
+
+  <!-- 스크립트 : 라이브러리 -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+
+
+    //TOP 버튼
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', () => {
+      // 스크롤 위치가 100px 이상일 때 위로 가기 버튼을 보이게 함
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        document.getElementsByClassName('quick-top').style.display = 'block';
+      } else {
+        document.getElementsByClassName('quick-top').style.display = 'none';
+      }
+    });
+
+    // 클릭 시 페이지 맨 위로 스크롤 (애니메이션 효과 추가)
+    function backToTop() {
+      const position =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      if (position) {
+        window.requestAnimationFrame(() => {
+          window.scrollTo(0, position - position / 10);
+          backToTop();
+        });
+      }
+    }
+
+    //통합검색-상세검색 노출
+    document.querySelector('.ico-filter').addEventListener('click', function () {
+      const detailForm = document.querySelector('.detail-sch-form');
+      const button = this;
+
+      // 상세 검색 폼 토글
+      if (detailForm.style.display === 'none' || detailForm.style.display === '') {
+        detailForm.style.display = 'block';
+      } else {
+        detailForm.style.display = 'none';
+      }
+
+      // 버튼 아이콘 회전 토글
+      button.classList.toggle('open');
+    });
+
+  </script>
+
+
+</body>
+
+</html>

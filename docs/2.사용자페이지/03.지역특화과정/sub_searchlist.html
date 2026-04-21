@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/search.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/rs_index.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-media.css" rel="stylesheet" type="text/css">
+  <title>경기도 경기농업기술원</title>
+</head>
+
+<body>
+  <div class="layout">
+
+  <header>
+    <div class="header-wrap">
+      <h1><a href="#"><img src="../images/Regional-specialization/logo.png" alt="로고"></a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#">온라인교육</a></li>
+          <li><a href="#">오프라인교육</a></li>
+          <li><a href="#">현장실습교육</a></li>
+          <li><a href="#">커뮤니티</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="header-menu-right">
+          <li><a href="#"> <img src="../images/Regional-specialization/rs_i_search.svg" alt="검색">통합검색</a></li>
+          <li><a href="#"><img src="../images/Regional-specialization/rs_i_lock.svg" alt="로그인">로그인</a></li>
+        </ul>
+      </div>
+    </div><!--//header-wrap-->
+  </header>
+
+  <div class="sub-top-wrap">
+    <div class="rs-subvisual sv01">
+      <div class="sub-container">
+        <div class="sub-name-wrap">
+          <div class="breadcrumb-wrap">
+            <ol class="breadcrumb">
+              <li class="home"><a href="#" class="txt">홈</a></li>
+              <li><a href="#" class="txt">온라인학습</a></li>
+            </ol>
+          </div>
+          <h4>온라인학습</h4>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="sub-container">
+    <div class="sub-title-in">
+      <h5 class="sub-title-name">온라인 학습</h5>
+    </div>
+    <div class="sub-con-wrap">
+      <div class="online-search-box edu-sch-wrap">
+        <div class="inner">
+          <div class="">
+            <form role="search" method="get" class="" id="" name="">
+              <filedset class="online-sch-form">
+                <legend class="none">검색</legend>
+                <div class="sch-input top-sch">
+                  <input type="text" class="form-control md" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                  <button type="button" class="btn btn-ico ico-sch-or">
+                    <span class="none">검색</span>
+                  </button>
+                </div>
+                <button type="button" class="btn md ico-filter">상세검색</button>
+              </filedset>
+            </form>
+          </div><!--//div-->
+
+          <div class="detail-sch-form">
+
+            <form>
+              <fieldset>
+                <legend class="none">수강신청 가능여부</legend>
+
+                <div class="sch-group edu-detail-wrap">
+                  <span>수강신청 가능여부</span>
+                  <div class="form-chip md">
+                    <input type="radio" class="radio" name="rdo_chip" id="ap_class_1">
+                    <label class="form-chip-outline" for="ap_class_1">수강신청 가능</label>
+                  </div>
+                  
+                  <div class="form-chip md">
+                    <input type="radio" class="radio" name="rdo_chip" id="ap_class_2" checked>
+                    <label class="form-chip-outline" for="ap_class_2">수강신청 불가능</label>
+                  </div>
+                </div>
+                
+              </fieldset>
+            </form>
+
+            <form>
+              <fieldset>
+                <legend class="none">교육기간</legend>
+
+                <div class="sch-group edu-detail-wrap">
+                  <span>교육기간</span>
+                  <div class="datepicker-input">
+                    <div class="input-group range set">
+                      <div class="date-field">
+                        <label for="startDate" class="none">시작 날짜</label>
+                        <input type="number" id="startDate" class="form-control datepicker" placeholder="시작날짜" aria-label="시작 날짜 입력">
+                      </div>
+                      <div class="mark" aria-hidden="true">-</div>
+                      <div class="date-field">
+                          <label for="endDate" class="none">종료 날짜</label>
+                          <input type="number" id="endDate" class="form-control datepicker" placeholder="종료날짜" aria-label="종료 날짜 입력">
+                      </div>
+                    </div>
+                    <button type="button" class="form-btn-datepicker" aria-label="달력 열기">
+                      <span class="none">달력 열기</span>
+                    </button>
+                  </div>
+                </div>
+                
+              </fieldset>
+            </form>
+
+            <form>
+              <fieldset>
+                <legend class="none">신청기간</legend>
+
+                <div class="sch-group edu-detail-wrap">
+                  <span>신청기간</span>
+                  <div class="datepicker-input">
+                    <div class="input-group range set">
+                      <div class="date-field">
+                        <label for="startDate" class="none">시작 날짜</label>
+                        <input type="number" id="startDate" class="form-control datepicker" placeholder="시작날짜" aria-label="시작 날짜 입력">
+                      </div>
+                      <div class="mark" aria-hidden="true">-</div>
+                      <div class="date-field">
+                          <label for="endDate" class="none">종료 날짜</label>
+                          <input type="number" id="endDate" class="form-control datepicker" placeholder="종료날짜" aria-label="종료 날짜 입력">
+                      </div>
+                    </div>
+                    <button type="button" class="form-btn-datepicker" aria-label="달력 열기">
+                      <span class="none">달력 열기</span>
+                    </button>
+                  </div>
+                </div>
+                
+              </fieldset>
+            </form>
+
+            <div class="sch-btn-zone">
+              <button type="button" class="btn md btn-darkgray-w">
+                <img src="../images/edu/i_refresh.png" alt="검색 초기화">
+              </button>
+              <button type="button" class="btn md btn-primary close-modal">검색</button>
+            </div>
+
+          </div><!--//detail-sch-form-->
+          
+
+        </div>
+      </div>
+      <!--//online-search-box-->
+      <div class="tab-area">
+        <ul class="tablist" role="tablist">
+          <li id="" role="tab" class="active">
+            <button type="button" class="btn-tab">전체(<em>100</em>건)</button>
+          </li>
+          <li id="" role="tab">
+            <button type="button" class="btn-tab">오프라인(<em>20</em>건)</button>
+          </li>
+          <li id="" role="tab">
+            <button type="button" class="btn-tab">온라인(<em>40</em>건)</button>
+          </li>
+          <li id="" role="tab">
+            <button type="button" class="btn-tab">오픈 클래스(<em>10</em>건)</button>
+          </li>
+        </ul>
+      </div>
+      <!--//sch-list-top-->
+      <div class="sch-result-wrap">
+        <div class="con-heade-tit mt_24">
+          <h4>오프라인 학습</h4>
+          <span>(<strong>50</strong>건)</span>
+        </div>
+        <!--//con-heade-tit-->
+        <ul class="search-list">
+          <li class="li">
+            <div class="process-item">
+              <a href="/html/new/edu/online_detail.html">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process01.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                    
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">detail page 이동</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="/html/new/edu/online_detail_star.html">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process02.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">detail page02 이동</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="javascript:void(0)" class="open-modal" data-target="OpenDetail">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process03.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process01.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process02.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+              
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process03.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>온라인</li>
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!--//search-list-->
+        <div class="btn-more-wrap int-search-p">
+          <div class="btn btn-darkgray-w"><em>32</em>건 더보기 +</div>
+        </div>
+      </div>
+      <!--//sch-result-wrap-->
+      
+      <div class="sch-result-wrap">
+        <div class="con-heade-tit mt_24">
+          <h4>오프라인 학습</h4>
+          <span>(<strong>50</strong>건)</span>
+        </div>
+        <!--//con-heade-tit-->
+        <ul class="search-list">
+          <li class="li">
+            <div class="process-item">
+              <a href="/html/new/edu/online_detail.html">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process01.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                    
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">detail page 이동</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="/html/new/edu/online_detail_star.html">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process02.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">detail page02 이동</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="javascript:void(0)" class="open-modal" data-target="OpenDetail">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process03.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process01.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process02.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="li">
+            <div class="process-item">
+              <a href="#">
+              
+                <div class="pro-thumbnail">
+                  <img src="../images/edu/process03.png" alt="과정01">
+                  <div class="wish-btn">
+                    <button type="button">
+                      <i class="icon wish-d"></i> <!--선택 wish-n-->
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="pro-la-date">
+                  <div class="pro-label">온라인</div>
+                  <div class="pro-learnDate">
+                    <span>학습기간</span>
+                    <span>2024.08.05 ~ 2024.08.31</span>
+                  </div>
+                </div>
+                
+                <div class="pro-info">
+                  <ul class="label-zone">
+                    <li>온라인</li>
+                    <li>평생교육</li>
+                    <li>리더십</li>
+                  </ul>
+                  <p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+                  <div class="pro-detail-info">
+                    <ul>
+                      <li class="recruit-method">별도모집</li>
+                      <li class="enroll-rq">수강신청마감</li>
+                      <li class="education-time">3h 30m</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!--//search-list-->
+      </div>
+      <!--//sch-result-wrap-->
+    </div>
+    <!--//sub-con-wrap-->
+  </div>
+  
+
+
+    <footer>
+      <div class="f-top">
+        <div class="rs-container ft-container">
+          <ul class="f-link">
+            <li>
+              <a href="#">
+                <strong>개인정보처리방침</strong>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                이메일무단수집거부
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                자료이용 및 저작권 보호
+              </a>
+            </li>
+          </ul>
+          <div class="familysite" >
+            <button class="btn-family">관련사이트 바로가기</button>
+              <div class="family-list">
+                <div class="fl-in">
+                  <a href="https://www.rda.go.kr" class="option" target="_blank">
+                    <span>농촌진흥청</span>
+                  </a>
+                  <a href="https://www.naas.go.kr" class="option" target="_blank">
+                      <span>국립농업과학원</span>
+                  </a>
+                  <a href="https://www.nics.go.kr" class="option" target="_blank">
+                      <span>국립식량과학원</span>
+                  </a>
+                  <a href="https://www.nihhs.go.kr" class="option" target="_blank">
+                      <span>국립원예특작과학원</span>
+                  </a>
+                  <a href="https://www.nias.go.kr" class="option" target="_blank">
+                      <span>국립축산과학원</span>
+                  </a>
+                  <a href="https://www.nhi.go.kr/" class="option" target="_blank">
+                      <span>국가공무원인재개발원</span>
+                  </a>
+                  <a href="https://www.ati.go.kr/" class="option" target="_blank">
+                      <span>농식품공무원교육원</span>
+                  </a>
+                  <a href="https://www.nongsaro.go.kr" class="option" target="_blank">
+                      <span>농사로</span>
+                  </a>
+                  <a href="http://www.returnfarm.com" class="option" target="_blank">
+                      <span>귀농귀촌종합센터</span>
+                  </a>
+                  <a href="https://www.rda.go.kr:2360/kaesa/" class="option" target="_blank">
+                      <span>전문지도연구회</span>
+                  </a>
+                  <a href="https://www.agriedu.net" class="option" target="_blank">
+                      <span>농업교육포털</span>
+                  </a>
+                  <a href="https://astis.rda.go.kr" class="option" target="_blank">
+                      <span>농업과학기술정보서비스</span>
+                  </a>
+                </div>
+              </div>
+          </div><!--//familysite-->
+        </div>
+      </div>
+
+      <div class="f-bottom">
+        <div class="rs-container ft-container">
+          <div class="f-logo">
+            <a href="#">
+              <img src="../images/main-page/footer_logo.png" alt="footer-logo">
+            </a>
+          </div>
+          <div class="f-info">
+            <p class="info-address">(54874) 전북특별자치도 전주시 덕진구 농생명로 420 농촌인적자원개발센터</p>
+            <p class="info-tel">TEL : 063-238-1800</p>
+            <p>COPYRIGHT(C) RURAL HUMAN RESOURCE DEVELOPMENT CENTER(RHRDC). ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </footer>
+  </div>
+
+  <div id="quickMenu">
+    <a href="#" class="quick-top">TOP</a>
+    <a href="#" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick01.png" alt="나의강의실">
+      <span class="txt">나의 강의실</span>
+    </a>
+    <a href="https://app.gather.town/app/xMHipOBWGF0TTD8C/RDA%20HRD" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick02.png" alt="메타버스교육장">
+      <span class="txt">메타버스 교육장</span>
+    </a>
+    <a href="https://hrd.rda.go.kr/ehrd_front/vr/index.html" class="quick-btn" target="_blank">
+      <img src="../images/Regional-specialization/quick03.png" alt="VR농기계견학관">
+      <span class="txt">VR농기계 견학관</span>
+    </a>
+  </div>
+
+
+
+
+  <!-- 스크립트 : 라이브러리 -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+
+  //비주얼 배너
+  var swiper = new Swiper(".mySwiper", {
+    speed: 450,
+    loop: true,
+    autoplay: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: ".main-visual .swiper-pagination",
+      clickable: true,
+    },
+  });
+  const $swiperPlay = document.querySelector('.main-visual .swiper-button-play');
+  const $swiperStop = document.querySelector('.main-visual .swiper-button-stop');
+
+  $swiperPlay.style.display = "none";
+
+  $swiperPlay.addEventListener("click", () => {
+    swiper.autoplay.start();
+    $swiperStop.style.display = "";
+    $swiperPlay.style.display = "none";
+  });
+
+  $swiperStop.addEventListener("click", () => {
+    swiper.autoplay.stop();
+    $swiperStop.style.display = "none";
+    $swiperPlay.style.display = "";
+  });
+
+  //추천과정
+  var rcmSwiper = new Swiper('.rcm-list .swiper', {
+    spaceBetween: 24,
+    speed: 400,
+    loop: true,
+    breakpoints: {
+      600: {
+        slidesPerView: 1,
+      },
+      960: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+      },
+      1300: {
+        slidesPerView: 3,
+      },
+    },
+    navigation: {
+      nextEl: '.rcm-control .swiper-button-next',
+      prevEl: '.rcm-control .swiper-button-prev',
+    },
+    pagination: {
+      el: ".rcm-control .swiper-pagination",
+      type: "fraction",
+    },
+  });
+
+
+  //TOP 버튼
+  // 스크롤 이벤트 리스너
+  window.addEventListener('scroll', () => {
+    // 스크롤 위치가 100px 이상일 때 위로 가기 버튼을 보이게 함
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementsByClassName('quick-top').style.display = 'block';
+    } else {
+      document.getElementsByClassName('quick-top').style.display = 'none';
+    }
+  });
+
+  // 클릭 시 페이지 맨 위로 스크롤 (애니메이션 효과 추가)
+  function backToTop() {
+    const position =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (position) {
+      window.requestAnimationFrame(() => {
+        window.scrollTo(0, position - position / 10);
+        backToTop();
+      });
+    }
+  }
+
+  //통합검색-상세검색 노출
+  document.querySelector('.ico-filter').addEventListener('click', function() {
+    const detailForm = document.querySelector('.detail-sch-form');
+    const button = this;
+
+    // 상세 검색 폼 토글
+    if (detailForm.style.display === 'none' || detailForm.style.display === '') {
+      detailForm.style.display = 'block';
+    } else {
+      detailForm.style.display = 'none';
+    }
+
+    // 버튼 아이콘 회전 토글
+    button.classList.toggle('open');
+  });
+
+  </script>
+
+
+</body>
+</html>

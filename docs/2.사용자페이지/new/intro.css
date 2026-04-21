@@ -1,0 +1,161 @@
+body{
+	background: #F0F3F5;
+}
+.intro{
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	background: url(../../images/new/intro/intro_bg.png) no-repeat center;
+	background-size: cover;
+}
+.intro-logo{
+	text-align: center;
+	padding-top: 6.4rem;
+}
+.intro-cont{
+	margin: 4rem 10rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 4rem;
+}
+.intro-cont .intro-item{
+	width: 100%;
+	height: 60rem;
+	border-radius: 1.2rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.intro-cont .intro-item.main{
+	background: url('../../images/new/intro/img_ehrd.png') no-repeat center;
+	background-size: cover;
+	transition: background-size 0.5s ease;
+}
+.intro-cont .intro-item.edu {
+	position: relative;
+	background: url('../../images/new/intro/img_edu.png') no-repeat center;
+	background-size: cover;
+}
+
+.intro-cont .intro-item .int-in{
+	padding: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.int-in .int-txt-wrap{
+
+}
+.int-in .int-txt-wrap p{
+	font-size: 2.5rem;
+}
+.int-in .int-txt-wrap strong{
+	font-size: 4.4rem;
+}
+.int-in .int-txt-wrap p,
+.int-in .int-txt-wrap strong{
+	color: #fff;
+}
+.int-in .int-btn{
+	background: rgba(0,0,0,.3);
+	padding: 1.6rem 2rem;
+	border-radius: .8rem;
+	color: #fff;
+	font-size: 1.9rem;
+	transition: all .25s ease;
+	position: relative;
+	box-sizing: border-box;
+}
+.int-in .int-btn::after{
+	content: '→';
+	display: inline-block;
+	padding-left: 4rem;
+}
+.int-in .int-btn:hover{
+	background: #fff;
+	color: #004777;
+	font-weight: 700;
+}
+
+.footer{
+	text-align: center;
+	padding: 6.4rem 2rem 2rem;
+}
+.footer span{
+	font-size: 1.5rem;
+}
+.footer span.copy{
+	color: #717171;
+}
+.footer .ft-info{
+
+}
+.footer .ft-info span:last-child{
+	padding-left: 2.4rem;
+}
+/*********************
+== 반응형
+*********************/
+
+@media all and (max-width:1360px) {
+
+	.intro-cont .intro-item .int-in {
+		flex-direction: column;
+		align-items: center;
+		gap: 3.2rem;
+		padding: 6rem 0;
+	}
+	.int-in .int-txt-wrap {
+		text-align: center;
+	}
+
+
+}
+@media all and (max-width:1200px) {
+	.intro-logo{
+		padding-top: 4.8rem;
+	}
+	.intro-cont {
+    margin: 4rem 2.4rem 0;
+    gap: 2.4rem;
+	}
+}
+
+@media all and (max-width:992px) {
+
+}
+
+@media all and (max-width:768px) {
+	.intro-logo img{
+		width: auto;
+		height: 48px;
+		object-fit: contain;
+	}
+	.intro-cont {
+    flex-wrap: wrap;
+	}
+	.intro-cont .intro-item{
+		height: 30rem;
+	}
+	.int-in .int-btn {
+    background: rgba(0, 0, 0, .5);
+		font-size: 1.7rem;
+	}
+	.footer .ft-info span:last-child{
+		display: block;
+		margin: .6rem 0 1.6rem 0;
+	}
+}
+@media all and (max-width:576px) {
+	.int-in .int-txt-wrap p{
+		font-size: 1.9rem;
+	}
+	.int-in .int-txt-wrap strong{
+		font-size: 3.2rem;
+	}
+	.int-in .int-btn::after {
+    padding-left: 1.6rem;
+	}
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/rs_index.css" rel="stylesheet" type="text/css">
+
+
+  <title>현장실습보고서>경영계획.실천.점검 [작성하기]</title>
+
+</head>
+
+<body>
+  <!--style에 적용되어있는건 화면적용할 때 삭제해주세요-->
+  <style>
+    body {
+      background: #eee;
+    }
+
+    .modal {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+
+        <!-- modal 작성하기 누르면 나오는 팝업 -->
+        <section id="rs-report-edit" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-enroll">
+          <div class="modal-dialog modal-xlg">
+            <div class="modal-content">
+              <!-- modal title -->
+              <div class="modal-header">
+                <h2 id="tit-sch-detail" class="modal-title">경영계획.실천. 점검</h2>
+              </div>
+              <!-- //modal title -->
+      
+              <!-- modal contents -->
+              <div class="modal-conts">
+                <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+      
+                <div class="conts-area">
+      
+                  <div class="table-wrap">
+                    <table class="table-type1">
+                      <caption>경영계획 실천 점검</caption>
+                      <colgroup>
+                        <col style="width:6rem;">
+                        <col style="width:25rem;">
+                        <col style="width:25rem;">
+                        <col style="width:31.6rem;">
+                        <col style="width:6rem;">
+                      </colgroup>
+                      <thead>
+                        <th scope="col">번호</th>
+                        <th scope="col">경영계획</th>
+                        <th scope="col">경영실천(창업접목)</th>
+                        <th scope="col">
+                          첨부파일<button type="button" class="btn-tooltip bottom-tooltip sm"
+                            data-tooltip="각 항목마다 최대 800byte까지 입력가능합니다. 파일첨부는 HWP. FPG. PDF. ZOP만 가능합니다. ">
+                            <i class="i-tooltip"></i>
+                          </button>
+                        </th>
+                        <th scope="col">확인</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <div class="textarea-wrap">
+                              <textarea type="text" class="textarea form-control lg rs-textarea " placeholder=""></textarea>
+                              <div class="textarea-count rs-textarea-count">
+                                <span class="text-num">0</span>/800 byte
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="textarea-wrap">
+                              <textarea type="text" class="textarea form-control lg rs-textarea " placeholder=""></textarea>
+                              <div class="textarea-count rs-textarea-count">
+                                <span class="text-num">0</span>/800 byte
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <button type="button" class="btn sm btn-primary-w btn-download01">파일올리기</button>
+                          </td>
+                          <td class="rcs-report-form">
+                            <div class="form-check">
+                              <input type="checkbox" id="check-confirm">
+                              <label for="check-confirm"></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>
+                            <div class="textarea-wrap">
+                              <textarea type="text" class=" form-control lg rs-textarea " placeholder=""></textarea>
+                              <div class="textarea-count rs-textarea-count">
+                                <span class="text-num ">0</span>/800 byte
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="textarea-wrap">
+                              <textarea type="text" class="textarea form-control lg rs-textarea " placeholder=""></textarea>
+                              <div class="textarea-count rs-textarea-count">
+                                <span class="text-num">0</span>/800 byte
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="file-item rs-report-file">
+                              <div class="file-list rc-tbl-file-btn-wrap">
+                                <a href="" class="file-name" title="파일 다운로드">여성농업인 농기계 활용 추진계획서(외부)_홈페이지 게시.pdf</a>
+                                <button class="btn delete"></button>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="rcs-report-form">
+                            <div class="form-check">
+                              <input type="checkbox" id="check-confirm2">
+                              <label for="check-confirm2"></label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+      
+                  <div class="completion-rate-area">
+                    <div class="completion-rate">
+                      달성률 : <span>30</span>%
+                    </div>
+      
+                  </div>
+      
+      
+      
+                </div>
+      
+      
+              </div>
+              <!-- //modal contents -->
+              <!-- modal btn -->
+              <div class="modal-btn btn-wrap">
+                <button type="button" class="btn btn-darkgray-w close-modal">닫기</button>
+                <button type="button" class="btn btn-primary m-rcs-register-btn01">등록하기</button>
+                  <!-- toast popup -->
+                  <div class="t-popup-info-wrap sucsess-m01" style="display: none;">
+                    <div class="t-popup-info">
+                      <img src="../images/main-page/i_info_sucess.png" alt="정보">
+                      <p>등록되었습니다. </p>
+                    </div>
+                  </div>
+      
+                  <div class="t-popup-info-wrap sucsess-m01" style="display: none;">
+                    <div class="t-popup-info">
+                      <img src="../images/main-page/i_info_sucess.png" alt="정보">
+                      <p>수정되었습니다. </p>
+                    </div>
+                  </div>
+                  <!-- toast popup -->
+      
+              </div>
+              
+              <!-- //modal btn -->
+              <!-- close button -->
+              <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+              <!-- //close button -->
+            </div>
+          </div>
+          <div class="modal-back"></div>
+        </section>
+        <!-- //modal -->
+
+
+
+
+
+  <!-- 스크립트 : 라이브러리 -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // 토스트 팝업 표시 함수
+    function showToastPopup() {
+      const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+      popupInfoWrap.style.display = 'block'; // 토스트 팝업 보이기
+
+      // 3초 후에 토스트 팝업 숨기기
+      setTimeout(function () {
+        popupInfoWrap.style.display = 'none';
+      }, 3000);
+    }
+
+    // 등록하기 누르면 나오는 토스트 팝업
+    document.querySelectorAll('.rcs-register-btn').forEach(item => {
+      item.addEventListener('click', function () {
+        item.classList.toggle('selected');
+      });
+    });
+
+    document.querySelector('.rcs-register-btn').addEventListener('click', function () {
+      const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+
+      popupInfoWrap.style.display = 'block';
+
+      setTimeout(function () {
+        popupInfoWrap.style.display = 'none';
+      }, 3000);
+    });
+
+
+
+
+  </script>
+
+</body>
+
+</html>

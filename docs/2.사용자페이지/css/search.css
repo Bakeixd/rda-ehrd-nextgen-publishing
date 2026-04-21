@@ -1,0 +1,754 @@
+/* ========================================================
+ * 공통
+======================================================== */
+@charset "UTF-8";
+:root{
+	/* color */
+  --primary: #246BEB;
+  --primary--60:#1D56BC;
+  --primary--70:#26408D;
+  --green:#008A1E;
+  --salmon:#F0877D;
+  --violet:#7676ED;
+	--secondary:#003675;
+--secondary-10:#CDD7E4;
+--secondary-5:#EDF1F5;
+   --primary--70: #16408D;
+   --gray--60:#717171;
+   --gray--70:#555;
+   --gray--30:#d8d8d8;
+}
+
+/* ========================================================
+ * 검색
+======================================================== */
+
+.m-search-wrap.int-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.8rem;
+}
+
+.tab-conts-wrap .con_search3 .m-search-wrap{
+    background: #F4F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    padding: 3.2rem 0;
+    gap: .8rem;
+    margin-bottom: 6rem;
+}
+.m-search.form-control{
+    padding:0 1.6rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+}
+.m-search.form-control.input{
+    max-width: 50rem;;
+    width: 100%;
+    padding:.8rem 1.6rem;
+    position: relative;
+    background-color: #fff;
+    background-image: url(../images/main-page/i_serach2.svg);
+    background-repeat: no-repeat;
+    background-position: center right 1.6rem;
+    background-size: 2.4rem;
+    opacity: 1;
+
+}
+.m-search.form-control.input input{
+    width: 90%;
+    position: relative;
+}
+
+.int-search{
+}
+.int-search .m-search.form-control.input {
+    background-image: none;
+    max-width: 64rem;
+
+}
+.int-search .m-search.form-control.input input{
+    width: 100%;
+}
+
+.int-search-wrap{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.btn-ico{
+    width:2.4rem;
+    height:2.4rem;
+}
+.ico-sch{
+    background: url(../images/main-page/i_serach.svg) no-repeat;
+}
+.int-search-wrap .int-search.left{
+	max-width: 60rem;
+	width: 100%;
+	padding:0 2rem;
+	position: relative;
+}
+.int-search-wrap .int-search.left::after{
+	content: ''; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #cecece;
+}
+.int-search-wrap .int-search.right{
+    max-width: 45rem;
+    width: 100%;
+    padding:0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height:32rem;
+}
+.recent-searches-box{
+    width:100%
+}
+
+.int-search-text-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap:.8rem;
+    margin-bottom: 1.6rem;
+    align-items: center;
+}
+.int-search  .recent-searches-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:.8rem;
+    margin-bottom:2rem;
+    flex-wrap: wrap;
+}
+.int-search .int-search-tit  {
+    font-size: 1.9rem;
+    font-weight: 600;
+
+}
+.int-search-tag-wrap{
+    display: flex;
+    gap:.8rem;
+
+}
+.int-search .popular-keywords {
+}
+.int-search .popular-keywords li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    align-items: center;
+}
+
+
+.popular-keywords li:nth-child(1) span,
+.popular-keywords li:nth-child(2) span, 
+.popular-keywords li:nth-child(3) span {
+    color:var(--primary);
+    font-weight: 700;
+}
+
+.int-search .popular-keywords li.new::after{
+    content:"NEW";
+    font-size: 1.2rem;
+    font-weight:500;
+    display: inline-block;
+    color:#EE0000;
+}
+.recent-searches{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.int-search .recent-searches li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:.8rem;
+}
+
+.int-search .recent-searches .btn.closed{
+    content:"";
+    display: inline-block;
+    background-image: url(../images/edu/i_close_b16.png);
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height:1.6rem;
+    background-size: contain;
+    padding:0;
+}
+/*
+.recnet-all-remove:after{
+    content:"";
+    display: inline-block;
+    background-image: url(../../images/new/edu/i_close_b16.png);
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height:1.6rem;
+    background-size: contain;
+    padding:0;
+
+}
+*/
+
+.recnet-all-remove{
+    display: flex;
+    align-items: center;
+    gap:.8rem;
+}
+
+.recent-searches-btn.btn{
+    padding:0;
+}
+.recent-searches-wrap{
+
+}
+
+.recent-searches li a{
+
+		max-width: 90%;
+
+}
+.pop-keywords-wrap{
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:100%;
+    gap:.8rem;
+		align-items: baseline;
+}
+.pop-keywords-wrap a{
+    margin: .4rem .4rem;
+    line-height: 1.3;
+    display: block;
+    white-space: pre-line;
+    margin-right: 4rem;
+}
+
+
+.int-search-wrap .btn-txt:hover{
+    border-radius: .4rem;
+    background: #edf1f5;
+
+}
+
+/*태그*/
+.btn.primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #fff;
+}
+.btn.primary:hover {
+    background-color: var(--primary--60);
+    border-color: var(--primary--60);
+    transition: 0.4s ease-in-out;
+}
+.btn.primary:active{
+    background-color: var(--primary--70);
+    border-color: var(--primary--70);
+}
+.int-tag.btn{
+    border-radius: 8rem;
+}
+
+/* 교육 비밀번호 변경 버튼 */
+.edu-pop .btn.primary:hover{
+	background: #C5360D !important;
+	border-color: #C5360D !important;
+}
+
+/*교육 통합검색 팝업*/
+.modal .modal-dialog.edu-modal{
+	width: 100% !important;
+	margin: 0;
+  height: unset;
+ 	min-height: unset;
+}
+.modal .modal-dialog.edu-modal .modal-content{
+	border-radius: 0;
+}
+.modal .modal-dialog.edu-modal .online-sch-form .sch-input {
+	width: 90rem;
+	position: relative;
+}
+.edu-modal .online-search-box
+{
+  margin-bottom: 0 !important;
+}
+.edu-modal .online-search-box>.inner{
+	max-width: 105rem;
+	margin: 0 auto;
+	padding: 2.4rem;
+}
+.edu-modal .online-sch-form{
+	padding: 0;
+}
+.edu-modal .btn-txt:hover{
+  background: #FCECE7;
+}
+
+.ico-filter{
+  position: relative;
+}
+.ico-filter:hover{
+	text-decoration: underline;
+}
+.ico-filter::before{
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/edu/i_filter.png) no-repeat center;
+}
+.ico-filter::after{
+	content: '';
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/edu/ar_down_b20.svg) no-repeat center;
+	transform: transform .3s ease;
+
+}
+.ico-filter.open::after {
+  transform: rotate(180deg); /* 아이콘 회전 */
+}
+.edu-detail-wrap{
+
+}
+
+.edu-detail-wrap .datepicker-input{
+	flex: 1;
+}
+
+.edu-detail-wrap .datepicker-input .date-field{
+	width: 100%;
+}
+
+.edu-detail-wrap .datepicker-input .form-btn-datepicker{
+	width: 3.2rem;
+	height: 3.2rem;
+}
+.edu-detail-wrap span{
+	font-weight: 500;
+	width: 20%;
+}
+.detail-sch-form{
+	width: 100%;
+	margin-top: 1.6rem;
+	display: none;
+	max-height: 100%;
+	overflow: hidden;
+	transition: max-height .3s ease-out;
+}
+.detail-sch-form form + form{
+	margin: .8rem 0;
+}
+
+.detail-sch-form .sch-group{
+	display: flex;
+	flex-direction: row;
+	gap: 15px; 
+	align-items: center;
+	flex-wrap: wrap;
+}
+.detail-sch-form .btn-wrap{
+	border-top: 1px solid #cecece;
+	padding-top: 1.6rem;
+	margin-top: 2.4rem;
+}
+.detail-sch-form form:last-child{
+	margin-bottom: 1.6rem;
+}
+
+.int-tag{
+  border: 1px solid #717171;
+}
+.int-tag:not(.active):hover{
+  background: #f4f5f6;
+}
+.int-tag.active{
+  background: var(--primary);
+  border: 1px solid transparent;
+  color: #fff;
+}
+.detail-sch-form fieldset:nth-child(n+2){
+	margin-top: .8rem;
+}
+
+
+/* ========================================================
+ * 통합검색 페이지
+======================================================== */
+
+.m-search-wrap.int-search-p {
+    background: #F4F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    padding: 3.2rem 1.6rem;
+    gap: .8rem;
+    margin-bottom: 6rem;
+}
+.aside{
+    width:100%;
+    max-width:25rem;
+    position: relative;
+}
+.aside .filter-dl dt{
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #222;
+}
+.aside dd{
+    padding: 2.8rem 0;
+    border-bottom: 1px solid #cecece;
+
+}
+.aside .acco-head p{
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+.chk-area.int-search{
+    display: flex;
+    flex-direction: column;
+    gap:2.4rem;
+}
+.int-search-p.sch-input-wrap .sch-input{
+    margin: 2.4rem 0 ;
+
+}
+.filter-btn .btn{
+    width:100%;
+    margin-top:2.4rem
+}
+
+.int-search-p-box-wrap{
+    display: flex;
+    gap:5.2rem;
+}
+
+
+.aside .filter-reset {
+    position: absolute;
+    top: .4rem;
+    right: 0;
+}
+.aside .filter-reset .btn {
+    height: auto;
+    color:#717171;
+    display: flex;
+    align-items: center;
+}
+.btn-txt.ico-reset::after {
+    background-image: url(../images/main-page/i_retun.png);
+    width: 2.4rem;
+    height: 2.4rem;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+}
+.con-heade.int-search-p{
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:2.4rem;
+}
+.con-heade-tit{
+    display: flex;
+    gap:.8rem;
+    align-items: center;
+}
+.con-heade-tit h4{
+    font-size:2.4rem;
+    font-weight: 600;
+
+}
+.con-heade-tit span{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+.con-heade-tit span strong{
+    color: var(--primary);
+    font-weight: 400;
+}
+.con-heade2.int-search-p{
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.con-heade-tit{
+    display: flex;
+    gap:.8rem;
+    align-items: center;
+}
+.con-heade-tit h4{
+    font-size:2.4rem;
+    font-weight: 600;
+
+}
+.con-heade-tit span{
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+.con-heade-tit span strong{
+    color: var(--primary);
+    font-weight: 400;
+}
+.int-search-p-result-list{
+    padding: 2.4rem 0 1.2rem 0;
+    border-bottom: 1px solid #cecece;
+}
+.int-search-p-result-list .tit.w-hide{
+    margin-bottom: 2.4rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.int-search-p-result-list .info-body .in .text .txt{
+    font-size: 1.5rem;
+    color:#717171;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 2.4rem;
+}
+span.keyword{
+    background-color: #D3E1FB;
+    color:#00F;
+	font-size:1.5rem;
+}
+
+.keyword{
+    background-color: #D3E1FB;
+    color:#00F
+}
+.sch-result-wrap .keyword{
+  background-color: #FCECE7;
+  color: #d50000;
+  font-size: 1.9rem;
+}
+.info-btm div{
+
+}
+.info-btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-btm .i-cate{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.info-btm .i-cate li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.info-btm .i-cate li:not(:first-child)::before {
+    display: inline-flex;
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../images/main-page/ico_arr_16_gray.png) no-repeat center;
+    background-size: contain;
+}
+.info-btm .i-cate li a{
+    font-size:1.5rem;
+    color:#717171;
+    font-weight: 400;
+    text-decoration: underline;
+    padding:0;
+}
+.btn-txt.ico-more{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:#717171;
+}
+.btn-txt.ico-more::after{
+    display: inline-flex;
+    content: "";
+    width: 2.4rem;
+    height: 2rem;
+    background: url(../images/main-page/ico_more-gray.png) no-repeat center;
+    background-size: contain;
+}
+.int-search-p{
+    display: flex;
+    justify-content: center;
+}
+
+.int-search-select-form-wrap{
+    display: flex;
+    gap:.8rem
+}
+
+.int-search-select-form-wrap .form-control{
+    width:18rem;
+    font-size: 1.5rem;
+} 
+
+.in-img{
+    width:100%;
+    max-width: 20rem;
+    height:12rem;
+    border-radius: .8rem;
+    border:1px solid #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.in-img a{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+.in-img a img{
+    height:100%;
+    object-fit: cover;
+}
+.info-body .box-wrap{
+    display: flex;
+    gap:2.4rem;
+}
+.info-body .right{
+    margin-top: 1.2rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:3.2rem;
+}
+.info-body .right .tit.w-hide{
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.info-body .right .in .info-text{
+    display: flex;
+    align-items:center;
+}
+.info-body .right .in .info-text li{
+    font-size: 1.5rem;
+    color: #717171;
+}
+.info-body .right .in .info-text li+li:before{
+    content: "";
+    display: inline-flex;
+    width: 1px;
+    height: 1.2rem;
+    background-color: rgba(102, 102, 102, 0.80);
+    margin: 1.2rem;
+}
+.info-btm a.link{
+    font-size: 1.5rem;
+    color:#717171;
+    text-decoration: underline;
+}
+
+
+.int-search-p-result-list2{
+    display: flex;
+    gap:3.2rem;
+    border-bottom: 1px solid #cecece;
+    padding: 2rem 2rem 1.2rem 2rem;
+}
+.btn-more-wrap.int-search-p{
+    margin:4.8rem 0;
+}
+
+.int-search-p-result-list .info-body:hover,
+.int-search-p-result-list2 .info-top .tit:hover
+{
+    text-decoration: underline;
+}
+.sub_tab--wrap.int-search-p-tab{
+	margin-bottom:4rem;
+}
+
+
+/* 반응형 */
+@media all and (max-width: 1240px) {
+
+	.edu-modal .online-search-box>.inner {
+    max-width: 96rem;
+  }
+  .edu-modal .online-search-box>.inner .online-sch-form{
+  	width: 100%;
+  }
+  
+  
+  
+}
+
+@media all and (max-width: 768px) {
+ .int-search-wrap{
+    flex-wrap: wrap;
+  }
+  .int-search-wrap .int-search.left::after{
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    top: unset;
+  }
+  .int-search-wrap .int-search.left{
+  	padding-bottom: 2.4rem
+  }
+  .int-search-wrap .int-search.right{
+  	max-width: unset;
+  	padding-top: 2.4rem;
+  }
+}
+
+
+@media all and (max-width: 680px) {
+	.edu-detail-wrap span{
+		width: 100%;
+	}
+	.detail-sch-form .datepicker-input, .detail-sch-form .datepicker-input .date-field{
+		width: 100%;
+	}
+	.asp-modal .int-search-wrap .int-search.right{
+		padding: 0 !important;
+	}
+	.asp-modal .int-search .recent-searches li{
+		flex: 1 1 100% !important;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.detail-sch-form .input-group{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

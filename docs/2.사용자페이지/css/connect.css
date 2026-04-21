@@ -1,0 +1,29 @@
+.connect-wrap{
+	padding: 4rem;
+}
+.connect-wrap h2{
+	background: #fff;
+	border: 1px solid #222;
+	font-size: 2rem;
+	display: inline-block;
+	padding: 2rem;
+}
+.cnt-table{
+	background: #fff;
+	font-size: 1.9rem;
+}
+.cnt-table th, .cnt-table td{
+	font-size: 1.9rem;
+	padding: 1.6rem;
+}
+.cnt-table thead th{
+	background: #4668d4;
+	color: #fff;
+}
+.cnt-table a{
+	text-decoration: underline;
+}
+.etc{
+	font-size: 1.5rem !important;
+	text-align: left !important;
+}

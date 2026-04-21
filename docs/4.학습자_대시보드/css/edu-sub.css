@@ -1,0 +1,215 @@
+/* ========================================================
+ * 서브페이지 공통
+======================================================== */
+
+.sub-content .container{
+	margin: 8rem 0;
+}
+.sub-title-wrap{
+	border-bottom: 1px solid #cecece;
+	padding-bottom: .8rem;
+	margin-bottom: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.breadcrumb-wrap {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.breadcrumb-wrap .breadcrumb{
+	display: flex;
+	gap: .4rem;
+	width: 100%;
+}
+.breadcrumb-wrap .breadcrumb .home{
+	gap: 0;
+}
+.breadcrumb-wrap .breadcrumb li {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	font-size: 1.5rem;
+}
+.breadcrumb-wrap .breadcrumb .home::before {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	content: "";
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../images/edu/i_bread_home.png) no-repeat center;
+}
+.breadcrumb-wrap .breadcrumb li .txt {
+	font-size: 1.5rem;
+	color: #717171;
+}
+.breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	content: "";
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-left: .4rem;
+	background: url(../images/edu/i_bread_ar.png) no-repeat;
+	background-size: contain;
+}
+.sub-title-wrap h4{
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+.sub-title-wrap .sub-title-utill{
+
+}
+.sub-title-wrap .sub-title-utill ul{
+	display: flex;
+	align-items: center;
+	gap: .8rem;
+}
+.sub-title-wrap .sub-title-utill ul li{
+	position: relative;
+}
+.sub-title-wrap .sub-title-utill ul li a{
+	width: 4rem;
+	height: 4rem;
+	border: 1px solid #cecece;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sub-title-wrap .sub-title-utill ul li a:hover{
+	background: #f4f5f6;
+	transition: all .25s;
+}
+.sub-con-wrap{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ========================================================
+ * contents
+======================================================== */
+.online-search-box{
+	background: #f4f5f6; 
+	position: relative;
+	margin-bottom: 4rem;
+}
+.online-search-box > .inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	padding: 3.2rem 0;
+}
+.online-sch-form{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 1.6rem;
+}
+.online-sch-form .sch-input{
+	width: 50rem;
+	position: relative;
+}
+.online-sch-form .sch-input .form-control{
+	border-radius: .8rem;
+	box-sizing: border-box;
+}
+.online-sch-form .top-sch .ico-sch-or{
+	position: absolute;
+	top: 50%;
+	right: 1.6rem;
+	transform: translateY(-50%);
+	background: url(../images/edu/i_search_o24.png) no-repeat;
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.btn-detail{
+	background: var(--primary);
+	border-radius: .8rem;
+	color: #fff;
+}
+.btn-detail:hover{
+	background: #C6360E;
+}
+.btn-detail::before{
+	background-image: url('../images/edu/i_search_detail_w24.png');
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.sch-list-top{
+	display: flex;
+	justify-content: space-between;
+}
+.sch-list-top .nt-info{
+	
+}
+.sch-list-top .sch-info .keyword{
+	color: var(--primary);
+	font-weight: 600;
+	margin: 0 .4rem;
+}
+.sch-list-top .sch-sort li{
+	display: flex;
+	align-items: center;
+}
+.sch-list-top .sch-sort .sort-label{
+	font-weight: 600;
+	white-space: nowrap;
+	margin-right: 1.2rem;
+}
+.sch-list-top .sch-sort .w-sort-btn{
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+.sch-list-top .sch-sort .w-sort-btn button.active{
+	text-decoration: underline;
+	color: var(--primary);
+	font-weight: 500;
+}
+.sch-list-top .sch-sort .w-sort-btn button:hover{
+	border-radius: .6rem;
+	background-color: #FCECE7;
+	transition: 0.4s ease-in-out;
+}
+
+/* 검색 리스트 ----- */
+.search-list{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2.4rem;
+	margin-top: 2rem;
+}
+.search-list .li{
+	position: relative;
+	display: flex;
+	align-items: normal;
+	justify-content: flex-start;
+	flex-direction: column;
+	overflow-x: auto;
+	box-sizing: border-box;
+}
+.pro-thumbnail img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.process-item:hover .pro-thumbnail img{
+	transform: scale(1.05);
+	transition: all .25s;
+}
+
+

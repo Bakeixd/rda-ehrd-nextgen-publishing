@@ -1,0 +1,705 @@
+:root{
+	/* color */
+	--Primary: #246BEB;
+    --green:#4CA951;
+    --salmon:#F0877D;
+    --violet:#7676ED;
+    --Primary--70:#16408D;
+    
+}
+/* ========================================================
+ * 서브 페이지공통
+======================================================== */
+.h-visual{
+    margin:2.4rem 4rem 2.4rem 4rem;
+    height:40rem;
+    border-radius: 1.2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, 
+    rgba(0, 0, 0, 0.20) 100%), 
+    url(../images/main-page/header-img.png) 
+    lightgray 50% / cover no-repeat;
+}
+.h-visual-text-wrap{
+    padding: 16rem 0  0rem 20rem;
+}
+.h-visual-text-wrap p, .h-visual-text-wrap h2{
+    color: #fff;
+}
+.h-visual-text-wrap p{
+    font-size:2.1rem;
+    font-weight:700;
+    margin-bottom:1.2rem;
+}
+.h-visual-text-wrap h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.sub-content .container{
+	margin: 8rem 0;
+}
+.sub-title-wrap{
+	border-bottom: 1px solid #cecece;
+	padding-bottom: 2.4rem;
+	margin-bottom: 6rem;
+	display: flex;
+	justify-content: flex-start;
+    flex-direction: column;
+}
+.breadcrumb-wrap {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+.breadcrumb-wrap .breadcrumb{
+	display: flex;
+	gap: .4rem;
+	width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 2.2rem;
+}
+.breadcrumb-wrap .breadcrumb .home{
+	gap: 0;
+}
+.breadcrumb-wrap .breadcrumb li {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	font-size: 1.5rem;
+}
+.breadcrumb-wrap .breadcrumb .home::before {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	content: "";
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../images/edu/i_bread_home.png) no-repeat center;
+}
+.breadcrumb-wrap .breadcrumb li .txt {
+	font-size: 1.5rem;
+	color: #666;
+}
+.breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	content: "";
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-left: .4rem;
+	background: url(../images/edu/i_bread_ar.png) no-repeat;
+	background-size: contain;
+}
+.sub-name-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-title-wrap h4{
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+.sub-title-wrap .sub-title-utill ul{
+	display: flex;
+	align-items: center;
+	gap: .8rem;
+}
+.sub-title-wrap .sub-title-utill ul li{
+	position: relative;
+}
+.sub-title-wrap .sub-title-utill ul li a{
+	width: 4rem;
+	height: 4rem;
+	border: 1px solid #cecece;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sub-title-wrap .sub-title-utill ul li a:hover{
+	background: #f4f5f6;
+	transition: all .25s;
+}
+
+
+.main-content{
+    margin:0 4rem 0 4rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    padding: 4rem  20rem 8rem 20rem;
+}
+
+
+/* ========================================================
+ * 기관소개
+======================================================== */
+.intro-info-text-group{
+    display: flex;
+    gap:9.8rem;
+}
+.into-img-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.into-img-wrap p{
+    font-size:1.9rem;
+}
+.into-img-wrap strong{
+    font-size:2.5rem;
+    font-weight: 799;
+}
+.into-img-wrap img{
+    width:44rem;
+    height:50rem;
+    border-radius: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+.info-text-wrap{
+    width:89.3rem;
+}
+.info-text-wrap h5{
+    font-size:3.2rem;
+    font-weight: 700;
+    line-height:4.4rem;
+    margin:2.4rem 0 3.2rem 0;
+
+}
+.info-text-wrap p{
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+}
+
+/* ========================================================
+ * 미션과 비전
+======================================================== */
+.v_tit_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.v_sub_tit_line{
+    content:'';
+    width: 3rem;
+    height:0.3rem;
+    background: #1D56BC;
+}
+.v_sub_tit{
+    color:#555;
+    font-size:2.5rem;
+    font-weight: 700;
+    margin-top:1.6rem;
+    margin-bottom:4rem;
+}
+.v_tit_wrap p{
+    color: #222;
+    text-align: center;
+    font-size:3rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+}
+.v_tit_wrap p::before{
+    content:'';
+    background-image: url(../images/main-page/i_mark01.svg);
+    background-repeat: no-repeat;
+    width: 2.4rem;
+    height: 2rem;
+    position: absolute;
+    left: 15%;
+    top: 57%; 
+    transform: translateY(-50%);
+}
+.v_tit_wrap p::after{
+    content:'';
+    background-image: url(../images/main-page/i_mark02.svg);
+    background-repeat: no-repeat;
+    width: 2.4rem;
+    height: 2rem;
+    position: absolute;
+    right: 15%;
+    top: 70%; 
+    transform: translateY(-50%);
+}
+
+.v_tit_wrap .text-highlight{
+    color:var(--Primary);
+    text-align: center;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+
+
+.vision02--wrap{
+    position: relative;
+}
+.value_b_tit{
+    display: flex;
+    padding:2.4rem 12.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    border: 6px solid #D8D8D8;
+    background-color: #fff;
+    place-self: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    width:16rem;
+}
+.vision_value_line{
+    width: 119.4rem;
+    height: 16rem;
+    border-radius: 10rem;
+    border:6px solid #D8D8D8;
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.v_icon_wrap{
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+    margin-top:6.4rem;
+    margin-bottom: 6rem;
+    gap:11.1rem;
+}
+.v_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    gap:1.6rem;
+}
+.vision02--wrap .dot {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin-top: 5rem;
+}
+
+.v_icon-bg{
+    width: 12rem;
+    height:12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.v_icon:nth-child(1) .v_icon-bg{
+    background-color: var(--green);
+    border-radius: 10rem;
+}
+.v_icon:nth-child(3) .v_icon-bg{
+    background-color: var(--salmon);
+    border-radius: 10rem;
+}
+.v_icon:nth-child(5) .v_icon-bg{
+    background-color: var(--violet);
+    border-radius: 10rem;
+}   
+
+.v_icon img{
+    width:6.4rem;
+    height: 6.4rem;
+}
+
+
+
+.value_tit{
+    font-size:2.1rem;
+    font-weight:700;
+}
+.v_icon p{
+    color:#717171;
+    font-size:1.9rem;
+}
+.vision03--wrap{
+    position: relative;
+}
+
+.v-tit-02{
+    color: #fff;
+    border-radius: 10rem;
+    background-color: #16408D;
+    border:0;
+    z-index: 2;
+}
+.vision03_card-box-wrap{
+    display: flex;
+    gap:2.4rem;
+    margin-top:7rem;
+    justify-content: center;
+}
+
+.vision-card-box img{
+    margin-top:6rem;
+}
+.v_card_tit{
+    color:#222;
+    font-size: 1.9rem;
+    font-weight:700;
+    margin:2.4rem 0  1.6rem 0 ;
+}
+.v_card_info{
+    color:#555;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.vision03--wrap--bg{
+    width: 100%;
+    height:50rem;
+    background: #F8F8F8;
+    position: absolute;
+    left: -20rem;
+    z-index: 0;
+    top: 4rem;
+    padding: 0 20rem;
+}
+
+.vision-card-box {
+    position: relative;
+    width:34.2rem;
+    border-radius: 1.2rem;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 5px 15px 30px 0px rgba(8, 69, 193, 0.10);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+}
+
+.vision-card-box .dot{
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #002366;
+    border-radius: 50%;
+    z-index: 1;
+}
+.vision-card-box .dot2{
+    position: absolute;
+    content: '';
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #CDD7E4;
+    border-radius: 50%;
+    z-index: 0;
+}
+.vision-dot-box-wrap{
+    position: absolute;
+    top: 14.5rem;
+    z-index: 2;
+    left: 1rem;
+}
+.vision-dot-box-wrap .vision-card-box {
+    position: relative;
+    width:30rem;
+    border-radius: 1.2rem;
+    margin-bottom: 0rem;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:none;
+}
+.vision-dot-box-wrap .vision03_card-box-wrap{
+    margin-top:0;
+}
+.vision-dot-box-wrap.v_dot02--wrap {
+    z-index: 1;
+}
+
+/* ========================================================
+ * 연혁
+======================================================== */
+.sub-text-box-wrap h5{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.sub-text-box-wrap p{
+    font-size: 1.9rem;
+    margin-bottom: 8rem;
+}
+.history--wrap{
+    display: flex;
+    justify-content: center;
+}
+.history-img-wrap{
+    display: flex;
+    flex-direction: column;
+    gap:12.4rem;
+}
+.history-img-wrap img{
+    width: 46.4rem;
+    height: 25.2rem;
+    margin-top:3rem;
+}
+.h-text-box-wrap .h_tit{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+}
+.h-text-box-wrap .h_tit::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background: #16408D;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: 2rem;
+}
+.h-text-box-wrap .h_info-wrap .h_sub_tit{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#222;
+}
+.h-text-box-wrap .h_info-wrap p{
+    color: #8E8E8E;
+    font-size: 1.9rem;
+}
+.h-text-box-wrap .h_info-wrap strong{
+    color:var(--Primary);
+    font-weight: 600;
+    margin-right: 0.4rem;
+    font-size:1.9rem;
+}
+.h_info-wrap{
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.history-contents{
+    display: flex;;
+    gap:14.6rem;
+}
+.h_sub_tit:before {
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #D9D9D9;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top:3rem;
+}
+
+.line-guide {
+    position: absolute;
+    width: 1px;
+    height: 188rem;
+    top: 98rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e5e5e5;
+}
+/* ========================================================
+ * 조직 및 기능
+======================================================== */
+.orgchart{
+    background: #f6f6f6;
+    border:1px solid #d9d9d9;
+    width: 100%;
+    padding-top:6rem;
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+}
+.org--wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orgchart--01{
+    width:26rem;
+    height:26rem;
+    background: #fff;
+    border: 1px dashed #2A5C96;
+    border-radius: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orgchart--01 p{
+    color: #fff;
+    font-size:2.5rem;
+    font-weight: 700;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15rem;
+    background-color: #16408D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.org02--box--wrap{
+    display: flex;
+    gap:35rem
+}
+.org02--box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.org_tit{
+    width: 30.7rem;
+    height:6.4rem;
+    background-color: #1D56BC;
+    border-radius: 0 4rem;
+    color:#fff;
+    font-size:2.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.org_sub_text-wrap{
+    width:30.7rem;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 1.2rem;
+    border:2px solid #c6c6c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2.4rem;
+}
+.org_sub_text-wrap li{
+    text-align: center;
+    width: 24.7rem;
+    border-radius: 1.2rem;
+    border: 1px solid #D9D9D9;
+    background: #EDF1F5;
+    padding:1.6rem 0;
+    font-size:2.1rem;
+}
+.org-line-1{
+    width: 2px;
+    height:6rem;
+    background-color: #c6c6c6;
+}
+.org-line-2{
+    height: 2px;
+    width: 72.25rem;
+    background-color: #c6c6c6;
+}
+.org-line-3{
+    width: 2px;
+    height:3rem;
+    background-color: #c6c6c6;
+}
+.org-line-4{
+    width: 2px;
+    height:2.4rem;
+    background-color: #c6c6c6;
+}
+
+.t-sub_tit{
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+/* ========================================================
+ * 찾아오시는 길
+======================================================== */
+.sub-address-wrap p{
+    font-size:2rem;
+}
+.sub-address-wrap .ads-tit{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.sub-address-wrap{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 3.2rem;
+    align-items:flex-end;
+}
+.route-search-btn{
+    width:16rem;
+    background-color:var(--Primary--70);
+    border-radius: .8rem;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.table-type1.sub-table2{
+    margin-top:6rem;
+    border-top: 2px solid #222;
+}
+.table-type1.sub-table2 th, .table-type1.sub-table2 td{
+    text-align: left;
+}
+.table-type1.sub-table2 col:nth-child(1) {
+    width: 20.7rem;
+  }
+.table-type1.sub-table2 .tit{
+    color:var(--Primary--70);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.table-type1.sub-table2 .tit:nth-of-type(3){
+    margin-top: 4rem;
+}
+.table-type1.sub-table2 .tit:nth-of-type(6){
+    margin-top: 4rem;
+}
+.table-type1.sub-table2 td{
+    padding:4rem 1.6rem;
+}
+.table-type1.sub-table2 th p{
+    font-size:2.1rem;
+    font-weight: 700;
+}
+.table-type1.sub-table2 th div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:.8rem;
+}
+.table-type1.sub-table2 td li {
+    font-size: 1.9rem;
+}
+.table-type1.sub-table2 td li strong{
+    color: var(--Primary);
+    margin-right:.4rem;
+}
+.sub-address-wrap2{
+    width: 100%;
+    height:50rem;
+}

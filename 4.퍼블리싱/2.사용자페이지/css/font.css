@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 100;
+  src: local(※), url("/assets/fonts/new/Pretendard-Thin.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 200;
+  src: local(※), url("../../fonts/new/Pretendard-ExtraLight.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 300;
+  src: local(※), url("../../fonts/new/Pretendard-Light.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  src: local(※), url("../../fonts/new/Pretendard-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  src: local(※), url("../../fonts/new/Pretendard-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  src: local(※), url("../../fonts/new/Pretendard-SemiBold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  src: local(※), url("../../fonts/new/Pretendard-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 800;
+  src: local(※), url("../../fonts/new/Pretendard-ExtraBold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 900;
+  src: local(※), url("../../fonts/new/Pretendard-Black.woff") format('woff');
+}
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/new/Roboto-Regular.woff2') format('woff2'),
+      url('../../fonts/new/Roboto-Regular.woff') format('woff'),
+      url('../../fonts/new/Roboto-Regular.otf') format('opentype');
+}
+
+
+

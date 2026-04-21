@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+
+	<title>강의실>공지게시판 상세</title>
+
+</head>
+
+<body>
+<!--style에 적용되어있는건 화면적용할 때 삭제해주세요-->
+<style>
+	body{background: #eee;}
+	.modal{display: block; visibility: visible; opacity: 1;}
+</style>
+
+<!-- modal -->
+<section id="learning-modal" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-review-modal" style="display: block; visibility: visible; opacity: 1; z-index: 999;">
+	<div class="modal-dialog modal-xlg">
+		<div class="modal-content learning-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-review-modal" class="modal-title">게시판 종류별로</h2>
+				<div class="lrn-user-zone">
+					<div class="user-profile">
+						<img src="../images/edu/user_nong.png">
+						<p>김농촌</p>
+					</div>
+					<a href="#" class="user-message" title="쪽지"><span class="none">쪽지</span></a>
+				</div>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="lrn-conts-area">
+					<div class="lrn-gnb">
+						<ul>
+							<li class="active">
+								<a href="">교재다운로드</a>
+							</li>
+							<li>
+								<a href="">강의실홈</a>
+							</li>
+							<li>
+								<a href="">강의 시간표</a>
+							</li>
+							<li>
+								<a href="">자료실</a>
+							</li>
+							<li>
+								<a href="">공지게시판</a>
+							</li>
+							<li>
+								<a href="">커뮤니티</a>
+							</li>
+							<li>
+								<a href="">토론</a>
+							</li>
+							<li>
+								<a href="">설문</a>
+							</li>
+							<li>
+								<a href="">시험</a>
+							</li>
+							<li>
+								<a href="">과제제출</a>
+							</li>
+						</ul>
+						<div class="lrn-section">
+							<p class="pcs-txt">사전학습</p><!--온라인/오프라인일땐 사용 x-->
+							<ul>
+								<li class="lrn-class-box">
+									<a href="">농업기계안전을 사수하라(경운기)</a>
+								</li>
+								<li class="lrn-class-box comp"><!--수강완료한 클래스명(comp)-->
+									<a href="">농업기계안전을 사수하라(경운기)</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="lrn-section">
+							<p class="pcs-txt">후학습</p>
+							<ul>
+								<li class="file-zone">
+									<a href="#"><i class="file-pdf"></i>파일명</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="lrn-con-wrap">
+						<div class="lrn-con-title">
+							<h4>농업기계 영상 관련 공지</h4>
+							<div class="icon-wrap">
+								<a href="#" class="lrn-i-share">
+									<img src="../images/edu/i_share.png">
+								</a>
+							</div>
+						</div>
+						<div class="lrn-con">
+							게시판 상세쪽은 전자정부 프레임워크 사용할 예정이라 적용 후 css 수정할 부분은 진행하겠습니다.
+						</div>
+						<div class="lrn-btn-wrap">
+							<button type="button" class="btn btn-primary-w">이전글</button>
+							<button type="button" class="btn btn-darkgray-w">목록</button>
+							<button type="button" class="btn btn-primary-w">다음글</button>
+						</div>
+						<div class="lrn-review">
+							<div class="sch-list-top">
+								<div class="sch-info">
+									전체
+									<span class="keyword">100</span>
+									건
+								</div>
+							</div>
+							<div class="review-write">
+								<div class="textarea-wrap">
+									<textarea id="textareaid" class="text-control" placeholder="내용을 입력해주세요." title="기타 제안 사항 입력"></textarea>
+								</div>
+								<div class="btn-wrap">
+									<button type="button" class="btn sm btn-darkgray-w">취소</button>
+									<button type="button" class="btn sm btn-primary">등록</button>
+								</div>
+							</div>
+							<div class="review-view-wrap">
+								<div class="rv-user-info">
+									<div class="rv-user">
+										<img src="../images/edu/user_gong.png" alt="공무원아이콘">
+										<div class="rv-user-name-zone">
+											<div class="rv-user-name">
+												<span class="review-name">김농촌</span>
+												<span class="review-grade">공무원</span>
+											</div>
+											<ul>
+												<li>2024.01.01</li>
+											</ul>
+											
+										</div>
+									</div>
+									<button class="btn-more-dot" type="button">
+										<i class="i-more-dot"><span class="none">더보기</span></i>
+										<div class="more-detail">
+											<ul>
+												<li><a href="">수정</a></li>
+												<li><a href="">삭제</a></li>
+											</ul>
+										</div>
+									</button>
+								</div><!--//rv-user-info-->
+								<div class="review-content">
+									<p>
+										1기 때부터 계속 듣고있는 공무원입니다.<br>
+										너무 유익해요<br><br>
+										과제에서 10p 부분은 모두 어려우셨을텐데 사이트 보면 도움 될 듯 싶습니다.<br>
+										참고하셔요~
+									</p>
+								</div><!--//review-content-->
+								<div class="review-utill-zone">
+									<div class="review-utill">
+										<button class="btn sm btn-darkgray-w">
+											<img src="../images/edu/thumbs_up.png" alt="좋아요">
+											<span>5</span>
+										</button>
+										<button class="btn sm btn-darkgray-w">
+											<img src="../images/edu/i_share.png" alt="공유">
+										</button>
+									</div>
+									<button class="btn sm btn-darkgray-w">
+										<span>답글달기</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div><!--//lrn-con-wrap-->
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-primary" onclick="window.location.href='./lrn-type04.html';">다른타입 확인하기</button>
+			</div>
+			<!-- //modal btn -->
+			
+
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>
+<!-- //modal -->
+
+
+
+
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+
+
+
+</script>
+
+</body>
+</html>

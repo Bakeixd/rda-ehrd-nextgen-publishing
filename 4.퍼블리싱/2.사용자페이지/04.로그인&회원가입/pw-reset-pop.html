@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <title>농촌진흥청 농촌인적자원개발센터</title>
+</head>
+
+
+<body class="uid-body">
+
+  <div class="pw-erro-pop pw-reset">
+    <div class="pw-erro-box">
+      <div class="pop-tit pw-reset">
+        <p>비밀번호 변경</p>
+        <img class="btn" src="../images/main-page/i_closed.svg" alt="닫기">
+      </div>
+      <p class="pop-info-text pw-reset-pop">
+        공무원 회원님, 3개월 이상 동일한 비밀번호를 사용하고 계십니다.<br>
+        소중한 개인정보 보호를 위해 비밀번호를 변경해시길 바랍니다.
+      </p>
+      <div class="fieldset pw-reset-pop">
+
+        <div class="form-group">
+          <div class="form-group-tit">
+            <p>현재 비밀번호</p>
+          </div>
+          <div class="form-tit">
+            <label for="login_pw">비밀번호</label>
+          </div>
+          <div class="form-conts btn-ico-wrap">
+            <input type="password" class="form-control lg current-password" placeholder="9~14자, 대/소문자 구분하여 입력">
+            <button type="button" class="btn btn-ico ico-pw-invisible">
+              <span class="sr-only">입력한 비밀번호 보기</span>
+            </button>
+            <button type="button" class="btn btn-ico ico-pw-visible" style="display: none;">
+              <span class="sr-only">입력한 비밀번호 숨기기</span>
+            </button>
+          </div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">비밀번호를 입력해주세요</div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">9~14자, 대/소문자 구분하여 입력해주세요.</div>
+        </div>
+        <div class="form-group">
+          <div class="form-group-tit">
+            <p>변경할 비밀번호</p>
+          </div>
+          <div class="form-tit">
+            <label for="login_pw">비밀번호</label>
+            
+          </div>
+          <div class="form-conts btn-ico-wrap">
+            <input type="password" id="login_pw" class="form-control lg new-password" placeholder="9~14자, 대/소문자 구분하여 입력">
+            <button type="button" class="btn btn-ico ico-pw-invisible">
+              <span class="sr-only">입력한 비밀번호 보기</span>
+            </button>
+            <button type="button" class="btn btn-ico ico-pw-visible" style="display: none;">
+              <span class="sr-only">입력한 비밀번호 숨기기</span>
+            </button>
+
+          </div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">비밀번호를 입력해주세요</div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">9~14자, 대/소문자 구분하여 입력해주세요.</div>
+
+        </div>
+        <div class="form-group">
+          <div class="form-tit">
+            <label for="login_pw">비밀번호 확인</label>
+          </div>
+          <div class="form-conts btn-ico-wrap">
+            <input type="password" id="login_pw" class="form-control lg confirm-password" placeholder="비밀번호 재입력">
+            <button type="button" class="btn btn-ico ico-pw-invisible">
+              <span class="sr-only">입력한 비밀번호 보기</span>
+            </button>
+            <button type="button" class="btn btn-ico ico-pw-visible"  style="display: none;">
+              <span class="sr-only">입력한 비밀번호 숨기기</span>
+            </button>
+          </div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">비밀번호를 한번 더 입력해주세요.</div>
+          <div class="pw-erro-text"><img src="../images/main-page/system-Danger.svg" alt="경고">비밀번호가 다릅니다. 다시 입력해주세요.</div>
+        </div>
+      <div class="form-group pw-reset-pop">
+        <button type="submit" class="btn tertiary md int-closed">30일후 변경</button>
+        <button type="submit" class="btn primary md int-confrim">비밀번호 변경</button>
+      </div>
+    </fieldset>
+    </div>
+  </div>
+
+
+
+<script>
+
+function validatePassword(inputField, errorMessages) {
+  const password = inputField.value;
+  const errorTextElements = errorMessages.map(message => message.element);
+  
+  // 기본적으로 모든 오류 메시지 숨김
+  errorTextElements.forEach(errorText => errorText.style.display = 'none');
+  inputField.closest('.form-conts').classList.remove('error'); 
+
+  if (!password) {
+    // 비밀번호가 공백인 경우
+    errorTextElements[0].style.display = 'flex'; 
+    inputField.closest('.form-conts').classList.add('error');
+  } else if (password.length < 9 || password.length > 14) {
+    // 비밀번호 길이가 9~14자가 아닌 경우
+    errorTextElements[1].style.display = 'flex';
+    inputField.closest('.form-conts').classList.add('error'); 
+  }
+}
+
+function validateConfirmPassword(newPasswordField, confirmPasswordField, errorMessages) {
+  const confirmPassword = confirmPasswordField.value;
+  const newPassword = newPasswordField.value;
+
+  const errorTextElements = errorMessages.map(message => message.element);
+  errorTextElements.forEach(errorText => errorText.style.display = 'none');
+  confirmPasswordField.closest('.form-conts').classList.remove('error');
+
+  if (!confirmPassword) {
+    // 비밀번호 확인 필드가 공백인 경우
+    errorTextElements[0].style.display = 'flex'
+    confirmPasswordField.closest('.form-conts').classList.add('error');
+  } else if (confirmPassword !== newPassword) {
+    // 비밀번호가 다른 경우
+    errorTextElements[1].style.display = 'flex'; 
+    confirmPasswordField.closest('.form-conts').classList.add('error'); 
+  }
+}
+
+// 비밀번호 입력 필드와 오류 메시지
+const currentPasswordField = document.querySelector('.current-password');
+const currentErrorMessages = [
+  { element: currentPasswordField.closest('.form-conts').nextElementSibling },
+  { element: currentPasswordField.closest('.form-conts').nextElementSibling.nextElementSibling },
+];
+
+const newPasswordField = document.querySelector('.new-password');
+const newErrorMessages = [
+  { element: newPasswordField.closest('.form-conts').nextElementSibling },
+  { element: newPasswordField.closest('.form-conts').nextElementSibling.nextElementSibling },
+];
+
+const confirmPasswordField = document.querySelector('.confirm-password');
+const confirmErrorMessages = [
+  { element: confirmPasswordField.closest('.form-conts').nextElementSibling },
+  { element: confirmPasswordField.closest('.form-conts').nextElementSibling.nextElementSibling }, 
+];
+
+// 입력 이벤트 리스너
+currentPasswordField.addEventListener('input', () => validatePassword(currentPasswordField, currentErrorMessages));
+newPasswordField.addEventListener('input', () => validatePassword(newPasswordField, newErrorMessages));
+confirmPasswordField.addEventListener('input', () => validateConfirmPassword(newPasswordField, confirmPasswordField, confirmErrorMessages));
+
+// 비밀번호 보이기/숨기기 기능
+document.querySelectorAll('.btn-ico').forEach(button => {
+  button.addEventListener('click', function () {
+    const inputField = this.closest('.form-conts').querySelector('input');
+    const showButton = this.closest('.form-conts').querySelector('.ico-pw-invisible');
+    const hideButton = this.closest('.form-conts').querySelector('.ico-pw-visible');
+
+    if (this.classList.contains('ico-pw-invisible')) {
+      inputField.type = 'text';
+      showButton.style.display = 'none'; 
+      hideButton.style.display = 'block'; 
+    } else {
+      inputField.type = 'password';
+      hideButton.style.display = 'none'; 
+      showButton.style.display = 'block'; 
+    }
+  });
+});
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/*********************
+  레이어 팝업 
+ *********************/
+.c_layer_pop {
+	width: 450px;
+	max-width: calc(100% - 30px);
+	margin: auto;
+	height: auto;
+	background-color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+	border-radius: 1.2rem;
+}
+
+.c_layer_pop.search_pop {
+	width: auto;
+	max-width: calc(100% - 30px);
+	margin: auto;
+	height: auto;
+	background-color: #fff;
+	position: relative;
+	top: 50%;
+	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+}
+
+.c_layer_pop .layer_title {
+  padding: 3.2rem 0 1rem 0;
+  margin: 0 3.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #cecece;
+}
+
+.c_layer_pop .layer_content {
+  padding: 2rem 3.2rem 3.2rem;
+  text-align: center;
+}
+
+.c_layer_pop .layer_bottom {
+  padding: 0 3.2rem 4rem;
+}
+
+.c_layer_pop .layer_bottom ul.layer_button {
+	overflow: hidden;
+	width: 250px;
+	margin: auto;
+}
+
+.c_layer_pop .layer_bottom ul.layer_button li {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.c_layer_pop .layer_bottc_layer_poper_button.two li {
+	width: 50%;
+}
+
+.pop_btn {
+	/*background-color: #e2e2e2;*/
+	/*color: #363636;*/
+	width: 100px;
+	/*height: 30px;*/
+	/*line-height: 30px;*/
+}
+
+.pop_btn.agree {
+	/*
+	background-color: #118ccf;
+	color: #fff;
+	*/
+}
+
+.scroll_box {
+	position: relative;
+	overflow: auto;
+	min-height: 150px;
+	max-height: 300px;
+	padding: 12px;
+	border: 1px solid #dadada;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	scrollbar-base-color: #d9d9d9;
+	scrollbar-arrow-color: #8e8e8e;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-highlight-color: #d9d9d9;
+	scrollbar-shadow-color: #d9d9d9;
+	scrollbar-track-color: #f2f2f2;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*********************
+  메인 팝업 
+ *********************/
+.layerpopSp {
+	/*display: none;*/
+	z-index: 1000;
+	border: 1px solid black;
+	background: #fff;
+	cursor: move;
+}
+
+.layerpop_area .title {
+	/*     padding: 10px 10px 10px 10px;
+    border: 0px solid #aaaaaa; */
+	background: #f1f1f1;
+	color: #3eb0ce;
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.layerpop_area .layerpop_close {
+	width: 25px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: transparent url('btn_exit_off.png') no-repeat;
+}
+
+.layerpop_area .layerpop_close:hover {
+	background: transparent url('btn_exit_on.png') no-repeat;
+	cursor: pointer;
+}
+
+.layerpop_area .contentSp {
+	width: 96%;
+	margin: 2%;
+	color: #828282;
+}
+
+.con_mpopup {
+	position: absolute;
+	overflow: hidden;
+	background: #ffffff;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+	z-index: 999999999;
+}
+
+.con_mpopup.op1 {
+	position: static;
+	overflow: hidden;
+	background: #ffffff;
+	box-shadow: none;
+}
+
+.con_mpopup_c1 {
+	padding: 17px 20px 17px 20px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: -0.03em;
+	background: #3e4347;
+	transition: all 0.3s ease;
+}
+
+.con_mpopup_c2 {
+	padding: 25px 20px 25px 20px;
+	color: #555555;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	transition: all 0.3s ease;
+}
+
+.con_mpopup_c2 img {
+	margin: 0 0 15px 0;
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+}
+
+.con_mpopup_c3 {
+	position: relative;
+	overflow: hidden;
+	border-top: 1px solid #dddddd;
+	padding: 15px 20px 15px 20px;
+	background: #f2f2f2;
+	transition: all 0.3s ease;
+}
+
+.con_mpopup_c3 label {
+	color: #444444;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: -0.02em;
+	cursor: pointer;
+}
+
+.con_mpopup_c3 input[type="checkbox"] {
+	margin: -5px 5px 0 0 !important;
+	vertical-align: middle;
+	width: 16px !important;
+	height: 16px !important;
+	cursor: pointer;
+	position: static !important;
+}
+
+.con_mpopup_c3 a.link_close {
+	position: absolute;
+	right: 20px;
+	transform: translateY(-50%);
+	top: 50%;
+	display: inline-block;
+	padding: 3px 15px 3px 15px;
+	background: #777777;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: -0.02em;
+	border-radius: 30px;
+	transition: all 0.3s ease;
+}
+
+.con_mpopup_c3 a.link_close:hover {
+	background: #454545;
+}

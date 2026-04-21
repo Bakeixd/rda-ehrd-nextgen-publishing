@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+
+	<title>설문조사 팝업</title>
+
+</head>
+
+<body>
+<!--style에 적용되어있는건 화면적용할 때 삭제해주세요-->
+<style>
+	body{background: #eee;}
+	.modal{display: block; visibility: visible; opacity: 1;}
+</style>
+
+<!-- modal -->
+<section id="mainSurvey" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-mainSurvey">
+	<div class="modal-dialog modal-xlg">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-mainSurvey" class="modal-title">농촌인적자원개발센터 설문</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+					<div class="helper-box refer">
+						<p class="helper-tit">설문안내</p>
+						<div class="helper-desc-wrap">
+							<ol class="helper-list">
+								<li>안내 문구나오기 안내 문구나오기</li>
+								<li>안내 문구 2개</li>
+							</ol>
+						</div>
+					</div><!--//helper-box-->
+
+					<div class="lrn-survey-wrap">
+						<ul class="lrn-sv-box main-sv-box">
+							<li>
+								<p class="sv-title">1. 설문제목이요</p>
+								<div class="sv-chk-wrap">
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo1" id="sv1-1">
+										<label for="sv1-1">전혀 그렇지 않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo1" id="sv2-1">
+										<label for="sv2-1">그렇지않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo1" id="sv3-1">
+										<label for="sv3-1">보통이다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo1" id="sv4-1">
+										<label for="sv4-1">그렇다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo1" id="sv5-1">
+										<label for="sv5-1">매우 그렇다</label>
+									</div>
+								</div><!--//sv-chk-wrap-->
+							</li>
+							<li>
+								<p class="sv-title">2. 설문 제목이요 설문제목</p>
+								<div class="sv-chk-wrap">
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo2" id="sv1-2">
+										<label for="sv1-2">전혀 그렇지 않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo2" id="sv2-2">
+										<label for="sv2-2">그렇지않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo2" id="sv3-2">
+										<label for="sv3-2">보통이다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo2" id="sv4-2">
+										<label for="sv4-2">그렇다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo2" id="sv5-2">
+										<label for="sv5-2">매우 그렇다</label>
+									</div>
+								</div><!--//sv-chk-wrap-->
+							</li>
+							<li>
+								<p class="sv-title">3. 설문제목 설문제목 설문제목</p>
+								<div class="sv-chk-wrap">
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo3" id="sv1-3">
+										<label for="sv1-3">전혀 그렇지 않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo3" id="sv2-3">
+										<label for="sv2-3">그렇지않다.</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo3" id="sv3-3">
+										<label for="sv3-3">보통이다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo3" id="sv4-3">
+										<label for="sv4-3">그렇다</label>
+									</div>
+									<div class="form-check sm">
+										<input type="radio" name="sv_rdo3" id="sv5-3">
+										<label for="sv5-3">매우 그렇다</label>
+									</div>
+								</div><!--//sv-chk-wrap-->
+							</li>
+						</ul>
+					</div>
+					
+
+					
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-primary">제출하기</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>
+<!-- //modal -->
+
+
+
+
+
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- modal -->
+<section id="myAbpopup" class="modal fade" aria-hidden="true" role="dialog">
+	<div class="modal-dialog modal-xlg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 id="tit-myAbpopup" class="modal-title">연구직 역량진단</h2>
+			</div>
+			<div class="modal-ofw-hidden">
+				<div id="modalSwiper" class="modal-swiper">
+					<div class="swiper-wrapper">
+						<!-- Slide 1 -->
+						<div class="modal-conts">
+							<div class="conts-area">
+								<div class="ab-tip">
+									<p>다음의 내용은 평소 연구업무를 수행하는 과정에 대한 자신의 행동에 대한 객관적 행동지표입니다.<br>
+										각 문항들을 읽고 자신을 가장 잘 나타내주는 항목에 표시해주세요.
+									</p>
+									<p>본 직무검사는 개인의 역량진단을 통한 자기계발을 위한 기초자료로만 활용됩니다.<br>
+										따라서 자신의 평소 행동지표에 대해 솔직하게 표시해주세요.
+									</p>
+								</div>
+							</div>
+							<div class="modal-btn btn-wrap">
+								<button type="button" class="btn md btn-primary open-modal"  id="firstModal">역량진단 시작</button>
+								<button type="button" class="btn btn-darkgray-w close-modal">닫기</button>
+							</div>
+						</div>
+
+						<!-- Slide 2 -->	
+						<div class="modal-conts swiper-slide">
+							<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+							<div class="conts-area">
+								<div class="ab-course-wrap">
+									<div class="ab-course-lt">
+										    <c:forEach var="abilityLevelInfo" items="${selectAbilityOneLevelList}">
+										    <%-- <h5>${upperIdx + 1}. <c:out value="${abilityLevelInfo.partNm}" /></h5> --%>
+										    <!-- ${upperIdx + 1}은 인덱스를 1부터 시작하도록 설정 -->
+										    <c:set var="upperIdx2" value="${upperIdx2 + 1}" />
+										    <c:set var="contentCount" value="0" /> <!-- 기본값 0 설정 -->
+										    <c:forEach var="course" items="${courseCount}">
+										        <c:if test="${course.upperCd == abilityLevelInfo.partCd}">
+										            <c:set var="contentCount" value="${course.contentsCount}" />
+										        </c:if>
+										    </c:forEach>
+										    
+											<div class="ab-course-sort">
+												<ul class="ab-cs-ul">
+													<li class="${upperIdx == upperIdx2 -1 ? 'highlight' : ''}"> 
+														<a href="javascript:void(0);" class="load-course" data-part-cd="${abilityLevelInfo.partCd}">
+					                    <p><c:out value="${upperIdx2}"/>.<c:out value="${abilityLevelInfo.partNm}"/></p>
+					                     <c:if test="${upperIdx < upperIdx2}">
+					                        <div class="ab-cs-pnum">
+					                            <span><strong>0</strong> / ${contentCount}</span>
+					                        </div>
+					                    </c:if>
+					                    
+					                    <!-- upperIdx가 upperIdx2보다 크거나 같으면 contentCount / contentCount -->
+					                    <c:if test="${upperIdx >= upperIdx2}">
+					                        <div class="ab-cs-pnum">
+					                            <span><strong>${contentCount}</strong> / ${contentCount}</span>
+					                        </div>
+					                    </c:if>
+						                </a>
+													</li>
+												</ul>
+											</div><!--//ab-course-sort-->
+										</c:forEach>
+									</div>
+									
+									<!-- div를 동적으로 변경할 부분 -->
+									<div class="ab-course-rt">
+									    <!-- AJAX로 데이터가 로드될 위치 -->
+									 	<div class="accordion mt_24" id="course-details">
+											<c:forEach var="result" items="${selectAbilityDgnssCourseList}" varStatus="status">
+											  <div class="accordion-item">
+											    <h2 id="acLHeader${status.index + 1}" class="accordion-header">
+											      <button type="button" class="btn-accordion" aria-controls="acLCollapse${status.index + 1}">
+											        <c:out value='${status.index + 1}'/>. <c:out value='${result.contents}'/>
+											      </button>
+											    </h2>
+											    <div id="acLCollapse${status.index + 1}" class="accordion-collapse collapse" aria-expanded="false" aria-labelledby="acLHeader${status.index + 1}">
+											      <div class="accordion-body">
+											        <div class="sv-chk-wrap">
+											          <div class="form-check sm">
+														    <input type="radio" name="checkInfoArr_<c:out value='${status.index + 1}'/>" id="sv1-<c:out value='${status.index + 1}'/>" value="5">
+														    <label for="sv1-<c:out value='${status.index + 1}'/>">매우 그렇다</label>
+														</div>
+														<div class="form-check sm">
+														    <input type="radio" name="checkInfoArr_<c:out value='${status.index + 1}'/>" id="sv2-<c:out value='${status.index + 1}'/>" value="4">
+														    <label for="sv2-<c:out value='${status.index + 1}'/>">그렇다</label>
+														</div>
+														<div class="form-check sm">
+														    <input type="radio" name="checkInfoArr_<c:out value='${status.index + 1}'/>" id="sv3-<c:out value='${status.index + 1}'/>" value="3">
+														    <label for="sv3-<c:out value='${status.index + 1}'/>">보통이다</label>
+														</div>
+														<div class="form-check sm">
+														    <input type="radio" name="checkInfoArr_<c:out value='${status.index + 1}'/>" id="sv4-<c:out value='${status.index + 1}'/>" value="2">
+														    <label for="sv4-<c:out value='${status.index + 1}'/>">그렇지 않다</label>
+														</div>
+														<div class="form-check sm">
+														    <input type="radio" name="checkInfoArr_<c:out value='${status.index + 1}'/>" id="sv5-<c:out value='${status.index + 1}'/>" value="1">
+														    <label for="sv5-<c:out value='${status.index + 1}'/>">매우 그렇지 않다</label>
+														</div>
+											        </div>
+											      </div>
+											    </div>
+											  </div>
+											  </c:forEach>
+										</div>
+									</div> 
+									<%-- <div class="ab-course-rt">
+										
+											
+									</div>
+									
+								</div> --%>
+								<div class="modal-btn btn-wrap">
+									<button type="button" class="btn btn-primary" onclick="abilityResult()">결과보기</button>
+									<c:if test="${upperIdx+1 < levelCnt}">
+									<button type="button" class="btn btn-secondary" onclick="abilityNext('<c:out value='${upperIdx+1}'/>')">다음</button>
+									</c:if>
+									 <c:if test="${upperIdx+1 == levelCnt}">
+									<button type="button" class="btn btn-secondary" onclick="clearAbilityDgnss()">진단완료</button>
+									</c:if>
+									<button type="button" class="btn btn-darkgray-w close-modal">닫기</button>
+								</div>
+							</div><!--//modal-conts-->
+						</div>
+							<!-- modal btn -->
+							<div class="modal-btn btn-wrap">
+								<button type="button" class="btn btn-primary" onclick="abilityResult()">결과보기</button>
+								<c:if test="${upperIdx+1 < levelCnt}">
+								<button type="button" class="btn btn-secondary" onclick="abilityNext('<c:out value='${upperIdx+1}'/>')">다음</button>
+								</c:if>
+								 <c:if test="${upperIdx+1 == levelCnt}">
+								<button type="button" class="btn btn-secondary" onclick="clearAbilityDgnss()">진단완료</button>
+								</c:if>
+								<button type="button" class="btn btn-darkgray-w close-modal">닫기</button>
+							</div>
+							<!-- //modal btn -->
+						</div>
+						<!-- //modal contents -->
+						
+						
+					</div>
+				</div>
+			</div>
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>

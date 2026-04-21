@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+
+	<title>교육>온라인클래스 상세>수강평작성 모달추가</title>
+
+</head>
+
+<body>
+<section class="layout">
+	<section class="gnb">
+		<div class="gnb-wrap">
+			<button type="button" class="btn-gnb-fold"></button>
+			<div class="gnb-logo">
+				<h1 class="logo">
+					<a href="index_edu.html">
+						<img src="../images/edu/logo.png" alt="농촌진흥청 농촌인적자원개발센터">
+					</a>
+				</h1>
+			</div>
+	
+			<div class="navbar">
+				<div class="navbar-con-wrapper" aria-label="scrollable content">
+					<ul class="navbar-nav">
+						<li>
+							<a class="" href="#" role="button">오프라인학습</a>
+						</li>
+						<li>
+							<a class="dropdown" href="#online" role="button" aria-expanded="false" aria-controls="online">온라인 학습</a>
+							<!--2차메뉴-->
+							<div class="nav-list" id="online" aria-hidden="true">
+								<ul class="" id="online">
+									<li><a href="#" role="button">평생교육</a></li>
+									<li><a href="#" role="button">직무교육</a></li>
+								</ul>
+							</div>
+							<!--//2차메뉴-->
+						</li>
+						<li>
+							<a class="dropdown" href="#open" role="button" aria-expanded="false" aria-controls="open">오픈클래스</a>
+								<!--2차메뉴-->
+								<div class="nav-list" id="open" aria-hidden="true">
+									<ul class="" id="open">
+										<li><a class="open-icon1" href="#" role="button">스마트농업</a></li>
+										<li><a class="open-icon2" href="#" role="button">디지털배움터</a></li>
+										<li><a href="#" role="button">과수</a></li>
+										<li><a href="#" role="button">농기계</a></li>
+										<li><a href="#" role="button">농업환경</a></li>
+									</ul>
+								</div>
+								<!--//2차메뉴-->
+						</li>
+	
+					</ul>
+				</div>
+			</div>
+			<div class="view-text">
+				<span>메뉴 펼쳐보기</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="lnb">
+
+		<div class="lnb-inner">
+			<div class="lnb-utill-area">
+				<ul>
+					<li>
+						<a class="userDropdown" href="#userbox">
+							<i class="utill-user"></i>공무원
+						</a>
+					</li>
+						<!-- hover box-->
+						<div class="user-box" id="userBox">
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="dashboard-user1.html" target="_self">대시보드</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">나의 수강현황</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">마일리지 및 배지</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">역량진단</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link user-logout" href="">로그아웃</a>
+							</div>
+						</div>
+					<li><a href="#"><i class="utill-alarm"></i>알림</a></li>
+					<li class="scale">화면크기
+						<button class="plus" title="키우기" id="" onclick=""></button>
+						<button class="minus" title="줄이기" id="" onclick=""></button>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="search-area">
+				<div class="sch-form-wrap">
+					<div class="sch-input main-sch-input">
+						<input type="text" class="form-control" placeholder="검색어를 입력해주세요" title="검색어 입력">
+						<button type="button" class="btn ico-sch">
+							<span class="none">검색</span>
+						</button>
+					</div>
+					<div class="keyword">
+						<ul>
+							<li><a href="#">여성</a></li>
+							<li><a href="#">탄소</a></li>
+							<li><a href="#">교육갈등</a></li>
+							<li><a href="#">노지</a></li>
+							<li><a href="#">농업용수</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div class="quick-area">
+				<ul>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img01" src="../images/edu/quick01_N.png" alt="메타버스 교육장">
+							</div>
+							<span>메타버스<br>교육장</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img02" src="../images/edu/quick02_N.png" alt="VR농기계 견학관">
+							</div>
+							<span>VR농기계<br>견학관</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img03" src="../images/edu/quick03_N.png" alt="지역특화과정">
+							</div>
+							<span>지역<br>특화과정</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img04" src="../images/edu/quick04_N.png" alt="원격지원 서비스">
+							</div>
+							<span>원격지원<br>서비스 </span>
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="popup-area">
+				<div class="popup-in">
+					<div class="main-d-ban-swiper">
+						<div class="swiper">
+								<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<a href="">
+												<img src="../images/edu/img_popup01.png" alt="팝업1">
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="">
+												<img src="../images/edu/img_popup01.png" alt="팝업1">
+											</a>
+										</li>
+								</ul>
+						</div>
+						<div class="pop_bottom">
+							<p>팝업존</p>
+							<div class="swiper-indicator">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-controller">
+									<button type="button" class="swiper-button-play">
+											<span class="none">슬라이드 재생</span>
+									</button>
+									<button type="button" class="swiper-button-stop">
+											<span class="none">슬라이드 멈춤</span>
+									</button>
+								</div>
+								<div class="swiper-navigation">
+									<button type="button" class="swiper-button-prev">
+											<span class="none">이전</span>
+									</button>
+									<button type="button" class="swiper-button-next">
+											<span class="none">다음</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	
+		<div class="lnb-fold-area">
+			<div class="lnb-fold-btn-wrap">
+				<button class="lnb-fold-btn"></button>
+			</div>
+		</div>
+	
+	</section>
+
+	<section class="main-content sub-content">
+		<div class="container">
+			<!--서브페이지 공통-->
+			<div class="sub-title-wrap">
+				<div class="sub-name-wrap">
+					<div class="breadcrumb-wrap">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">온라인학습</a></li>
+						</ol>
+					</div>
+					<h4>온라인학습</h4>
+				</div>
+				<div class="sub-title-utill">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="../images/edu/i_share20.png" alt="공유">
+								<span class="none">공유</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../images/edu/i_print20.png" alt="출력">
+								<span class="none">출력</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="sub-con-wrap">
+				<div class="learn-detail-wrap">
+					<div class="ld-thumb">
+						<img src="../images/edu/process01.png" alt="상세 썸네일01">
+					</div>
+
+					<div class="ld-info">
+						<div class="label-wrap">
+							<ul class="label-zone">
+								<li>온라인</li>
+								<li>평생교육</li>
+								<li>리더십</li>
+							</ul>
+							<div class="ld-icon-wrap">
+								<a href="#" class="ld-icon-heart">
+									<img src="../images/edu/i_heart.png" alt="찜하기">
+									<img src="../images/edu/i_heart_s.png" alt="찜하기" class="none"> <!--//찜했을 때 해당아이콘 사용(개발하실 때 삭제해주세요)-->
+								</a>
+								<a href="#" class="ld-icon-share">
+									<img src="../images/edu/i_share.png" alt="공유">
+								</a>
+							</div>
+						</div>
+						<p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1 기]</p>
+
+						<div class="star-wrap">
+								<div class="star-ratings">
+									<div class="star-ratings-fill">
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+									</div>
+								</div>
+							<div class="star-grade-wrap">
+								<span><strong class="star-grade">5.0</strong>(14)</span>
+							</div>
+						</div>
+
+						<div class="info-con">
+							<ul>
+								<li>
+									<strong>과정장</strong>
+									<span>농촌과정장</span>
+								</li>
+								<li>
+									<strong>학습시간</strong>
+									<span>3시간</span>
+								</li>
+								<li>
+									<strong>교육기간</strong>
+									<span>2024.01.01 ~ 2024.01.01</span>
+								</li>
+								<li>
+									<strong>수강신청</strong>
+									<span>수강신청 가능</span>
+								</li>
+							</ul>
+						</div>
+
+					</div><!--//ld-info-->
+				</div><!--//learn-detail-wrap-->
+
+				<div class="learn-con-wrap">
+					<div class="learn-con">
+						<div class="lc-tab-wrap">
+							<ul>
+								<li class="active">
+									<a href="#detail-con1">과정상세</a>
+								</li>
+								<li>
+									<a href="#detail-con2">커리큘럼</a>
+								</li>
+								<li>
+									<a href="#detail-con3">기수정보</a>
+								</li>
+								<li>
+									<a href="#detail-con4">수강평(N)개</a>
+								</li>
+							</ul>
+						</div>
+						<div class="lc-cont">
+
+							<!--과정상세-->
+							<div class="lc-item-box" id="detail-con1">
+								<p class="lc-title">과정상세</p>
+								<div class="cd-item">
+									<p>교육목적</p>
+									<ul>
+										<li>목적이뭔가요</li>
+									</ul>
+								</div>
+								<div class="cd-item">
+									<p>교육목표</p>
+									<ul>
+										<li>목표는 뭘까요</li>
+									</ul>
+								</div>
+								<div class="cd-item">
+									<p>교육내용</p>
+									<ul>
+										<li>내용은 뭘까요</li>
+										<li>내용은 뭘까요2222222222222222</li>
+									</ul>
+								</div>
+								<div class="file-item">
+									<p>첨부파일</p>
+									<div class="file-list">
+										<a href="" class="file-name" title="파일 다운로드">여성농업인 농기계 활용 추진계획서(외부)_홈페이지 게시.pdf</a>
+									</div>
+								</div>
+							</div><!--//lc-item-box-->
+
+							<!--커리큘럼-->
+							<div class="lc-item-box" id="detail-con2">
+								<p class="lc-title">커리큘럼</p>
+								<div class="table-wrap">
+									<table class="table-type1">
+										<caption>커리큘럼</caption>
+										<colgroup>
+											<col style="width: 15%">
+											<col>
+										</colgroup>
+										<thead>
+											<th scope="col">기수</th>
+											<th scope="col">목차</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1차시</td>
+												<td>
+													<span class="curriculum-text">대만 수출용 포도 사전등록제 운영계획</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!--//lc-item-box-->
+
+							<!--기수정보-->
+							<div class="lc-item-box" id="detail-con3">
+								<p class="lc-title">기수정보</p>
+								<div class="table-wrap">
+									<table class="table-type1">
+										<caption>커리큘럼</caption>
+										<colgroup>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+										</colgroup>
+										<thead>
+											<th scope="col">기수</th>
+											<th scope="col">교육기간</th>
+											<th scope="col">신청기간</th>
+											<th scope="col">교육장소</th>
+											<th scope="col">수료점수/진도율</th>
+											<th scope="col">신청/정원</th>
+											<th scope="col">수강신청</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>3기수</td>
+												<td>2024.01.01~2024.01.01</td>
+												<td>2024.01.01~2024.01.01</td>
+												<td>온라인</td>
+												<td>90점 / 80%</td>
+												<td>제한없음</td>
+												<td>
+													<button type="button" class="btn sm btn-primary-w">수강신청</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!--//lc-item-box-->
+
+							<!--수강평-->
+							<div class="lc-item-box" id="detail-con4">
+								<p class="lc-title">수강평</p>
+								<div class="sch-list-top">
+									<div class="sch-info">
+										전체
+										<span class="keyword">100</span>
+										건
+									</div>
+									<ul class="sch-sort">
+										<li class="li1">
+											<strong class="sort-label"><label>정렬기준</label></strong>
+											<div class="w-sort-btn">
+												<button type="button" class="active">인기순</button>
+												<button type="button" class="">최신순</button>
+												<button type="button" class="">별점 높은순</button>
+												<button type="button" class="">별점 낮은순</button>
+											</div>
+										</li>
+									</ul>
+								</div><!--//sch-list-top-->
+
+								<div class="review-b-write">
+									<div class="review-b-text">
+										<p class="rb-title">수강평을 남겨주세요!</p>
+										<p>여러분의 소중한 수강평이 다른 학습자들에게 큰 도움이 됩니다.<br>
+											간단한 피드백을 남겨주세요!</p>
+									</div>
+									<button type="button" class="btn sm btn-primary open-modal" data-target="review-modal">수강평 작성</button>
+								</div>
+
+								<!--댓글세트-->
+								<div class="review-view-wrap">
+									<div class="rv-user-info">
+										<div class="rv-user">
+											<img src="../images/edu/user_gong.png" alt="공무원아이콘">
+											<div class="rv-user-name-zone">
+												<div class="rv-user-name">
+													<span class="review-name">김농촌</span>
+													<span class="review-grade">공무원</span>
+												</div>
+												<ul>
+													<li>2024.01.01</li>
+													<li>수강평 10개</li>
+													<li>평균평점 4.9</li>
+												</ul>
+												
+											</div>
+										</div>
+										<button class="btn-more-dot" type="button">
+											<i class="i-more-dot"><span class="none">더보기</span></i>
+											<div class="more-detail">
+												<ul>
+													<li><a href="">수정</a></li>
+													<li><a href="">삭제</a></li>
+												</ul>
+											</div>
+										</button>
+									</div>
+
+									<div class="review-view-star">
+										<div class="star-ratings-fill">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</div>
+										<span class="rv-avg-num">4.8</span>
+										<span class="star-standard">86% 수강 후 작성</span>
+									</div>
+
+									<div class="review-content">
+										<p>
+											1기 때부터 계속 듣고있는 공무원입니다.<br>
+											너무 유익해요<br><br>
+											과제에서 10p 부분은 모두 어려우셨을텐데 사이트 보면 도움 될 듯 싶습니다.<br>
+											참고하셔요~
+										</p>
+									</div>
+
+									<div class="review-utill-zone">
+										<div class="review-utill">
+											<button class="btn sm btn-darkgray-w">
+												<img src="../images/edu/thumbs_up.png" alt="좋아요">
+												<span>5</span>
+											</button>
+											<button class="btn sm btn-darkgray-w">
+												<img src="../images/edu/i_share.png" alt="공유">
+											</button>
+										</div>
+										<button class="btn sm btn-darkgray-w">
+											<span>답글달기</span>
+										</button>
+									</div>
+									<!--답글달기 box-->
+									<div class="review-write">
+										<div class="textarea-wrap">
+											<textarea id="textareaid" class="text-control" placeholder="내용을 입력해주세요." title="기타 제안 사항 입력"></textarea>
+										</div>
+										<div class="btn-wrap">
+											<button type="button" class="btn sm btn-darkgray-w">취소</button>
+											<button type="button" class="btn sm btn-primary">등록</button>
+										</div>
+									</div>
+									<!--답글 단 사용자-->
+									<div class="reviewer-box">
+										<div class="reviewer-info">
+											<div class="rv-user-name">
+												<span class="review-name">김하나</span>
+												<span class="review-grade">일반인</span>
+											</div>
+											<span class="rv-date">2024.01.01</span>
+										</div>
+
+										<div class="review-content">
+											<p>
+												네 감사합니다. 덕분에 유익한 정보를 가져간거같아요. 감사합니다~!
+											</p>
+										</div>
+
+										<div class="review-utill-zone">
+											<div class="review-utill">
+												<button class="btn sm btn-darkgray-w">
+													<img src="../images/edu/thumbs_up.png" alt="좋아요">
+													<span>5</span>
+												</button>
+												<button class="btn sm btn-darkgray-w">
+													<img src="../images/edu/i_share.png" alt="공유">
+												</button>
+											</div>
+											<button class="btn sm btn-darkgray-w">
+												<span>답글달기</span>
+											</button>
+										</div>
+
+									</div>
+								</div><!--//review-view-wrap-->
+
+
+								<div class="review-view-wrap">
+									<div class="rv-user-info">
+										<div class="rv-user">
+											<img src="../images/edu/user_gong.png" alt="공무원아이콘">
+											<div class="rv-user-name-zone">
+												<div class="rv-user-name">
+													<span class="review-name">김농촌</span>
+													<span class="review-grade">공무원</span>
+												</div>
+												<ul>
+													<li>2024.01.01</li>
+													<li>수강평 10개</li>
+													<li>평균평점 4.9</li>
+												</ul>
+												
+											</div>
+										</div>
+										<button class="btn-more-dot" type="button">
+											<i class="i-more-dot"><span class="none">더보기</span></i>
+											<div class="more-detail">
+												<ul>
+													<li><a href="">수정</a></li>
+													<li><a href="">삭제</a></li>
+												</ul>
+											</div>
+										</button>
+									</div>
+
+									<div class="review-view-star">
+										<div class="star-ratings-fill">
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+											<span>★</span>
+										</div>
+										<span class="rv-avg-num">4.8</span>
+										<span class="star-standard">86% 수강 후 작성</span>
+									</div>
+
+									<div class="review-content">
+										<p>
+											1기 때부터 계속 듣고있는 공무원입니다.<br>
+											너무 유익해요<br><br>
+											과제에서 10p 부분은 모두 어려우셨을텐데 사이트 보면 도움 될 듯 싶습니다.<br>
+											참고하셔요~
+										</p>
+									</div>
+
+									<div class="review-utill-zone">
+										<div class="review-utill">
+											<button class="btn sm btn-darkgray-w">
+												<img src="../images/edu/thumbs_up.png" alt="좋아요">
+												<span>5</span>
+											</button>
+											<button class="btn sm btn-darkgray-w">
+												<img src="../images/edu/i_share.png" alt="공유">
+											</button>
+										</div>
+										<button class="btn sm btn-darkgray-w">
+											<span>답글달기</span>
+										</button>
+									</div>
+								</div><!--//review-view-wrap-->
+
+							</div><!--//lc-item-box-->
+
+						</div>
+						<div class="recommend-zone">
+							<div class="process-title">
+								<h3>이런 과정은 어때요?</h3> 
+							</div>
+							<div class="recommend-item">
+								<div class="process-item">
+									<a href="#">
+										<div class="pro-thumbnail">
+											<img src="../images/edu/process01.png" alt="과정01">
+										</div>
+										<div class="pro-info">
+											<ul class="label-zone">
+												<li>온라인</li>
+												<li>평생교육</li>
+												<li>리더십</li>
+											</ul>
+											<p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+											<div class="pro-date">
+												<img src="../images/edu/i_calendar.png" alt="달력">
+												<span>2024.01.01~2024.12.31</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="process-item">
+									<a href="#">
+										<div class="pro-thumbnail">
+											<img src="../images/edu/process01.png" alt="과정01">
+										</div>
+										<div class="pro-info">
+											<ul class="label-zone">
+												<li>온라인</li>
+												<li>평생교육</li>
+												<li>리더십</li>
+											</ul>
+											<p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+											<div class="pro-date">
+												<img src="../images/edu/i_calendar.png" alt="달력">
+												<span>2024.01.01~2024.12.31</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="process-item">
+									<a href="#">
+										<div class="pro-thumbnail">
+											<img src="../images/edu/process01.png" alt="과정01">
+										</div>
+										<div class="pro-info">
+											<ul class="label-zone">
+												<li>온라인</li>
+												<li>평생교육</li>
+												<li>리더십</li>
+											</ul>
+											<p class="pro-name">e-러닝(데이터 분석과 모델링 및 데이터 활용 기술)_농협 [1기]</p>
+											<div class="pro-date">
+												<img src="../images/edu/i_calendar.png" alt="달력">
+												<span>2024.01.01~2024.12.31</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div><!--//recommend-zone-->
+					</div>
+
+
+					<asdie class="learn-floating">
+						<div class="lf-box">
+							<div class="lf-inner">
+								<div class="lf-process-wrap">
+									<p class="lf-process-nm">과정 개요</p>
+									<div class="ld-icon-wrap">
+										<a href="#" class="ld-icon-heart">
+											<img src="../images/edu/i_heart.png" alt="찜하기">
+											<img src="../images/edu/i_heart_s.png" alt="찜하기" class="none"> <!--//찜했을 때 해당아이콘 사용(개발하실 때 삭제해주세요)-->
+										</a>
+										<a href="#" class="ld-icon-share">
+											<img src="../images/edu/i_share.png" alt="공유">
+										</a>
+									</div>
+								</div>
+								<div class="lf-process-info">
+									<ul>
+										<li>
+											<strong>교육구분</strong>
+											<span>평생교육</span>
+										</li>
+										<li>
+											<strong>교육방식</strong>
+											<span>온라인</span>
+										</li>
+										<li>
+											<strong>교육대상</strong>
+											<span>농업인</span>
+										</li>
+										<li>
+											<strong>과정장</strong>
+											<span>농촌과정장</span>
+										</li>
+										<li>
+											<strong>학습시간</strong>
+											<span>3시간</span>
+										</li>
+										<li>
+											<strong>교육기간</strong>
+											<span>2024.01.01~2024.01.01</span>
+										</li>
+										<li>
+											<strong>신청기간</strong>
+											<span>2024.01.01~2024.01.01</span>
+										</li>
+									</ul>
+								</div>
+								<div class="lf-input-zone">
+									
+								</div>
+							</div>
+							<div class="state-zone">
+								<button class="btn btn-primary">수강신청</button>
+							</div>
+						</div>
+					</asdie>
+
+				</div>
+			</div>
+			<!--//sub-con-wrap-->
+		</div>
+
+
+<!-- modal -->
+<section id="review-modal" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-review-modal">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-review-modal" class="modal-title">수강평 작성</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+
+					<div class="modal-star">
+						<div class="star-ratings-fill">
+							<span>★</span>
+							<span>★</span>
+							<span>★</span>
+							<span>★</span>
+							<span>★</span>
+						</div>
+					</div>
+					<div class="textarea-wrap">
+						<textarea id="textareaid" class="text-control" placeholder="내용을 입력해주세요." title="수강평 작성"></textarea>
+					</div>
+					
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+				<button type="button" class="btn btn-primary  close-modal">등록</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>
+<!-- //modal -->
+
+
+
+	</div><!--//container-->
+	</section><!--//main-content-->
+
+</section><!--//layout-->
+
+<section class="footer">
+	<div class="ft-in">
+		<div class="ft-nav-wrap">
+			<img src="../images/edu/logo_ft.png" alt="농촌진흥청 농촌인적자원개발센터">
+			<div class="ft-nav">
+				<a href="">
+					<span class="org">개인정보처리방침</span>
+				</a>
+				<a href="">
+					<span>이메일무단수집거부</span>
+				</a>
+				<a href="">
+					<span>자료이용 및 저작권보호</span>
+				</a>
+				<a href="">
+					<span>조직 및 기능</span>
+				</a>
+				<a href="">
+					<span>찾아오시는길</span>
+				</a>
+			</div>
+		</div>
+		<div class="ft-bottom">
+			<ul class="address">
+				<li><strong>주소</strong>(54874) 전북특별자치도 전주시 덕진구 농생명로 420 농촌인적자원개발센터  </li>
+				<li><strong>전화</strong>063-238-1800</li>
+			</ul>
+			<div class="familysite">
+				<button class="btn-family">관련사이트 바로가기</button>
+				<div class="family-list">
+					<div class="fl-in">
+						<a href="https://www.rda.go.kr" class="option" target="_blank">
+							<span>농촌진흥청</span>
+						</a>
+						<a href="https://www.naas.go.kr" class="option" target="_blank">
+							<span>국립농업과학원</span>
+						</a>
+						<a href="https://www.nics.go.kr" class="option" target="_blank">
+							<span>국립식량과학원</span>
+						</a>
+						<a href="https://www.nihhs.go.kr" class="option" target="_blank">
+							<span>국립원예특작과학원</span>
+						</a>
+						<a href="https://www.nias.go.kr" class="option" target="_blank">
+							<span>국립축산과학원</span>
+						</a>
+						<a href="https://www.nhi.go.kr/" class="option" target="_blank">
+							<span>국가공무원인재개발원</span>
+						</a>
+						<a href="https://www.ati.go.kr/" class="option" target="_blank">
+							<span>농식품공무원교육원</span>
+						</a>
+						<a href="https://www.nongsaro.go.kr" class="option" target="_blank">
+							<span>농사로</span>
+						</a>
+						<a href="http://www.returnfarm.com" class="option" target="_blank">
+							<span>귀농귀촌종합센터</span>
+						</a>
+						<a href="https://www.rda.go.kr:2360/kaesa/" class="option" target="_blank">
+							<span>전문지도연구회</span>
+						</a>
+						<a href="https://www.agriedu.net" class="option" target="_blank">
+							<span>농업교육포털</span>
+						</a>
+						<a href="https://astis.rda.go.kr" class="option" target="_blank">
+							<span>농업과학기술정보서비스</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-copy">
+			<span>COPYRIGHT(C) RURAL HUMAN RESOURCE DEVELOPMENT CENTER(RHRDC). ALL RIGHTS RESERVED</span>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>

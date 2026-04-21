@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+  <link href="../css/mypage.css" rel="stylesheet" type="text/css">
+
+  <title>회원가입 > 추가정보 입력</title>
+</head>
+
+
+<body class="uid-body">
+  <header class="uid-header">
+    <h1><a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터"></a></h1>
+  </header>
+
+  <div class="uid-wrap">
+    <div class="join-container add-info-container">
+      <h2>추가정보 입력</h2>
+      <div class="join-input-wrap">
+        <div class="member-modify">
+          <div class="form-group">
+            <div class="form-tit">
+              회원구분
+            </div>
+            <div class="chk-area modify-chk">
+              <div class="form-check">
+                <input type="radio" name="pManageCd" id="pManageCd1" checked="">
+                <label for="pManageCd1" id="memdivi1">공무원</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="pManageCd" id="pManageCd2">
+                <label for="pManageCd2" id="memdivi2">농업인</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="pManageCd" id="pManageCd3">
+                <label for="pManageCd3" id="memdivi3">일반인</label>
+              </div>
+            </div>
+          </div>
+          <!--//회원구분-->
+          <div class="form-group">
+            <div class="form-tit">
+              소속
+            </div>
+            <div class="input-group">
+              <input type="text" id="addr-input" class="form-control" value="농촌진흥청 청장" disabled="">
+              <button type=" button" class="btn md btn-darkgray-w open-modal" data-target="insSearch">검색</button>
+              <button type=" button" class="btn md secondary">삭제</button>
+            </div>
+          </div>
+          <!--//소속-->
+          <div class="form-group">
+            <div class="form-tit">
+              직급
+            </div>
+            <div class="input-group">
+              <input type="text" id="addr-input" class="form-control" value="농업연구사" disabled="">
+              <button type=" button" class="btn md btn-darkgray-w">검색</button>
+              <button type=" button" class="btn md secondary">삭제</button>
+            </div>
+          </div>
+          <!--//직급-->
+          <div class="form-group">
+            <div class="form-tit">
+              직위
+            </div>
+            <div class="input-group">
+              <input type="text" id="addr-input" class="form-control" value="농업관" disabled="">
+              <button type=" button" class="btn md btn-darkgray-w">검색</button>
+              <button type=" button" class="btn md secondary">삭제</button>
+            </div>
+          </div>
+          <!--//직위-->
+          <div class="form-group">
+            <div class="form-tit">
+              현 담당업무
+            </div>
+            <div class="input-group">
+              <input type="text" id="addr-input" class="form-control" value="업무">
+            </div>
+          </div>
+          <!--//현 담당업무-->
+          <div class="form-group">
+            <div class="form-tit">
+              현 업무시작일
+            </div>
+            <div class="datepicker-input">
+              <div class="input-group range">
+                <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+              </div>
+              <button type="button" class="form-btn-datepicker">
+                <span class="none">달력 열기</span>
+              </button>
+            </div>
+          </div>
+          <!--//현 업무시작일-->
+          <div class="form-group">
+            <div class="form-tit">
+              임용일
+            </div>
+            <div class="datepicker-input">
+              <div class="input-group range">
+                <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+              </div>
+              <button type="button" class="form-btn-datepicker">
+                <span class="none">달력 열기</span>
+              </button>
+            </div>
+          </div>
+          <!--//임용일-->
+          <div class="form-group">
+            <div class="form-tit">
+              현재 비밀번호
+            </div>
+            <div class="input-group">
+              <input type="text" id="addr-input" class="form-control" placeholder="현재 비밀번호를 입력해주세요">
+            </div>
+          </div>
+          <!--//현재 비밀번호-->
+
+          <div class="btn-wrap-center btn_100 mt_40">
+            <button type="button" class="btn md btn-darkgray-w" data-target="addInformationG">이전</button>
+            <button type="button" class="btn md primary open-modal" data-target="rcmProcess">가입완료</button>
+          </div>
+
+        </div>
+        
+        
+      </div>
+    </div>
+    <!--//join-container-->
+  </div>
+
+
+
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2021 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+
+<!-- 추천과정 등록 -->
+
+  <!-- modal -->
+  <section id="rcmProcess" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-rcmProcess">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit-rcmProcess" class="modal-title">추천 과정 설정</h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts rcm-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="rcm-title"><p><strong>관심분야</strong>를 등록하면, 맞춤과정을 추천해드립니다! </p></div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 id="acLHeader01" class="accordion-header">
+                  <button type="button" class="btn-accordion" aria-controls="acLCollapse01">
+                      식량작물
+                  </button>
+                </h2>
+                <div id="acLCollapse01" class="accordion-collapse collapse" aria-expanded="false" aria-labelledby="acLHeader01">
+                  <div class="accordion-body">
+                    <div class="rcm-chk-wrap">
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">벼보리</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">옥수수</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">잡곡</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">콩</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">팥</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">흑미</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">고구마</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">밀</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">메밀</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">감자</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- //accordion-item -->
+              
+
+              <div class="accordion-item">
+                <h2 id="acLHeader01" class="accordion-header">
+                  <button type="button" class="btn-accordion" aria-controls="acLCollapse01">
+                      텍스트긴거 테스트
+                  </button>
+                </h2>
+                <div id="acLCollapse01" class="accordion-collapse collapse" aria-expanded="false" aria-labelledby="acLHeader01">
+                  <div class="accordion-body">
+                    <div class="rcm-chk-wrap">
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">고려엉겅퀴(곤드레나물)</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">기타엽경채류</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">명이나물/부지깽이</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">스마트폰 쉽게 이용하기</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- //accordion-item -->
+
+              <div class="accordion-item">
+                <h2 id="acLHeader01" class="accordion-header">
+                  <button type="button" class="btn-accordion" aria-controls="acLCollapse01">
+                      텍스트긴거 테스트
+                  </button>
+                </h2>
+                <div id="acLCollapse01" class="accordion-collapse collapse" aria-expanded="false" aria-labelledby="acLHeader01">
+                  <div class="accordion-body">
+                    <div class="rcm-chk-wrap">
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">건강안전농산물활용</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">건강한 우리 식품 만들기</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">우수농산물인증제(GAP)</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">농산물활용 제품만들기</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">도시농업_정원가꾸기</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">도시농업_텃밭가꾸기</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">반려동물/애완정서곤충</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" name="chk_1" id="su-list1">
+                        <label for="su-list1">원예치료</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- //accordion-item -->
+
+
+              
+              
+          </div>
+          <!-- //accordion -->
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">다음에 등록</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+
+
+
+  
+
+
+  <script>
+    /*** * modal * ***/
+    const $modalTrigger = document.querySelectorAll('.open-modal');
+    const $modalCloseTrigger = document.querySelectorAll('.close-modal');
+    const $kds_body = document.querySelector('body');
+    const kds_modal = {
+      init: () => {
+        kds_modal.open();
+        kds_modal.close();
+      },
+      open: () => {
+        $modalTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.getAttribute('data-target'); // id 가져오기
+            e.classList.add('modal-opened');
+            e.setAttribute('tabindex', '-1');
+            kds_modal.modalOpen(id); // 모달 열기 함수 호출
+            ele.preventDefault();
+          });
+        });
+      },
+      modalOpen: (id) => {
+        const $idVal = document.getElementById(id); // id에 해당하는 모달 가져오기
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalBack = $idVal.querySelector('.modal-back');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length + 1;
+        $kds_body.classList.add('scroll-no');
+        $idVal.setAttribute('aria-hidden', 'false');
+        $modalBack.classList.add('in'); // 백그라운드 추가
+        $idVal.classList.add('shown'); // 모달 보이기
+        setTimeout(() => {
+          $idVal.classList.add('in'); // 애니메이션을 위한 클래스 추가
+        }, 150);
+
+        // 열린 팝업창 포커스
+        $dialog.setAttribute('tabindex', '0');
+
+        // 모달 여러 개 열린 경우 마지막 모달 z-index 높게 설정
+        if ($modalOpenedLen > 1) {
+          const openedLen = $modalOpenedLen;
+          const zIndexNew = 1010 + openedLen;
+          $idVal.setAttribute('style', 'z-index: ' + zIndexNew);
+        }
+
+        // 레이어 진입 시 포커스
+        setTimeout(() => {
+          $dialog.focus();
+        }, 350);
+      },
+      close: () => {
+        $modalCloseTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.closest('.modal').getAttribute('id');
+            kds_modal.modalClose(id);
+          });
+          e.addEventListener('keydown', ele => { // 닫기 버튼에서 탭 키 누르면 모달 내 첫번째 포커스로 키보드 이동
+            if (e.classList.contains('btn-close')) {
+              const keyCode = ele.keyCode || ele.which;
+              if (!ele.shiftKey && keyCode == 9) {
+                e.closest('.modal-content').focus(); // 첫 번째 링크로 이동
+                ele.preventDefault();
+              }
+            }
+          });
+        });
+      },
+      modalClose: (id) => {
+        const $idVal = document.getElementById(id);
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length;
+        if ($modalOpenedLen < 2) {
+          $kds_body.classList.remove('scroll-no');
+        }
+
+        $idVal.setAttribute('aria-hidden', 'true');
+        $idVal.classList.remove('in');
+
+        $dialog.removeAttribute('tabindex');
+
+        setTimeout(() => {
+          $idVal.classList.remove('shown');
+        }, 150);
+
+        // 모달 창 연 버튼에 class 삭제 및 tabindex 0으로 조정 (포커스 영역 수정)
+        const $triggerBtn = document.querySelector('.modal-opened');
+        if ($triggerBtn != null) {
+          $triggerBtn.focus();
+          $triggerBtn.setAttribute('tabindex', '0');
+          $triggerBtn.classList.remove('modal-opened');
+        }
+      },
+    };
+
+    // 모달 초기화 실행
+    kds_modal.init();
+
+    /*비밀번호 보이기*/
+    document.querySelectorAll('.ico-pw-visible').forEach(button => {
+      button.addEventListener('click', function () {
+        const inputField = this.previousElementSibling;
+
+        if (inputField.type === 'password') {
+          inputField.type = 'text';
+        } else {
+          inputField.type = 'password';
+          this.classList.remove('active');
+        }
+      });
+    });
+
+
+/*** * accordion * ***/
+const $accordionBtn = document.querySelectorAll('.btn-accordion');
+const kds_accordion = {
+  init: () => {
+    kds_accordion.expand();
+  },
+  expand: () => {
+    $accordionBtn.forEach(e => {
+      const $wrap = e.closest('.accordion-item');
+      const $collapse = document.querySelector(`#${e.getAttribute('aria-controls')}`);
+
+      e.addEventListener('click', () => {
+        if (!$wrap.classList.contains('active')) {
+          // 현재 클릭한 아코디언 아이템을 열기
+          $wrap.classList.add('active');
+          $collapse.classList.add('show');
+        } else {
+          // 현재 클릭한 아코디언 아이템을 닫기
+          $wrap.classList.remove('active');
+          $collapse.classList.remove('show');
+        }
+      });
+    });
+  },
+};
+
+// kds_accordion 초기화 함수 호출
+kds_accordion.init();
+  </script>
+
+</body>
+
+</html>

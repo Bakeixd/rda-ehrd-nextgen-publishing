@@ -1,0 +1,203 @@
+
+/* ========================================================
+ * sub 페이지 헤더
+======================================================== */
+.h-visual-img.sub01 {
+  width: 100%;
+  height: 20rem;
+  background: url(../images/Regional-specialization/rs-h-banner_01.png) no-repeat center;
+}
+
+.h-visual-text-wrap {
+  padding-top: 8rem;
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.breadcrumb-wrap .breadcrumb .rs-home a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/Regional-specialization/ico_home.png) no-repeat center;
+  font-size: 0;
+}
+
+.h-visual-text-wrap h2 {
+  font-size: 3.2rem;
+  color: #fff;
+}
+/* ========================================================
+ * sub 페이지 내용
+======================================================== */
+.content {
+  width: 120rem;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
+}
+
+.sub-name-wrap h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.download-area {
+  width: 120rem;
+  padding: 3.2rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F4F5F6;
+  gap: 3.2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.download-area p {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.btn-download-wrap {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.btn-download::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../images/Regional-specialization/ico-download.png) no-repeat center;
+  margin-right: .8rem
+}
+
+.btn-download01::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../images/Regional-specialization/ico-download02.png) no-repeat center;
+  margin-right: .8rem
+}
+
+.btn-download01:hover:before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../images/Regional-specialization/ico-download.png) no-repeat center;
+  margin-right: .8rem
+}
+.btn-download03::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../images/Regional-specialization/ico-download03.png) no-repeat center;
+  margin-right: .8rem
+}
+
+.rs-con-tbl {
+  flex: 1;
+}
+
+.rs-con-tbl .rc-tab-wrap {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.rs-con-tbl .rc-tab-wrap ul {
+  display: flex;
+  border-bottom: 1px solid #cecece;
+}
+
+.rs-con-tbl .rc-tab-wrap ul li {
+  width: calc(100% / 2);
+  padding: 1.2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.rs-con-tbl .rc-tab-wrap ul li a:hover {
+  color: var(--primary);
+  transition: all .25s ease;
+}
+
+.rs-con-tbl .rc-tab-wrap ul li.active a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.rs-con-tbl .rc-tab-wrap ul li.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  bottom: 0;
+  left: 0;
+}
+
+.rc-con {
+  margin-top: 4rem;
+  position: relative;
+}
+
+
+.rc-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rc-list-top .rc-tbl-info .keyword {
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0 .4rem;
+  background-color: transparent;
+}
+
+.tbl-info-text {
+  color: #555;
+  font-weight: 500;
+}
+
+.table-wrap table .file-list.rc-tbl-file-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rc-tbl-file-btn-wrap .btn.delete {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/Regional-specialization/i_closed_20.png);
+}
+
+.rc-con-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 1.2rem;
+}
+
+.tbl-tit01 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 75rem;
+}
+.rc-list-top.jus-flx-end{
+  justify-content: flex-end;
+}

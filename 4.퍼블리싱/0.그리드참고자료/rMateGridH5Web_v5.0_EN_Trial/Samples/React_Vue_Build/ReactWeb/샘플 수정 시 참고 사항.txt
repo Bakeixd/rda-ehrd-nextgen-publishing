@@ -1,0 +1,14 @@
+- Build 전
+1. package.json 가장 아래 부분에 "homepage" : "."을 추가하기
+
+
+- Build 후
+1. index.html을 열고 rMateChart의 제품을 기존 샘플들과 같이 사용하기 위해 아래 경로로 변경하기
+<script type="text/javascript" src="../../../rMateGridH5/JS/rMateGridH5.js"></script>
+<script type="text/javascript" src="../../../LicenseKey/rMateGridH5License.js"></script>
+<link rel="stylesheet" href="../../../rMateGridH5/Assets/rMateH5.css"/>
+
+2. 같이 build된 제품 중 불필요한 파일 삭제
+rMateGridH5/JS 폴더 : 레이아웃 콜백함수를 사용하기 위한 rMateGridH5\JS\rMateGridVar 를 제외한 나머지 삭제
+rMateGridH5/Assets 폴더 : 이미지 파일은 남겨두고 rMateH5.css파일만 삭제
+

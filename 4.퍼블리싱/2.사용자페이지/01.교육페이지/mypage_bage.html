@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+	<link href="../css/login.css" rel="stylesheet" type="text/css">
+	<link href="../css/mypage.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javaScript" src="/assets/js/jquery-1.11.2.js"></script>
+	<title>마이페이지 > 내 정보 관리</title>
+
+</head>
+
+<body>
+<section class="layout">
+	<section class="gnb">
+		<div class="gnb-wrap">
+			<button type="button" class="btn-gnb-fold"></button>
+			<div class="gnb-logo">
+				<h1 class="logo">
+					<a href="/ehrdEduIndex.do" target="_self">
+						<img src="../images/edu/logo.png" alt="농촌진흥청 농촌인적자원개발센터">
+					</a>
+				</h1>
+			</div>
+	
+			<div class="navbar">
+				<div class="navbar-con-wrapper" aria-label="scrollable content">
+					<ul class="navbar-nav">
+						<li>
+							<a class="" href="#" role="button">오프라인학습</a>
+						</li>
+						<li>
+							<a class="dropdown" href="#online" role="button" aria-expanded="false" aria-controls="online">온라인 학습</a>
+							<!--2차메뉴-->
+							<div class="nav-list" id="online" aria-hidden="true">
+								<ul class="" id="online">
+									<li><a href="#" role="button">평생교육</a></li>
+									<li><a href="#" role="button">직무교육</a></li>
+								</ul>
+							</div>
+							<!--//2차메뉴-->
+						</li>
+						<li>
+							<a class="dropdown" href="#open" role="button" aria-expanded="false" aria-controls="open">오픈클래스</a>
+								<!--2차메뉴-->
+								<div class="nav-list" id="open" aria-hidden="true">
+									<ul class="" id="open">
+										<li><a class="open-icon1" href="#" role="button">스마트농업</a></li>
+										<li><a class="open-icon2" href="#" role="button">디지털배움터</a></li>
+										<li><a href="#" role="button">과수</a></li>
+										<li><a href="#" role="button">농기계</a></li>
+										<li><a href="#" role="button">농업환경</a></li>
+									</ul>
+								</div>
+								<!--//2차메뉴-->
+						</li>
+	
+					</ul>
+				</div>
+			</div>
+			<div class="view-text">
+				<span>메뉴 펼쳐보기</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="lnb">
+
+		<div class="lnb-inner">
+			
+			<div class="search-area">
+				<div class="sch-form-wrap">
+					<div class="sch-input main-sch-input">
+						<input type="text" class="form-control " placeholder="검색어를 입력해주세요" title="검색어 입력">
+						<button type="button" class="btn ico-sch">
+							<span class="none">검색</span>
+						</button>
+					</div>
+					<div class="keyword">
+						<ul>
+							<li><a href="#">여성</a></li>
+							<li><a href="#">탄소</a></li>
+							<li><a href="#">교육갈등</a></li>
+							<li><a href="#">노지</a></li>
+							<li><a href="#">농업용수</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div class="quick-area">
+				<ul>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img01" src="../images/edu/quick01_N.png" alt="메타버스 교육장">
+							</div>
+							<span>메타버스<br>교육장</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img02" src="../images/edu/quick02_N.png" alt="VR농기계 견학관">
+							</div>
+							<span>VR농기계<br>견학관</span>
+						</a>
+					</li>
+					<li>
+						<a href="/html/new/asp/rs_index.html" target="_blank">
+							<div class="quick-img">
+								<img class="q-img03" src="../images/edu/quick03_N.png" alt="지역특화과정">
+							</div>
+							<span>지역<br>특화과정</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="quick-img">
+								<img class="q-img04" src="../images/edu/quick04_N.png" alt="원격지원 서비스">
+							</div>
+							<span>원격지원<br>서비스 </span>
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="popup-area">
+				<div class="popup-in">
+					<div class="main-d-ban-swiper">
+						<div class="swiper">
+								<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<a href="">
+												<img src="../images/edu/img_popup01.png" alt="팝업1">
+											</a>
+										</li>
+										<li class="swiper-slide">
+											<a href="">
+												<img src="../images/edu/img_popup01.png" alt="팝업1">
+											</a>
+										</li>
+								</ul>
+						</div>
+						<div class="pop_bottom">
+							<p>팝업존</p>
+							<div class="swiper-indicator">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-controller">
+									<button type="button" class="swiper-button-play">
+											<span class="none">슬라이드 재생</span>
+									</button>
+									<button type="button" class="swiper-button-stop">
+											<span class="none">슬라이드 멈춤</span>
+									</button>
+								</div>
+								<div class="swiper-navigation">
+									<button type="button" class="swiper-button-prev">
+											<span class="none">이전</span>
+									</button>
+									<button type="button" class="swiper-button-next">
+											<span class="none">다음</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	
+		<div class="lnb-fold-area">
+			<div class="lnb-fold-btn-wrap">
+				<button class="lnb-fold-btn"></button>
+			</div>
+		</div>
+	
+	</section>
+
+	<section class="main-content sub-content">
+		<div class="container">
+			<div class="lnb-utill-area">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" class="open-modal top-open-modal" data-target="My" tabindex="0">
+							<i class="utill-user"></i>유재화
+						</a>
+					</li>
+					<!-- hover box-->
+						<!-- 
+						<div class="user-box" id="userBox">
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="dashboard-user1.html" target="_self">대시보드</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">나의 수강현황</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">마일리지 및 배지</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link" href="#" target="_self">역량진단</a>
+							</div>
+							<div class="user-menu-item">
+								<a class="user-menu-link user-logout" href="">로그아웃</a>
+							</div>
+						</div> -->
+					<li>
+						<a href="javascript:void(0)" class="open-modal top-open-modal" data-target="alarm" tabindex="0"><i class="utill-alarm"></i>알림</a>
+					</li>
+											
+					<li><a href="javascript:void(0)" class="open-modal top-open-modal" data-target="message" tabindex="0"><i class="utill-message"></i>쪽지</a></li>
+						
+					<li class="scale">화면크기
+						<button class="plus" title="키우기" id="" onclick="javascript:zControl.zIn()"></button>
+						<button class="minus" title="줄이기" id="" onclick="javascript:zControl.zOut()"></button>
+					</li>
+		
+					<!-- 알림모달 -->
+					<section id="alarm" class="modal shown fade top-modal" aria-hidden="true" role="dialog" aria-labelledby="tit-alarm">
+						<div class="modal-alarm">
+							<div class="md-header">
+								<h2 class="tit-alarm">알림</h2>
+								<a href="#" class="all">전체보기</a>
+							</div>
+							<!-- content -->
+							<div class="modal-content">
+								<ul class="mdl-list">
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl01"></i>과정시작</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>오늘부터 신청하신 과정 ‘치유농업 프로그램 개발 및 운영’이 시작됩니다. 잊지말고 수강해주세요!</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl02"></i>추천과정</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>오늘부터 신청하신 과정 ‘치유농업 프로그램 개발 및 운영’이 시작됩니다. 잊지말고 수강해주세요!</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl03"></i>수강평작성</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>오늘부터 신청하신 과정 ‘치유농업 프로그램 개발 및 운영’이 시작됩니다. 잊지말고 수강해주세요!</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl03"></i>수강평작성</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>오늘부터 신청하신 과정 ‘치유농업 프로그램 개발 및 운영’이 시작됩니다. 잊지말고 수강해주세요!</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl02"></i>추천과정</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>오늘부터 신청하신 과정 ‘치유농업 프로그램 개발 및 운영’이 시작됩니다. 잊지말고 수강해주세요!</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					
+					<!-- 쪽지모달 -->
+					<section id="message" class="modal shown fade top-modal" aria-hidden="true" role="dialog" aria-labelledby="tit-message">
+						<div class="modal-message">
+							<div class="md-header">
+								<h2 class="tit-alarm">쪽지</h2>
+								<a href="#" class="all">전체보기</a>
+							</div>
+							<!-- content -->
+							<div class="modal-content">
+								<ul class="mdl-list">
+									<li>
+										<a href="#">
+											<div class="mdl-title">
+												<div class="title-name"><i class="ico mdl04"></i>관리자님</div>
+												<div class="title-time">
+													<span>9월 4일</span>
+													<span>오전 09:00</span>
+												</div>
+											</div>
+											<div class="mdl-cont">
+												<p>공무원님, “농업인의 하루” 수강신청 부탁드립니다.</p>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</section>
+					
+					<!-- 마이 모달 -->
+					<section id="My" class="modal shown fade top-modal" aria-hidden="true" role="dialog" aria-labelledby="tit-my">
+						<div class="modal-my">
+							<div class="modal-content">
+								<div class="user-box" id="userBox">
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="dashboard_user1.html" target="_self">대시보드</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="/html/new/edu/dashboard_user2.html" target="_self">대시보드(농업인)</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="/html/new/edu/dashboard_user3.html" target="_self">대시보드(공무원)</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="/myClass/lect/selectLectureEduIngList.do" target="_self">나의 수강현황</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="#" target="_self">마일리지 및 배지</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="#" target="_self">역량진단</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link" href="./my_info.html" target="_self">내정보관리</a>
+									</div>
+									<div class="user-menu-item">
+										<a class="user-menu-link user-logout" href="">로그아웃</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+		
+				</ul>
+			</div>
+	
+		
+			<!--서브페이지 공통-->
+			<div class="sub-title-wrap">
+				<div class="sub-name-wrap">
+					<div class="breadcrumb-wrap">
+						<ol class="breadcrumb">
+							<li class="home"><a href="#" class="txt">홈</a></li>
+							<li><a href="#" class="txt">마이페이지</a></li>
+							<li><a href="#" class="txt">마일리지/배지</a></li>
+						</ol>
+					</div>
+					<h4>배지내역</h4>
+				</div>
+			
+			</div>
+
+			<div class="sub-con-wrap">
+				<div class="tab-area">
+					<ul class="tablist" role="tablist">
+						<li id="" role="tab">
+							<button type="button" class="btn-tab">마일리지 내역</button>
+						</li>
+						<li id="" role="tab" class="active">
+							<button type="button" class="btn-tab">배지내역</button>
+						</li>
+					</ul>
+				</div><!--//tab-area-->
+
+				<div class="my-bage-area">
+					<div class="">
+						<ul class="my-bage-ico">
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+							<li>
+								<div class="ico"></div>
+								<p>test</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sch-list-top mt_32">
+					<div class="sch-info">
+						전체
+						<span class="keyword">100</span>
+						건
+					</div>
+				</div><!--//sch-list-top-->
+				<div class="table-wrap">
+					<table class="table-type1">
+						<caption>배지 내역</caption>
+						<colgroup>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+							<tr><th scope="col">번호</th>
+							<th scope="col">발급일</th>
+							<th scope="col">이름</th>
+							<th scope="col">내용</th>
+							<th scope="col">기타</th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>2024.01.01</td>
+								<td>성실의 아이콘</td>
+								<td>7일 이상 로그인</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>2024.01.01</td>
+								<td>소통 꿈나무</td>
+								<td>댓글 1개, 게시물 1개 작성</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>2024.01.01</td>
+								<td>러브마이셀프</td>
+								<td>프로필 사진 등록</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				
+				
+
+			</div><!--//sub-con-wrap-->
+			
+		</div>
+
+	</div><!--//container-->
+	</section><!--//main-content-->
+</section><!--//layout-->
+
+<section class="footer">
+	<div class="ft-in">
+		<div class="ft-nav-wrap">
+			<img src="../images/edu/logo_ft.png" alt="농촌진흥청 농촌인적자원개발센터">
+			<div class="ft-nav">
+				<a href="">
+					<span class="org">개인정보처리방침</span>
+				</a>
+				<a href="">
+					<span>이메일무단수집거부</span>
+				</a>
+				<a href="">
+					<span>자료이용 및 저작권보호</span>
+				</a>
+				<a href="">
+					<span>조직 및 기능</span>
+				</a>
+				<a href="">
+					<span>찾아오시는길</span>
+				</a>
+			</div>
+		</div>
+		<div class="ft-bottom">
+			<ul class="address">
+				<li><strong>주소</strong>(54874) 전북특별자치도 전주시 덕진구 농생명로 420 농촌인적자원개발센터  </li>
+				<li><strong>전화</strong>063-238-1800</li>
+			</ul>
+			<div class="familysite">
+				<button class="btn-family">관련사이트 바로가기</button>
+				<div class="family-list">
+					<div class="fl-in">
+						<a href="https://www.rda.go.kr" class="option" target="_blank">
+							<span>농촌진흥청</span>
+						</a>
+						<a href="https://www.naas.go.kr" class="option" target="_blank">
+							<span>국립농업과학원</span>
+						</a>
+						<a href="https://www.nics.go.kr" class="option" target="_blank">
+							<span>국립식량과학원</span>
+						</a>
+						<a href="https://www.nihhs.go.kr" class="option" target="_blank">
+							<span>국립원예특작과학원</span>
+						</a>
+						<a href="https://www.nias.go.kr" class="option" target="_blank">
+							<span>국립축산과학원</span>
+						</a>
+						<a href="https://www.nhi.go.kr/" class="option" target="_blank">
+							<span>국가공무원인재개발원</span>
+						</a>
+						<a href="https://www.ati.go.kr/" class="option" target="_blank">
+							<span>농식품공무원교육원</span>
+						</a>
+						<a href="https://www.nongsaro.go.kr" class="option" target="_blank">
+							<span>농사로</span>
+						</a>
+						<a href="http://www.returnfarm.com" class="option" target="_blank">
+							<span>귀농귀촌종합센터</span>
+						</a>
+						<a href="https://www.rda.go.kr:2360/kaesa/" class="option" target="_blank">
+							<span>전문지도연구회</span>
+						</a>
+						<a href="https://www.agriedu.net" class="option" target="_blank">
+							<span>농업교육포털</span>
+						</a>
+						<a href="https://astis.rda.go.kr" class="option" target="_blank">
+							<span>농업과학기술정보서비스</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ft-copy">
+			<span>COPYRIGHT(C) RURAL HUMAN RESOURCE DEVELOPMENT CENTER(RHRDC). ALL RIGHTS RESERVED</span>
+		</div>
+	</div>
+</section>
+
+<!-- modal -->
+<section id="message-modal" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-message-modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-message-modal" class="modal-title">쪽지보내기</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+
+					<div class="table-wrap">
+						<table class="table-type2">
+							<caption>쪽지보내기</caption>
+							<col width="20%">
+							<col>
+							<tbody>
+								<tr>
+									<th rowspan="2">수신인</th>
+									<td>
+										<div class="select-btn-wrap">
+											<article class="cont-select" style="max-width: 33rem">
+												<button class="btn-select sm">선택</button>
+												<ul class="list-member sm">
+													<li><button type="button" title="진드기 매개 감염병 예방 1기 : 과정장 홍길동">진드기 매개 감염병 예방 1기 : 과정장 홍길동</button></li>
+													<li><button type="button" title="밭농업기계 현장기술 1기 : 밭농업기계화 연구개발">밭농업기계 현장기술 1기 : 밭농업기계화 연구개발</button></li>
+													<li><button type="button" title="밭농업기계 현장기술 1기 : 과정장 김농촌">밭농업기계 현장기술 1기 : 과정장 김농촌</button></li>
+												</ul>
+											</article>
+											<button type="button" class="btn btn-darkgray-w">추가</button>
+										</div>
+										
+									</td>
+									</tr>
+									<tr>
+									<td>
+										<div class="input-group">
+											<input type="text" id="" class="form-control sm" value="" placeholder="수신인을 입력해주세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>제목</th>
+									<td>
+										<div class="input-group">
+											<input type="text" id="" class="form-control sm" value="" placeholder="제목을 입력해주세요">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>내용</th>
+									<td>
+										<div class="textarea-wrap">
+											<textarea class="form-control" placeholder="플레이스홀더" id="textarea"></textarea>
+											<p class="textarea-count">
+												<span class="text-primary">0</span><span class="text-num">/100</span>
+											</p>
+										</div>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+
+
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-primary close-modal">보내기</button>
+				<button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>
+<!-- //modal -->
+
+
+
+<!--쪽지 읽기-->
+<!-- modal -->
+<section id="messageRead-modal" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-message-modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-message-modal" class="modal-title">쪽지읽기</h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+				<div class="conts-area">
+
+					<div class="table-wrap">
+						<table class="table-type2">
+							<caption>쪽지보내기</caption>
+							<col width="20%">
+							<col>
+							<tbody>
+								<tr>
+									<th>제목</th>
+									<td>수강생 여러분 안녕하세요 공지사항입니다 </td>
+								</tr>
+								<tr>
+									<th>발신인</th>
+									<td>박농촌(park12****)</td>
+								</tr>
+								<tr>
+									<th>발송일</th>
+									<td>2024-11-18 12:10:15</td>
+								</tr>
+								<tr>
+									<th>수신확인</th>
+									<td>2024-11-18 14:10:15</td>
+								</tr>
+								<tr>
+									<th>내용</th>
+									<td>쪽지 내용입니다 쪽지 내용입니다 
+										쪽지 내용입니다 쪽지 내용입니다 
+										
+										쪽지 내용입니다 쪽지 내용입니다 
+										
+										쪽지 내용입니다 쪽지 내용입니다 
+										
+										쪽지 내용입니다 쪽지 내용입니다 
+										
+										쪽지 내용입니다 
+										
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-primary">답장보내기</button>
+				<button type="button" class="btn btn-secondary">삭제</button>
+				<button type="button" class="btn btn-darkgray-w close-modal">닫기</button>
+			</div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back"></div>
+</section>
+<!-- //modal -->
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+
+//모달 열기 스크립트
+document.querySelectorAll('.top-open-modal').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const targetId = button.getAttribute('data-target');
+        const modal = document.getElementById(targetId);
+        
+        if (modal) {
+            modal.classList.add('in'); // 'in' 클래스 추가
+            modal.setAttribute('aria-hidden', 'false');
+        }
+    });
+});
+
+// 모달 닫기 스크립트 - 배경 클릭 시 닫기
+document.querySelectorAll('.top-modal').forEach(modal => {
+    modal.addEventListener('click', (event) => {
+        // 모달 배경 부분 클릭 시 닫기
+        if (event.target === modal) {
+            modal.classList.remove('in'); // 'in' 클래스 제거
+            modal.setAttribute('aria-hidden', 'true');
+        }
+    });
+});
+
+/*통합계정 01 다음에 하기 버튼 누르면 나오는 info*/
+    document.querySelectorAll('.int-sign-list .btn').forEach(item => {
+      item.addEventListener('click', function() {
+        item.classList.toggle('selected');
+      });
+    });
+  document.querySelector('.btn.btn-darkgray-w').addEventListener('click', function() {
+    const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+    
+    popupInfoWrap.style.display = 'block';
+    
+    setTimeout(function() {
+      popupInfoWrap.style.display = 'none';
+    }, 3000); 
+  });
+
+
+	/*프로그레스바 애니메이션*/
+	let progress = 0;
+    const progressBar = document.querySelector('.int-sign-progress-bar');
+    const percentageText = document.querySelector('.int-percentage');
+    const statusText = document.querySelector('.int-status');
+    //const signIcon = document.querySelector('.int-sign-icon');
+    let time;
+    var nTime;
+    function updateProgress() {
+        if (progress <= 100) {
+
+            progressBar.style.width = progress + '%';
+            percentageText.textContent = progress + '%';
+            //signIcon.style.left = (progress - 6) + '%';
+
+            
+            if (progress === 0) {
+                statusText.textContent = '열심히 달려가고 있어요!';
+            } else if (progress === 40) {
+                statusText.textContent = '벌써 중간까지 왔자나?!';
+            } else if (progress === 80) {
+                statusText.textContent = '끝이보인다!';
+            } else if (progress === 100) {
+                statusText.textContent = '';
+            }
+            
+            progress += 1;
+            time = setTimeout(updateProgress, 100); 
+        } else if(progress > 100){
+        	nTime = setTimeout(function() {
+        		showModalContent('03');
+			}, 1000); // 1초 뒤 실행
+        }
+    }
+
+    //updateProgress();
+	    
+	function showModalContent(contentId) {
+		// 모든 내용 숨기기
+		var contents = document.querySelectorAll('#enroll .modal-content');
+		contents.forEach(function(content) {
+			content.style.display = 'none';
+		});
+		
+		// 선택된 내용만 보여주기
+		document.getElementById('enr-content' + contentId).style.display = 'flex';
+		if(contentId == "01"){
+			if(time != null && time != ""){
+				progress = 0;
+				clearTimeout(time);	
+				clearTimeout(nTime);	
+			}
+		} else if(contentId == "02"){
+			progress = 0;
+			updateProgress();
+		}
+	}
+	
+	$("#enroll .close-modal").off("click").on("click", function(){
+		$(".int-sign-list ul li").removeClass("selected");
+		if(time != null && time != "" && time != "undefined"){
+			progress = 0;
+			clearTimeout(time);
+			clearTimeout(nTime);	
+		}
+	});
+	
+	
+	//select box 커스텀
+	const btn = document.querySelector('.btn-select');
+	const list = document.querySelector('.list-member');
+	btn.addEventListener('click', () => {
+	  btn.classList.toggle('on');
+	});
+	list.addEventListener('click', (event) => {
+	  if (event.target.nodeName === "BUTTON") {
+	    btn.innerText = event.target.innerText;
+	    btn.classList.remove('on');
+	  }
+	});
+	
+</script>
+
+</body>
+</html>

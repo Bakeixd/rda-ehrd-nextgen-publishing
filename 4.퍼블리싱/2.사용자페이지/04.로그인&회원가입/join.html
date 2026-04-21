@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/reset.css" rel="stylesheet" type="text/css">
+  <link href="../css/font.css" rel="stylesheet" type="text/css">
+  <link href="../css/index-main.css" rel="stylesheet" type="text/css">
+  <link href="../css/login.css" rel="stylesheet" type="text/css">
+  <link href="../css/component.css" rel="stylesheet" type="text/css">
+  <link href="../css/modal.css" rel="stylesheet" type="text/css">
+
+  <title>회원가입 > 추가정보 입력</title>
+</head>
+
+
+<body class="uid-body">
+  <header class="uid-header">
+    <h1><a href="../02.대표페이지/index.html"><img src="../images/main-page/logo.png" alt="농촌인적자원개발센터"></a></h1>
+  </header>
+
+  <div class="uid-wrap">
+    <div class="join-container">
+      <h2>회원가입</h2>
+      <div class="join-input-wrap">
+        <div class="form-group">
+          <div class="form-tit">
+            아이디
+          </div>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" placeholder="아이디입력">
+          </div>
+        </div>
+        <!--//아이디-->
+        <div class="form-group">
+          <div class="form-tit">
+            <label for="login_pw">비밀번호</label>
+          </div>
+          <div class="form-conts btn-ico-wrap">
+            <input type="password" id="login_pw" class="form-control lg" placeholder="9~14자, 대/소문자 구분하여 입력">
+            <button type="button" class="btn btn-ico ico-pw-invisible">
+              <span class="sr-only">입력한 비밀번호 보기</span>
+            </button>
+            <button type="button" class="btn btn-ico ico-pw-visible" style="display: none;">
+              <span class="sr-only">입력한 비밀번호 숨기기</span>
+            </button>
+          </div>
+        </div>
+        <!--//비밀번호입력-->
+        <div class="form-group">
+          <div class="form-tit">
+            <label for="login_pw">비밀번호 확인</label>
+          </div>
+          <div class="form-conts btn-ico-wrap">
+            <input type="password" id="login_pw" class="form-control lg" placeholder="비밀번호 재입력">
+            <button type="button" class="btn btn-ico ico-pw-invisible">
+              <span class="sr-only">입력한 비밀번호 보기</span>
+            </button>
+            <button type="button" class="btn btn-ico ico-pw-visible" style="display: none;">
+              <span class="sr-only">입력한 비밀번호 숨기기</span>
+            </button>
+          </div>
+        </div>
+        <!--//비밀번호입력-->
+        <div class="form-group">
+          <div class="form-tit">
+            회원구분
+          </div>
+          <div class="chk-area modify-chk">
+            <div class="form-check">
+              <input type="radio" name="gender" id="gender-male">
+              <label for="gender-male">남성</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="gender" id="gender-female">
+              <label for="gender-female">여성</label>
+            </div>
+          </div>
+        </div>
+        <!--//회원구분-->
+        <div class="form-group">
+          <div class="form-tit">
+            주소
+          </div>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" value="" placeholder="우편번호" disabled="">
+            <button type="button" class="btn md btn-darkgray-w">우편번호 찾기</button>
+          </div>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" value="주소" disabled="">
+          </div>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" placeholder="상세주소 입력">
+          </div>
+        </div>
+        <!--//주소-->
+        <div class="form-group">
+          <div class="form-tit">
+            전화번호
+          </div>
+          <div class="input-group">
+            <select class="form-select" title="선택" aria-label="국가선택">
+              <option value="+82">대한민국 +82</option>
+              <option value="+1">미국 (+1)</option>
+              <option value="+81">일본 (+81)</option>
+              <option value="+86">중국 (+86)</option>
+              <option value="+44">영국 (+44)</option>
+              <option value="+49">독일 (+49)</option>
+              <option value="+33">프랑스 (+33)</option>
+              <option value="+39">이탈리아 (+39)</option>
+              <option value="+7">러시아 (+7)</option>
+              <option value="+61">호주 (+61)</option>
+              <option value="+91">인도 (+91)</option>
+              <option value="+55">브라질 (+55)</option>
+              <option value="+34">스페인 (+34)</option>
+              <option value="+52">멕시코 (+52)</option>
+              <option value="+62">인도네시아 (+62)</option>
+              <option value="+60">말레이시아 (+60)</option>
+              <option value="+65">싱가포르 (+65)</option>
+              <option value="+63">필리핀 (+63)</option>
+              <option value="+90">터키 (+90)</option>
+              <option value="+31">네덜란드 (+31)</option>
+              <option value="+41">스위스 (+41)</option>
+              <option value="+46">스웨덴 (+46)</option>
+              <option value="+48">폴란드 (+48)</option>
+              <option value="+64">뉴질랜드 (+64)</option>
+              <option value="+45">덴마크 (+45)</option>
+              <option value="+47">노르웨이 (+47)</option>
+              <option value="+43">오스트리아 (+43)</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" value="" placeholder="'-' 없이 입력해주세요">
+            <button type="button" class="btn md btn-darkgray-w">인증요청</button>
+          </div>
+          <span class="confirmNum">인증번호가 발송되었습니다. 유효시간 <em>03:00</em></span>
+          <div class="input-group">
+            <input type="text" id="" class="form-control" placeholder="인증번호 입력">
+          </div>
+        </div>
+        <!--//전화번호-->
+        <div class="agree-wrap">
+          <div class="terms-agree-all">
+            <div class="form-check">
+              <input type="checkbox" id="check-agree-all">
+              <label for="check-agree-all">전체 동의</label>
+            </div>
+          </div>
+          <div class="terms-agree-box">
+            <div class="form-check sm">
+              <input type="checkbox" name="agreeToS" id="agreeToS1">
+              <label for="agreeToS1">[필수] 이용약관 동의</label>
+            </div>
+            <a href="#" class="terms-look btn sm btn-txt">보기</a>
+          </div>
+          <div class="terms-agree-box">
+            <div class="form-check sm">
+              <input type="checkbox" name="agreeToS" id="agreeToS2">
+              <label for="agreeToS2">[필수] 개인정보 수집 및 동의</label>
+            </div>
+            <a href="#" class="terms-look btn sm btn-txt">보기</a>
+          </div>
+          <div class="terms-agree-box">
+            <div class="form-check sm">
+              <input type="checkbox" name="agreeToS" id="agreeToS3">
+              <label for="agreeToS3">[선택] 마케팅 수신 동의</label>
+            </div>
+          </div>
+        </div>
+        <!--//동의란-->
+        <div class="btn_100 mt_40">
+          <button type="button" class="btn md primary open-modal" data-target="addInformationG">회원정보입력 완료</button>
+          <button type="button" class="btn md primary open-modal mt_20" data-target="addInformationN">농업인모달</button>
+          <!--확인용-->
+        </div>
+      </div>
+    </div>
+    <!--//join-container-->
+  </div>
+
+
+
+  <footer class="uid-footer">
+    <span>COPYRIGHT ⓒ 2021 RURAL DEVELOPMENT ADMINISTRATION. ALL RIGHTS RESERVED</span>
+  </footer>
+
+
+  <!--공무원 모달-->
+  <!-- modal -->
+  <section id="addInformationG" class="modal fade" aria-hidden="true" role="dialog"
+    aria-labelledby="tit-addInformationG">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit-addInformationG" class="modal-title">추가정보</h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="member-modify">
+              <div class="form-group">
+                <div class="form-tit">
+                  회원구분
+                </div>
+                <div class="chk-area modify-chk">
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd1" checked>
+                    <label for="pManageCd1" id="memdivi1">공무원</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd2">
+                    <label for="pManageCd2" id="memdivi2">농업인</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd3">
+                    <label for="pManageCd3" id="memdivi3">일반인</label>
+                  </div>
+                </div>
+              </div>
+              <!--//회원구분-->
+              <div class="form-group">
+                <div class="form-tit">
+                  소속
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="농촌진흥청 청장" disabled="">
+                  <button type=" button" class="btn md btn-darkgray-w open-modal" data-target="insSearch">검색</button>
+                  <button type=" button" class="btn md secondary">삭제</button>
+                </div>
+              </div>
+              <!--//소속-->
+              <div class="form-group">
+                <div class="form-tit">
+                  직급
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="농업연구사" disabled="">
+                  <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                  <button type=" button" class="btn md secondary">삭제</button>
+                </div>
+              </div>
+              <!--//직급-->
+              <div class="form-group">
+                <div class="form-tit">
+                  직위
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="농업관" disabled="">
+                  <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                  <button type=" button" class="btn md secondary">삭제</button>
+                </div>
+              </div>
+              <!--//직위-->
+              <div class="form-group">
+                <div class="form-tit">
+                  현 담당업무
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="업무">
+                </div>
+              </div>
+              <!--//현 담당업무-->
+              <div class="form-group">
+                <div class="form-tit">
+                  현 업무시작일
+                </div>
+                <div class="datepicker-input">
+                  <div class="input-group range">
+                    <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+                  </div>
+                  <button type="button" class="form-btn-datepicker">
+                    <span class="none">달력 열기</span>
+                  </button>
+                </div>
+              </div>
+              <!--//현 업무시작일-->
+              <div class="form-group">
+                <div class="form-tit">
+                  임용일
+                </div>
+                <div class="datepicker-input">
+                  <div class="input-group range">
+                    <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="현 업무시작일">
+                  </div>
+                  <button type="button" class="form-btn-datepicker">
+                    <span class="none">달력 열기</span>
+                  </button>
+                </div>
+              </div>
+              <!--//임용일-->
+              <div class="form-group">
+                <div class="form-tit">
+                  현재 비밀번호
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" placeholder="현재 비밀번호를 입력해주세요">
+                </div>
+              </div>
+              <!--//현재 비밀번호-->
+
+            </div>
+            <!--//member-modify-->
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+
+
+  <!--농업인 모달 -->
+
+  <!-- modal -->
+  <section id="addInformationN" class="modal fade" aria-hidden="true" role="dialog"
+    aria-labelledby="tit-addInformationN">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit-addInformationN" class="modal-title">추가정보</h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="member-modify">
+              <div class="form-group">
+                <div class="form-tit">
+                  회원구분
+                </div>
+                <div class="chk-area modify-chk">
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd1">
+                    <label for="pManageCd1" id="memdivi1">공무원</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd2" checked>
+                    <label for="pManageCd2" id="memdivi2">농업인</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pManageCd" id="pManageCd3">
+                    <label for="pManageCd3" id="memdivi3">일반인</label>
+                  </div>
+                </div>
+              </div>
+              <!--//회원구분-->
+              <div class="form-group">
+                <div class="form-tit">
+                  소속
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="12345678" disabled="">
+                  <button type=" button" class="btn md btn-darkgray-w">인증</button>
+                </div>
+              </div>
+              <!--/농업인 발급번호-->
+              <div class="form-group">
+                <div class="form-tit">
+                  시도 및 시군센터
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="농촌진흥청 국립농업과확원" disabled="">
+                  <button type=" button" class="btn md btn-darkgray-w">검색</button>
+                  <button type=" button" class="btn md primary">삭제</button>
+                </div>
+              </div>
+              <!--//시도 및 시군센터-->
+              <div class="form-group">
+                <div class="form-tit">
+                  학력
+                </div>
+                <div class="chk-area modify-chk">
+                  <div class="form-check">
+                    <input type="radio" name="pAcademicCd" id="pAcademicCd1">
+                    <label for="pAcademicCd1">박사</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pAcademicCd" id="pAcademicCd2">
+                    <label for="pAcademicCd2">석사</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pAcademicCd" id="pAcademicCd3">
+                    <label for="pAcademicCd3">학사</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pAcademicCd" id="pAcademicCd4">
+                    <label for="pAcademicCd4">전문학사</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="pAcademicCd" id="pAcademicCd5">
+                    <label for="pAcademicCd5">고졸이하</label>
+                  </div>
+                </div>
+              </div>
+              <!--//학력-->
+              <div class="form-group">
+                <div class="form-tit">
+                  영농시작년도
+                </div>
+                <div class="datepicker-input">
+                  <div class="input-group range">
+                    <input type="number" class="form-control md datepicker" placeholder="2010-01-01" title="영농시작년도">
+                  </div>
+                  <button type="button" class="form-btn-datepicker">
+                    <span class="none">달력 열기</span>
+                  </button>
+                </div>
+              </div>
+              <!--//영농시작년도-->
+              <div class="form-group">
+                <div class="form-tit">
+                  주작목
+                </div>
+                <div class="crop-input">
+                  <div class="input-group ">
+                    <input type="text" id="" class="form-control" placeholder="주작목을 입력해주세요">
+                    <div class="mp-crop">
+                      <span>규모</span>
+                      <input type="text" id="" class="form-control" placeholder="10">㎡
+                      <input type="text" id="" class="form-control" placeholder="1">두
+                    </div>
+                  </div>
+                  <button type="button" class="btn md secondary">주작목추가</button>
+                  <button type=" button" class="btn md primary">삭제</button>
+                </div>
+                <!--//crop-input-->
+                <div class="crop-input">
+                  <div class="input-group ">
+                    <input type="text" id="" class="form-control" placeholder="주작목을 입력해주세요">
+                    <div class="mp-crop">
+                      <span>규모</span>
+                      <input type="text" id="" class="form-control" placeholder="10">㎡
+                      <input type="text" id="" class="form-control" placeholder="1">두
+                    </div>
+                  </div>
+                  <button type="button" class="btn md secondary">주작목추가</button>
+                  <button type=" button" class="btn md primary">삭제</button>
+                </div>
+                <!--//crop-input-->
+              </div>
+              <!--//주작목-->
+
+              <div class="form-group">
+                <div class="form-tit">
+                  영농현황
+                </div>
+                <div class="chk-area modify-chk">
+                  <div class="form-check">
+                    <input type="radio" name="farmType" id="farmType1">
+                    <label for="farmType1">후계농업경영인</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="farmType" id="farmType2">
+                    <label for="farmType2">창업농업인</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" name="farmType" id="farmType3">
+                    <label for="farmType3">전업농업인</label>
+                  </div>
+                  <div class="form-check form-etc">
+                    <input type="radio" name="farmType" id="farmType4">
+                    <label for="farmType4">기타</label>
+                    <input type="text" id="" class="form-control sm" placeholder="입력">
+                  </div>
+                </div>
+              </div>
+              <!--//영농현황-->
+              <div class="form-group">
+                <div class="form-tit">
+                  보유 농기계 수량
+                </div>
+                <div class="form-group-addr">
+                  <div class="form-group addr-division">
+                    <div class="form-tit">
+                      <label for="select">경운기</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="form-select" id="select">
+                        <option value="">1대</option>
+                        <option value="">2대</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group addr-division">
+                    <div class="form-tit">
+                      <label for="select">트랙터</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="form-select" id="select">
+                        <option value="">1대</option>
+                        <option value="">2대</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group addr-division">
+                    <div class="form-tit">
+                      <label for="select">이양기</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="form-select" id="select">
+                        <option value="">1대</option>
+                        <option value="">2대</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--//1번째줄-->
+                <div class="form-group-addr">
+                  <div class="form-group addr-division">
+                    <div class="form-tit">
+                      <label for="select">콘바인</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="form-select" id="select">
+                        <option value="">1대</option>
+                        <option value="">2대</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group addr-division">
+                    <div class="form-tit">
+                      <label for="select">기타</label>
+                    </div>
+                    <div class="form-conts">
+                      <select class="form-select" id="select">
+                        <option value="">1대</option>
+                        <option value="">2대</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!--//2번째줄-->
+              </div>
+              <!--//영농현황-->
+              <div class="form-group">
+                <div class="form-tit">
+                  기술수준
+                </div>
+                <div class="input-group">
+                  <input type="text" id="" class="form-control" placeholder="기술수준 입력">
+                </div>
+              </div>
+              <!--//기술수준-->
+              <div class="form-group">
+                <div class="form-tit">
+                  경영능력
+                </div>
+                <div class="input-group">
+                  <input type="text" id="" class="form-control" placeholder="경영능력 입력">
+                </div>
+              </div>
+              <!--//경영능력-->
+              <div class="form-group">
+                <div class="form-tit">
+                  소득수준
+                </div>
+                <div class="input-group">
+                  <input type="text" id="" class="form-control" placeholder="소득수준 입력">
+                </div>
+              </div>
+              <!--//소득수준-->
+
+              <div class="form-group">
+                <div class="form-tit">
+                  현재 비밀번호
+                </div>
+                <div class="input-group">
+                  <input type="text" id="" class="form-control" placeholder="현재 비밀번호를 입력해주세요">
+                </div>
+              </div>
+              <!--//현재비밀번호-->
+
+            </div>
+            <!--//member-modify-->
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+
+
+
+  <!-- 기관검색 -->
+  <!-- modal -->
+  <section id="insSearch" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-insSearch">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit-insSearch" class="modal-title">기관검색</h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="member-modify">
+              <div class="form-group">
+                <div class="form-tit">
+                  기관검색
+                </div>
+                <div class="input-group">
+                  <input type="text" id="addr-input" class="form-control" value="" placeholder="기관명을 입력해주세요">
+                  <button type=" button" class="btn md btn-darkgray-w" onclick="search();">검색</button>
+                </div>
+                <span class="refer-txt">기관단위 입력 : 예)전주시 농업기술센터의 경우 <em>전주시 농업</em>으로 검색바랍니다.</span>
+              </div>
+              <!--//기관검색-->
+              <div class="table-wrap mt_24">
+                <table class="table-type1 sch-table">
+                  <caption>소속검색</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="sorting">기관명</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('6410000','경기도','0','전체기관','1');">경기도</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('6410563','경기도 경기도농업기술원','6410000','경기도','2');">경기도 경기도농업기술원</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('3740034','경기도 수원시 농업기술센터','6410000','경기도','3');">경기도 수원시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('3780036','경기도 성남시 농업기술센터','6410000','경기도','3');">경기도 성남시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('3910043','경기도 평택시 농업기술센터','6410000','경기도','3');">경기도 평택시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('3930155','경기도 안산시 농업기술센터','6410000','경기도','3');">경기도 안산시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('3940046','경기도 고양시 농업기술센터','6410000','경기도','3');">경기도 고양시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl"> 
+                        <a href="#" onclick="centerSelect('3990060','경기도 남양주시 농업기술센터','6410000','경기도','3');">경기도 남양주시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('4010349','경기도 시흥시 농업기술센터','6410000','경기도','3');">경기도 시흥시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="tl">
+                        <a href="#" onclick="centerSelect('4050027','경기도 용인시 농업기술센터','6410000','경기도','3');">경기도 용인시 농업기술센터</a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            <!--//member-modify-->
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+
+
+
+
+<!-- 이용약관 동의 -->
+  <!-- modal -->
+  <section id="addInformationN" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-insSearch">
+    <div class="modal-dialog modal-xlg">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit-insSearch" class="modal-title">기관검색</h2>
+        </div>
+        <!-- //modal title -->
+
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <!--<h3 class="conts-tit">내용 타이틀</h3>-->
+          <div class="conts-area">
+            <div class="join-agree-conBox">
+              <h2 class="conH2">통합회원 서비스 이용약관</h2>
+              <div class="agreement01" id="agreement01" tabindex="2">
+
+                제 1 장 총칙<br> 
+
+              <br> 
+
+              제 1 조 (목적)<br> 
+
+              이 약관은 농촌진흥청이 제공하는 모든 웹서비스의 이용 조건 및 절차, 농촌진흥청 및 이용자의 권리, 의무 및 책임 사항 등 기타 필요한 사항을 규정함을 목적으로 합니다.<br> 
+
+              <br> 
+
+              제 2 조 (약관의 효력 및 변경)<br> 
+
+              ① 이 약관은 농촌진흥청 온라인 서비스 및 기타의 방법을 통하여 이를 공지함으로써 효력이 발생됩니다.<br> 
+
+              ② 농촌진흥청은 중요한 사유가 발생되거나 필요시 사전 고지 없이 이 약관의 내용을 변경할 수 있으며, 변경된 약관은 ①항과 같은 방법으로 공지함으로써 효력이 발생됩니다.<br> 
+
+              ③ 회원은 변경된 약관에 동의하지 않을 경우 회원 탈퇴를 요청할 수 있으며, 변경된 약관의 효력 발생일 이후에도 서비스를 계속 사용할 경우 약관의 변경 사항에 동의한 것으로 간주됩니다.<br> 
+
+               <br> 
+
+              제 3 조 (약관 외 준칙)<br> 
+
+              본 약관에 명시되지 아니한 사항에 대해서는 전자정부법, 전기통신기본법, 전기통신사업법, 정보통신망 이용촉진 등에 관한 법률 및 기타 관련 법령의 규정에 따릅니다.<br> 
+
+               <br> 
+
+              제 4 조 (용어의 정의)<br> 
+
+              이 약관에서 사용하는 주요한 용어의 정의는 다음과 같습니다.<br> 
+
+              1. 기본회원 : 본 약관에 따라 아이디를 부여받고 서비스를 이용하는 자<br> 
+
+              2. 비회원 : 회원에 가입하지 않고 서비스를 이용하는 자<br> 
+
+              3. 운영자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 농촌진흥청에서 지정한 자<br> 
+
+              4. 본 약관에서 정의하지 않은 용어는 개별서비스에 대한 별도 약관 및 이용규정에서 정의합니다.<br> 
+
+              <br> 
+
+              제 2 장 서비스 이용 계약 체결<br> 
+
+               <br> 
+
+              제 5 조 (이용 계약의 성립)<br> 
+
+              ① 회원가입 시 "동의합니다." 를 선택하면 이 약관에 동의하는 것으로 간주됩니다. 약관 변경 시에도 이와 동일하며, 변경된 약관에 동의하지 않을 경우 회원 등록 취소가 가능합니다.<br> 
+
+              ② 이용 계약은 서비스 이용 희망자의 이용약관 동의 후 이용 신청에 대하여 농촌진흥청이 승낙함으로써 성립합니다.<br> 
+
+              <br> 
+
+              제 6 조 (이용 신청)<br> 
+
+              회원으로 가입하여 서비스를 이용하기를 희망하는 자는 농촌진흥청이 요청하는 소정의 가입 신청 양식에서 요구하는 사항을 기록하여 신청합니다.<br> 
+
+               <br> 
+
+              제 7 조 (이용 신청의 승낙)<br> 
+
+              ① 제 6 조에 따른 이용 신청에 대하여, 농촌진흥청은 특별한 사정이 없는 한 접수 순서대로 이용 신청을 승낙합니다.<br> 
+
+              ② 다음 각 호에 해당하는 경우 농촌진흥청은 이용 신청에 대한 승낙을 제한할 수 있고, 그 사유가 해소될 때까지 승낙을 유보할 수 있습니다.<br> 
+
+              1. 서비스 관련 설비에 여유가 없는 경우<br> 
+
+              2. 기술상 문제가 발생한 경우<br> 
+
+              3. 기타 농촌진흥청의 사정상 필요하다고 인정되는 경우<br> 
+
+              ③ 농촌진흥청은 다음 각 호에 해당하는 사항을 인지하는 경우 이용 신청을 승낙하지 아니할 수 있습니다.<br> 
+
+              1. 본인의 실명으로 신청하지 않은 경우<br> 
+
+              2. 다른 사람의 명의를 사용하여 신청한 경우<br> 
+
+              3. 이용 신청 시 필요 사항을 허위로 기재하여 신청한 경우<br> 
+
+              4. 사회의 안녕과 질서 혹은 미풍양속을 저해할 목적으로 신청한 경우<br> 
+
+              5. 기타 농촌진흥청이 정한 이용 신청 요건이 미비된 경우<br> 
+
+              ④ ②항 또는 ③항에 의하여 이용 신청의 승낙을 유보하거나 승낙하지 아니하는 경우, 농촌진흥청은 이를 이용 신청자에게 알려야 합니다. 다만, 농촌진흥청의 귀책 사유 없이 이용 신청자에게 통지할 수 없는 경우는 예외로 합니다.<br> 
+
+               <br> 
+
+              제 8 조 (개인정보의 보호)<br> 
+
+              ① 농촌진흥청은 회원의 개인정보를 보호하고 존중합니다.<br> 
+
+              ② 농촌진흥청은 회원이 서비스를 이용함에 있어서 온라인 상에서 농촌진흥청에게 제공한 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. 이에 개인정보보호법, 정보통신망 이용촉진 등에 관한 법률 등 서비스 제공자가 준수하여야 할 관련 법규를 바탕으로 개인정보 보호정책을 만들어 이를 준수하고 있습니다. 자세한 사항은 농촌진흥청의 개인정보 보호지침을 참고하시기 바랍니다.<br> 
+
+              ③ 회원의 개인정보는 본 이용 계약의 이행과 본 이용 계약상의 서비스 제공을 위한 목적으로만 사용됩니다.<br> 
+
+              ④ 농촌진흥청은 서비스 제공과 관련하여 취득한 회원의 개인정보를 본인의 승낙 없이 제 3자에게 누설 또는 배포할 수 없으며, 상업적 목적으로 사용할 수 없습니다. 다만, 다음의 각 호에 해당하는 경우에는 그러하지 아니합니다.<br> 
+
+              1. 정보통신서비스의 제공에 따른 요금 정산을 위하여 필요한 경우<br> 
+
+              2. 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로써 특정 개인을 식별할 수 없는 형태로 가공하여 제공하는 경우<br> 
+
+              3. 관계 법령에 의하여 수사상 목적으로 정해진 절차와 방법에 따라 관계 기관의 요구가 있는 경우<br> 
+
+              4. 다른 법률에 특별한 규정이 있는 경우<br> 
+
+              5. 방송통신심위위원회 요청이 있는 경우<br> 
+
+              ⑤ 농촌진흥청은 서비스를 통해 회원의 컴퓨터에 쿠키를 전송할 수 있습니다. 회원은 쿠키 수신을 거부하거나 쿠키 수신에 대해 경고하도록 브라우저 설정을 변경할 수 있습니다.<br> 
+
+              <br> 
+
+              제 9 조 (계약 사항의 변경)<br> 
+
+              ① 회원은 개인정보 관리를 통해 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다.<br> 
+
+              ② 회원은 이용 신청 시 기재한 사항이 변경되었을 경우 온라인으로 수정을 해야 하며 회원정보를 변경하지 아니하여 발생되는 문제의 책임은 회원에게 있습니다.<br> 
+
+              <br> 
+
+              제 3 장 농진청과 회원의 권리 및 의무<br> 
+
+               <br> 
+
+              제 10 조 (농진청의 의무)<br> 
+
+              ① 농촌진흥청은 다음 각 호의 사유가 발생한 경우를 제외하고 계속적, 안정적으로 서비스를 제공할 의무가 있습니다.<br> 
+
+              1. 서비스용 설비의 보수, 정기 점검 또는 공사로 인한 부득이한 경우<br> 
+
+              2. 전기통신사업법에 규정된 기간통신사업자가 전기통신 서비스를 중지한 경우<br> 
+
+              3. 전시, 사변, 천재지변 또는 이에 준하는 국가비상사태가 발생하거나 발생할 우려가 있는 경우<br> 
+
+              4. 설비 장애 또는 이용 폭주 등으로 인하여 서비스 이용에 지장이 있는 경우<br> 
+
+              ② 농촌진흥청은 회원으로부터 소정의 절차에 의해 제기되는 의견에 대해서는 적절한 절차를 거처 처리하며, 처리 시 일정 기간이 소요될 경우 회원에게 그 사유와 처리 일정을 알려주어야 합니다.<br> 
+
+              <br> 
+
+              제 11 조 (회원의 의무)<br> 
+
+              ① 회원은 관계 법령, 본 약관의 규정, 이용 안내 및 서비스 상에 공지한 주의사항, 농촌진흥청이 통지하는 사항을 준수하여야 하며, 기타 농촌진흥청의 업무에 방해되는 행위를 하여서는 안됩니다.<br> 
+
+              ② 회원은 서비스를 이용한 어떠한 영리행위도 농촌진흥청의 사전 동의 없이는 할 수 없으며, 법에 저촉되는 자료를 배포 또는 게재할 수 없습니다.<br> 
+
+              ③ 회원은 자신의 ID와 비밀번호를 유지 관리할 책임이 있으며 자신의 ID와 비밀번호를 사용하여 발생하는 모든 결과에 대해 전적인 책임이 있습니다. 또한 자신의 ID와 비밀번호가 자신의 승낙 없이 사용되었을 경우 즉시 농촌진흥청에 통보하여야 하며, 통보를 하지 않음으로 인해 발생하는 모든 책임은 회원 본인이게 있습니다.<br> 
+
+              ④ 회원은 서비스와 관련하여 다음 각 호에 해당하는 행위를 하여서는 안 됩니다.<br> 
+
+              1. 서비스를 이용하여 얻은 정보를 농촌진흥청의 사전 승낙 없이 복사, 복제, 변경, 번역, 출판, 방송 기타의 방법으로 사용하거나 이를 타인에게 제공하는 행위<br> 
+
+              2. 음란물 게재 또는 음란사이트를 링크하거나 유포하는 등 사회질서를 해치는 행위<br> 
+
+              3. 타인의 명예를 훼손하거나 모욕하는 행위, 타인의 지적재산권 등의 권리를 침해하는 행위<br> 
+
+              4. 해킹 또는 컴퓨터 바이러스를 유포하는 일, 타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위<br> 
+
+              5. 다른 회원의 ID를 부정 사용하는 행위<br> 
+
+              6. 다른 사용자의 개인 정보를 수집, 저장하는 행위<br> 
+
+              7. 농촌진흥청 직원, 관리자 등을 포함한 타인을 사칭하는 행위<br> 
+
+              8. 서비스를 통해 전송된 콘텐츠의 발신인을 위조하는 행위<br> 
+
+              9. 타인을 스토킹하거나, 괴롭히는 행위<br> 
+
+              10. 서비스 운영에 지장을 주거나 줄 우려가 있는 일체의 행위, 기타 관계 법령에 위배되는 행위<br> 
+
+               <br> 
+
+              제 12 조 (면책 조항)<br> 
+
+              ① 농촌진흥청은 회원이 서비스를 통해 게재 또는 전송한 정보, 자료, 사실에 관하여는 그 정확성, 신뢰성 등 내용에 대한 어떠한 보증도 하지 아니하며 회원의 서비스 자료에 대한 취사 선택 또는 이용으로 발생하는 손해 등에 대해 책임을 지지 아니합니다.<br> 
+
+              ② 농촌진흥청은 회원이 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 아니합니다.<br> 
+
+              ③ 농촌진흥청은 회원 상호간 또는 회원과 제 3자 상호간에 서비스를 매개로 발생한 분쟁에 대해서는 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.<br> 
+
+              ④ 회원의 서비스 이용에 있어 회원의 귀책사유로 인하여 발생한 장애에는 농촌진흥청의 책임이 면제됩니다.<br> 
+
+              ⑤ 회원이 본 약관의 규정을 위반함으로 인하여 농촌진흥청에 손해가 발생하는 경우, 이 약관을 위반한 회원은 농촌진흥청에 발생하는 모든 손해를 배상하여야 하며, 동 손해로부터 농촌진흥청을 면책시켜야 합니다.<br> 
+
+               <br> 
+
+              제 13 조 (손해배상)<br> 
+
+              농촌진흥청이 제공하는 서비스와 관련하여 회원에게 어떠한 손해가 발생하더라도 농촌진흥청의 중대한 과실에 의한 경우를 제외하고는 농촌진흥청은 이에 대하여 책임을 부담하지 않습니다.<br> 
+
+              <br> 
+
+              제 14 조 (양도 금지)<br> 
+
+              회원은 서비스의 이용 권한, 기타 이용 계약상 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.<br> 
+
+              제 4 장 서비스 이용<br> 
+
+               <br> 
+
+              제 15 조 (정보의 제공)<br> 
+
+              농촌진흥청은 회원이 서비스 이용 중 필요가 있다고 인정되는 다양한 정보를 공지사항이나 전자우편 등의 방법으로 회원에게 제공할 수 있습니다.<br> 
+
+               <br> 
+
+              제 16 조 (콘텐츠 이용 요금)<br> 
+
+              농촌진흥청은 해당 웹사이트의 모든 콘텐츠를 무료로 제공합니다. 단, 배포, 가공, 상업적 이용에 관한 사항은 공공누리 규정을 준수하여 저작권 침해 등이 발생하지 않도록 하여야 합니다.<br> 
+
+              <br> 
+
+              제 17 조 (회원의 게시물)<br> 
+
+              농촌진흥청은 회원이 게시하거나 등록하는 서비스 내의 내용물이 다음 각 호에 해당한다고 판단되는 경우에 사전 통지 없이 삭제할 수 있습니다.<br> 
+
+              1. 다른 회원 또는 제 3자를 비방하거나 중상모략으로 명예를 손상시키는 내용인 경우<br> 
+
+              2. 공공질서 및 미풍양속에 위반되는 내용인 경우<br> 
+
+              3. 범죄적 행위에 결부된다고 인정되는 내용일 경우<br> 
+
+              4. 농촌진흥청의 저작권, 제 3자의 저작권 등 기타 권리를 침해하는 내용인 경우<br> 
+
+              5. 농촌진흥청에서 규정한 게시 기간이나 용량을 초과한 경우<br> 
+
+              6. 음란물을 게재하거나 음란사이트를 링크하는 경우<br> 
+
+              7. 불법복제 또는 해킹을 조장하는 내용인 경우<br> 
+
+              8. 영리를 목적으로 하는 광고일 경우<br> 
+
+              9. 게시판의 성격에 부합하지 않는 내용을 게시할 경우<br> 
+
+              10. 기타 관계법령에 위배된다고 판단되는 경우<br> 
+
+              <br> 
+
+              제 18 조 (게시물의 저작권)<br> 
+
+              서비스에 게재된 자료에 대한 권리는 다음 각 호와 같습니다.<br> 
+
+              1. 게시물에 대한 권리와 책임은 게시자에게 있으며 농촌진흥청은 게시자의 동의 없이 이를 서비스 내 게재 이외의 영리적 목적으로 사용할 수 없습니다. 단, 비영리적인 경우에는 그러하지 아니하며 또한 농촌진흥청이 서비스 내의 게재권을 갖습니다.<br> 
+
+              2. 회원은 서비스를 이용하여 얻은 정보를 가공하거나 상업적으로 이용시 공공누리 규정을 준수하여야 하며 저작권 침해 등이 발생하지 않도록 하여야 합니다.<br> 
+
+               <br> 
+
+              제 19 조 (서비스의 이용 시간)<br> 
+
+              ① 농촌진흥청의 업무상 또는 기술상의 문제로 인하여 서비스를 개시하지 못하는 경우, 서비스에 공지하거나 회원에게 즉시 이를 통지합니다.<br> 
+
+              ② 서비스의 이용은 연중 무휴 1일 24시간을 원칙으로 합니다. 다만 농촌진흥청의 업무상, 운영상 또는 기술상의 이유로 인하여 서비스의 전부 또는 일부가 일시 중지될 수 있습니다.<br> 
+
+              ③ 농촌진흥청은 서비스 별로 이용 가능한 시간을 별도로 정할 수 있으며 이 경우 그 내용을 사전에 공지합니다.<br> 
+
+              <br> 
+
+              제 20 조 (서비스 제공의 중지)<br> 
+
+              농촌진흥청의 필요에 따라 본 서비스의 전부 또는 일부를 수정하거나 중단할 수 있으며, 이 경우 농촌진흥청이 전자우편 또는 인터넷 홈페이지 등을 통하여 회원에게 이를 고지합니다.<br> 
+
+               <br> 
+
+              제 5장 계약 해지 및 서비스 이용 제한<br> 
+
+               <br> 
+
+              제 21 조 (회원 탈퇴 및 이용 제한)<br> 
+
+              ① 회원이 이용 계약을 해지하고자 하는 때에는 회원 본인이 직접 농촌진흥청 사이트 내의 회원정보 관리를 이용하여 회원 탈퇴를 요청해야 합니다.<br> 
+
+              ② 농촌진흥청은 회원이 다음 사항에 해당하는 행위를 하였을 경우, 사전 통지 없이 이용 계약을 해지하거나 또는 기간을 정하여 해당 회원의 서비스 이용을 차단할 수 있습니다.<br> 
+
+              1. 공공 질서 및 미풍 양속에 반하는 행위를 한 경우<br> 
+
+              2. 범죄적 행위에 관련되는 행위를 한 경우<br> 
+
+              3. 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행한 경우<br> 
+
+              4. 타인의 ID 및 비밀번호를 도용한 경우<br> 
+
+              5. 가입한 이름이 실명이 아닌 경우<br> 
+
+              6. 타인의 명예를 손상시키거나 타인에게 불이익을 주는 경우<br> 
+
+              7. 같은 사용자가 다른 ID로 이중 등록을 한 경우<br> 
+
+              8. 서비스에 위해를 가하는 등 건전한 이용을 저해하는 행위를 한 경우<br> 
+
+              9. 정보통신설비의 오작동이나 정보 등의 파괴를 유발시키는 컴퓨터 바이러스 프로그램 등을 유포하는 경우<br> 
+
+              10. 기타 관련 법령이나 농촌진흥청이 정한 이용 조건에 위배되는 행위를 한 경우<br> 
+
+               <br> 
+
+              부 칙<br> 
+
+               <br> 
+
+              1. (시행일) 이 약관은 2010년 6월 7일부터 시행합니다.<br>
+
+            
+
+            </div>
+            </div>
+            <!--//member-modify-->
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="btn btn-darkgray-w close-modal">취소</button>
+          <button type="button" class="btn primary">저장</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back in"></div>
+  </section>
+  <!-- //modal -->
+
+
+
+  <script>
+    /*** * modal * ***/
+    const $modalTrigger = document.querySelectorAll('.open-modal');
+    const $modalCloseTrigger = document.querySelectorAll('.close-modal');
+    const $kds_body = document.querySelector('body');
+    const kds_modal = {
+      init: () => {
+        kds_modal.open();
+        kds_modal.close();
+      },
+      open: () => {
+        $modalTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.getAttribute('data-target'); // id 가져오기
+            e.classList.add('modal-opened');
+            e.setAttribute('tabindex', '-1');
+            kds_modal.modalOpen(id); // 모달 열기 함수 호출
+            ele.preventDefault();
+          });
+        });
+      },
+      modalOpen: (id) => {
+        const $idVal = document.getElementById(id); // id에 해당하는 모달 가져오기
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalBack = $idVal.querySelector('.modal-back');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length + 1;
+        $kds_body.classList.add('scroll-no');
+        $idVal.setAttribute('aria-hidden', 'false');
+        $modalBack.classList.add('in'); // 백그라운드 추가
+        $idVal.classList.add('shown'); // 모달 보이기
+        setTimeout(() => {
+          $idVal.classList.add('in'); // 애니메이션을 위한 클래스 추가
+        }, 150);
+
+        // 열린 팝업창 포커스
+        $dialog.setAttribute('tabindex', '0');
+
+        // 모달 여러 개 열린 경우 마지막 모달 z-index 높게 설정
+        if ($modalOpenedLen > 1) {
+          const openedLen = $modalOpenedLen;
+          const zIndexNew = 1010 + openedLen;
+          $idVal.setAttribute('style', 'z-index: ' + zIndexNew);
+        }
+
+        // 레이어 진입 시 포커스
+        setTimeout(() => {
+          $dialog.focus();
+        }, 350);
+      },
+      close: () => {
+        $modalCloseTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.closest('.modal').getAttribute('id');
+            kds_modal.modalClose(id);
+          });
+          e.addEventListener('keydown', ele => { // 닫기 버튼에서 탭 키 누르면 모달 내 첫번째 포커스로 키보드 이동
+            if (e.classList.contains('btn-close')) {
+              const keyCode = ele.keyCode || ele.which;
+              if (!ele.shiftKey && keyCode == 9) {
+                e.closest('.modal-content').focus(); // 첫 번째 링크로 이동
+                ele.preventDefault();
+              }
+            }
+          });
+        });
+      },
+      modalClose: (id) => {
+        const $idVal = document.getElementById(id);
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length;
+        if ($modalOpenedLen < 2) {
+          $kds_body.classList.remove('scroll-no');
+        }
+
+        $idVal.setAttribute('aria-hidden', 'true');
+        $idVal.classList.remove('in');
+
+        $dialog.removeAttribute('tabindex');
+
+        setTimeout(() => {
+          $idVal.classList.remove('shown');
+        }, 150);
+
+        // 모달 창 연 버튼에 class 삭제 및 tabindex 0으로 조정 (포커스 영역 수정)
+        const $triggerBtn = document.querySelector('.modal-opened');
+        if ($triggerBtn != null) {
+          $triggerBtn.focus();
+          $triggerBtn.setAttribute('tabindex', '0');
+          $triggerBtn.classList.remove('modal-opened');
+        }
+      },
+    };
+
+    // 모달 초기화 실행
+    kds_modal.init();
+
+    /*비밀번호 보이기*/
+    document.querySelectorAll('.ico-pw-visible').forEach(button => {
+      button.addEventListener('click', function () {
+        const inputField = this.previousElementSibling;
+
+        if (inputField.type === 'password') {
+          inputField.type = 'text';
+        } else {
+          inputField.type = 'password';
+          this.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

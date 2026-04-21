@@ -1,0 +1,16 @@
+@media all and (max-width:1524px) {
+	.main-content{
+		flex: 1 1 960px;
+		width: 960px;
+		margin: 0 80px;
+	}
+	.pro-fir::before{
+		left: -80px;
+	}
+} 
+
+@media all and (max-width:1280px) {
+	.lnb {
+		display: none;
+	}
+} 

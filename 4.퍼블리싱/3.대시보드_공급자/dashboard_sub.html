@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<!--CSS-->
+		<link href="./css/reset.css" rel="stylesheet" type="text/css">
+		<link href="./css/admin.css" rel="stylesheet" type="text/css">
+		<link href="./css/dashboard.css" rel="stylesheet" type="text/css">
+		<link href="./css/font.css" rel="stylesheet" type="text/css">
+		
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<title>대시보드>공급자>상세페이지</title>	
+
+
+	
+
+</head>
+
+<body>
+	<!--header-->
+	<header class="header">
+    <div class="px-5 py-3">
+      <div class="container header-container">
+        <div class="topbar">
+
+          <div class="header-left">
+						<div class="header-logo">
+							<a href="#" class="adm_logo">
+								<img src="./images/logo.png" alt="농촌인적자원개발센터">
+							</a>
+						</div>
+						
+						<button class="button-toggle-menu">
+							<i class="mdi mdi-menu"></i>
+						</button>
+
+					</div>
+					
+					<div class="header-right">
+						<div class="header-time">
+							<span>999초 후에 자동로그아웃 됩니다.</span>
+						</div>
+	
+						<div class="header-user">
+							<img src="./images/user.png" alt="유저">
+							<span><strong>김농촌</strong> 님</span>
+						</div>
+	
+						<ul class="nav col-lg-auto my-2 justify-content-center my-md-0 text-small header-utill">
+							<li>
+								<a href="#" class="nav-link text-secondary" title="홈페이지이동">
+									<img class="hu-img01" src="./images/h1_D.png" alt="홈페이지이동">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white" title="메일발송">
+									<img class="hu-img02" src="./images/h2_D.png" alt="메일발송">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white" title="알림톡발송">
+									<img class="hu-img03" src="./images/h3_D.png" alt="알림톡발송">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="nav-link text-white" title="원격지원">
+									<img class="hu-img04" src="./images/h4_D.png" alt="원격지원">
+								</a>
+							</li>
+							
+						</ul>
+	
+						<div class="header_select">
+							<select class="form-select form-select-sm">
+								<option>시스템관리자</option>
+								<option>도원(특광역시)담당자</option>
+								<option>시군담당자</option>
+								<option>과정장</option>
+							</select>
+						</div>
+					</div>
+					
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+	<!--Layout-->
+	<div class="layout overflow-hidden">
+	<!--sideBar-->
+		<div class="navbar">
+			<div class="navbar-con-wrapper" aria-label="scrollable content">
+				<ul class="navbar-nav">
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link" href="#" role="button">
+							<i class="nav-dashboard"></i><span>Dashboard</span>
+							<div class="tip">Dashboard</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#edumenu" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-edu"></i><span>교육관리</span> 
+							<div class="tip">교육관리</div>
+						</a>
+						<!--2차메뉴-->
+						<div class="nav-drop">
+							<ul class="navbar-nav dropmenu collapse" id="edumenu">
+								<li class="nav-item">
+									<a class="nav-link ni-2" href="#" role="button">
+										<div class="d-flex align-items-center">
+											<span class="nav-link-text01 ps-1">과정분류관리</span></div>
+									</a>
+									<a class="nav-link ni-2" href="#" role="button">
+										<div class="d-flex align-items-center">
+											<span class="nav-link-text01 ps-1">과정옵션관리</span></div>
+									</a>
+									<a class="nav-link ni-2" href="#" role="button">
+										<div class="d-flex align-items-center">
+											<span class="nav-link-text01 ps-1">템플릿관리</span></div>
+									</a>
+									<a class="nav-link ni-2 dropdown-indicator02 collapsed" href="#offline" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+										<div class="d-flex align-items-center">
+											<span class="nav-link-text01 ps-1">오프라인 학습</span></div>
+									</a>
+										<!--3차메뉴-->
+										<ul class="nav collapse dropmenu02" id="offline">
+											<li class="nav-item">
+												<a class="nav-link" href="#">
+													<div class="d-flex align-items-center">
+														<span class="nav-link-text02 ps-1">과정관리</span>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">
+													<div class="d-flex align-items-center">
+														<span class="nav-link-text02 ps-1 active">현업적용도평가</span>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">
+													<div class="d-flex align-items-center">
+														<span class="nav-link-text02 ps-1">교육생 DB</span>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">
+													<div class="d-flex align-items-center">
+														<span class="nav-link-text02 ps-1">출결관리</span>
+													</div>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">
+													<div class="d-flex align-items-center">
+														<span class="nav-link-text02 ps-1">알림관리</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+										<!--//3차메뉴-->
+									</li>
+								</ul>
+						</div>
+						<!--//2차메뉴-->
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-capa"></i><span>역량관리</span>
+							<div class="tip">역량관리</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-user"></i><span>회원관리</span>
+							<div class="tip">회원관리</div>
+						</a>
+						
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-state"></i><span>통계관리</span>
+							<div class="tip">통계관리</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-homepage"></i><span>홈페이지관리</span>
+							<div class="tip">홈페이지관리</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-region"></i><span>지방센터관리</span>
+							<div class="tip">지방센터관리</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-system"></i><span>시스템관리</span>
+							<div class="tip">시스템관리</div>
+						</a>
+					</li>
+					<li class="nav-item ni-1">
+						<a class="nav-link ni1-link dropdown-indicator01 collapsed" href="#" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="offline">
+							<i class="nav-mcms"></i><span>MCMS</span>
+							<div class="tip">MCMS</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="main-content">
+			<div class="container-fluid px-5 py-5">
+				<!--------------------
+				*내용은 여기서부터 시작
+				----------------------->
+				<div class="db-process-box">
+					<ul class="label-area">
+						<li>온라인</li>
+						<li>영상</li>
+					</ul>
+					<p>스마트 과수원 이해</p>
+				</div>
+
+				<!-- 시작 -->
+				<div class="dash-grid">
+
+					<div class="w-7">
+						<div class="cmn-title-wrap">
+							<div class="cmn-title">
+								<p>등록자 및 완료율 추이</p>
+								<button type="button" class="btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="기수별 등록자 수와 과정 완료에 대한 추이입니다.">
+									<i class="i-tooltip">i</i>
+								</button>
+							</div>
+						</div>
+						<!--그래프 삽입-->
+						<div class="graph-wrap">
+							<img src="./images/gp_sub_graph1.png" alt="등록자 및 완료율 추이">
+						</div>
+					</div>
+
+					<div class="w-5">
+						<div class="cmn-title-wrap">
+							<div class="cmn-title">
+								<p>과정 완료율</p>
+								<button type="button" class="btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="기수별 과정 완료율입니다.">
+									<i class="i-tooltip">i</i>
+								</button>
+							</div>
+							<div class="search-select">
+								<select class="form-select">
+									<option>1기</option>
+									<option>2기</option>
+								</select>
+							</div>
+						</div>
+						<!--그래프 삽입-->
+						<div class="graph-wrap">
+							<img src="./images/gp_sub_graph2.png" alt="과정완료율">
+						</div>
+					</div>
+
+					<div class="w-6">
+						<div class="cmn-title-wrap">
+							<div class="cmn-title">
+								<p>참여도</p>
+								<button type="button" class="btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="기수별 학습 활동 참여도입니다.">
+									<i class="i-tooltip">i</i>
+								</button>
+							</div>
+						</div>
+						<!--그래프 삽입-->
+						<div class="graph-wrap">
+							<img src="./images/gp_sub_graph3.png" alt="참여도">
+						</div>
+					</div>
+
+					<div class="w-6">
+						<div class="cmn-title-wrap">
+							<div class="cmn-title">
+								<p>학습자 별점 평균</p>
+								<button type="button" class="btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="기수별 학습자의 별점 평균 지수입니다.">
+									<i class="i-tooltip">i</i>
+								</button>
+							</div>
+						</div>
+						<!--그래프 삽입-->
+						<div class="graph-wrap">
+							<img src="./images/gp_sub_graph4.png" alt="학습자 별점 평균">
+						</div>
+					</div>
+
+					<div class="w-12 db-table-box">
+						<div class="db-table-wrap">
+							<div class="adm-table-top db-top-new">
+								<div class="total-num">
+									<span>전체 <strong>100</strong>건</span>
+								</div>
+								<div class="pattern-type">
+									<ul>
+										<li class="pt1">미시청구간</li>
+										<li class="pt2">시청</li>
+										<li class="pt3">재시청</li>
+										<li class="pt4">반복 재시청</li>
+									</ul>
+								</div>
+								<div class="ss-wrap">
+									<div class="search-select">
+										<select class="form-select">
+											<option>오프라인교육</option>
+											<option>온라인교육</option>
+											<option>오픈클래스</option>
+										</select>
+									</div>
+									<div class="search-select">
+										<select class="form-select">
+											<option>연령대별</option>
+											<option>연령대별</option>
+											<option>연령대별</option>
+										</select>
+									</div>
+									<div class="sa-search">
+										<input type="text" class="form-control" name="searchText" title="검색어" value="" onkeypress="if (event.keyCode==13){search();}" placeholder="검색어를 입력하세요">
+									</div>
+								</div>
+							</div>
+							<div class="content">
+							<!-- 그리드가 삽입될 DIV -->
+								<div id="gridHolder" style="width:100%; height:440px;"></div>				
+							</div>
+						</div><!--//db-table-wrap-->
+					</div>
+				</div><!--//dash-grid-->
+
+				<!-- 상세 -->
+				<button type="button" class="adm-btn table-btn01" data-bs-toggle="modal" data-bs-target="#myModal" onclick="insertModalPopup(); return false;">모달팝업은 여기 확인해주세요</button>
+
+				<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content db-modal">
+
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">학습자별 패턴 분석</h4>
+								<button type="button" class="close" data-bs-dismiss="modal">
+									<i aria-hidden="true" class="modal-close"></i>
+								</button>
+							</div>
+
+							<div class="modal-body">
+								<div class="dash-grid modal-grid">
+
+									<div class="w-8 video-wrap">
+										<video controls="controls" width="100%" height="100%" autoplay="">
+											<source src="https://hrd.rda.go.kr/data/content/E1Y231268/01.mp4" type="video/mp4">
+									</video>
+									</div>
+
+									<div class="w-4 pa-detail bl">
+										<div class="pa-box c1">
+											<div class="pa-type">
+												<p class="pa-name">학습횟수</p>
+												<p class="pa-num"><strong>36</strong>회</p>
+											</div>
+											<div class="pa-icon"><i class="pa-i01"></i></div>
+										</div>
+									</div>
+
+									<div class="w-4 pa-detail gr">
+										<div class="pa-box c1">
+											<div class="pa-type">
+												<p class="pa-name">학습 확인 현황</p>
+												<p class="pa-num"><strong>66</strong>%</p>
+											</div>
+											<div class="pa-icon"><i class="pa-i02"></i></div>
+										</div>
+									</div>
+
+									<div class="w-4 pa-detail or">
+										<div class="pa-box c1">
+											<div class="pa-type">
+												<p class="pa-name">평균학습시간</p>
+												<p class="pa-num"><strong>01:52</strong>/ 03:16</p>
+											</div>
+											<div class="pa-icon"><i class="pa-i03"></i></div>
+										</div>
+									</div>
+
+									<div class="w-6 no-title-center">
+										<!--그래프 삽입-->
+										<div class="graph-wrap">
+											<img src="./images/gp_sub_graph6.png" alt="패턴">
+										</div>
+										<div class="pa-avg-box">
+											<p>평균 시청 패턴</p>	
+											<div class="pattern-type">
+												<ul>
+													<li class="pt1">미시청구간</li>
+													<li class="pt2">시청</li>
+													<li class="pt3">재시청</li>
+													<li class="pt4">반복 재시청</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="w-6">
+										<div class="cmn-title-wrap">
+											<div class="cmn-title">
+												<p>지난 15일간의 시청 현황</p>
+											</div>
+										</div>
+										<!--그래프 삽입-->
+										<div class="graph-wrap">
+											<img src="./images/gp_sub_graph5.png" alt="지난 15일간의 시청현황">
+										</div>
+									</div>
+
+									<div class="w-12 modal-table-box">
+										<div class="db-table-wrap">
+											<div class="adm-table-top db-top-new">
+												<div class="total-num">
+													<span>전체 <strong>100</strong>건</span>
+												</div>
+												<div class="ss-wrap">
+													<div class="search-select">
+														<select class="form-select">
+															<option>시청 횟수 많은 순</option>
+															<option>시청 횟수 낮은 순</option>
+														</select>
+													</div>
+													<div class="search-select">
+														<select class="form-select">
+															<option>10개보기</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="content">
+											<!-- 그리드가 삽입될 DIV -->
+												<div id="gridHolder" style="width:100%; height:200px;"></div>				
+											</div>
+										</div><!--//db-table-wrap-->
+									</div>
+
+								</div><!--//dash-grid-->
+							</div><!--//modal-body-->
+						</div>
+					</div>
+				</div><!--//모달종료-->
+
+			</div><!--//container-fluid-->
+		</div><!--//main-content-->
+
+	</div><!--//layout-->
+	
+	
+	<script>
+
+//sidemenu fold 기능
+		
+		const navbar = document.querySelector('.navbar');
+		const toggleButton = document.querySelector('.button-toggle-menu');
+
+		// navfold 클래스 토글 및 초기 설정
+		toggleButton.addEventListener('click', () => {
+			navbar.classList.toggle('navfold');
+
+			// 접힐 때는 모든 2차 메뉴 닫기
+			if (navbar.classList.contains('navfold')) {
+					document.querySelectorAll('.dropmenu.show').forEach(menu => menu.classList.remove('show'));
+			}
+		});
+
+		// 이벤트 위임으로 nav-item 클릭 처리
+		navbar.addEventListener('click', (e) => {
+			const clickedItem = e.target.closest('.nav-item');
+
+			// nav-item 이외의 부분을 클릭한 경우 무시
+			if (!clickedItem) return;
+
+			// navfold 상태에서 클릭 시 navbar 확장
+			if (navbar.classList.contains('navfold')) {
+					navbar.classList.remove('navfold'); // navfold 해제
+
+					// 모든 2차 메뉴 닫고 클릭한 항목의 2차 메뉴만 열기
+					document.querySelectorAll('.dropmenu.show').forEach(menu => menu.classList.remove('show'));
+					const submenu = clickedItem.querySelector('.dropmenu');
+					submenu?.classList.add('show'); // 클릭한 메뉴의 2차 메뉴만 열기
+			}
+		});
+
+
+		//툴팁
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  		return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+
+
+	</script>
+
+
+
+</body>
+</html>

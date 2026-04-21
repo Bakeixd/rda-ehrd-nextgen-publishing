@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="../css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-main.css" rel="stylesheet" type="text/css">
+	<link href="../css/edu-sub.css" rel="stylesheet" type="text/css">
+	<link href="../css/component.css" rel="stylesheet" type="text/css">
+	<link href="../css/modal.css" rel="stylesheet" type="text/css">
+	<link href="../css/font.css" rel="stylesheet" type="text/css">
+	<link href="../css/login.css" rel="stylesheet" type="text/css">
+
+
+	<title>통합로그인</title>
+
+</head>
+
+<body>
+<!--style에 적용되어있는건 화면적용할 때 삭제해주세요-->
+<style>
+	body{background: #eee;}
+	.modal{display: block; visibility: visible; opacity: 1;}
+</style>
+
+<!-- modal -->
+<section id="enroll" class="modal fade" aria-hidden="true" role="dialog" aria-labelledby="tit-enroll">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- modal title -->
+			<div class="modal-header">
+				<h2 id="tit-enroll" class="modal-title"></h2>
+			</div>
+			<!-- //modal title -->
+
+			<!-- modal contents -->
+			<div class="modal-conts">
+				<!--<h3 class="conts-tit">내용 타이틀</h3>-->
+
+				<div class="conts-area step-area">
+					<!-- 스텝 -->
+					<section>
+						<div class="int-sign-con int-sign-01">
+						  <div class="int-sign-wrap">
+							<div class="int-sign-text-wrap">
+							  <p class="int-sign-tit"><strong>홍길동</strong> 님!</p>
+							  <p class="int-sign-info">여러개의 계정이 발견되었습니다.<br>
+								[ <strong>gildong</strong> ] 계정으로 통합할 계정을 선택해주세요.
+							  </p>
+							</div>
+							<div class="int-sign-list-wrap">
+							  <p class="tit">통합할 아이디</p>
+							  <div class="int-sign-list">
+								<ul>
+								  <li class="btn">
+									<p>glidong01</p>
+									<span>최근 접속일:2024-01-01</span>
+								  </li>
+								  <li class="btn">
+									<p>glidong02</p>
+									<span>최근 접속일:2024-01-01</span>
+								  </li>
+								  <li class="btn">
+									<p>glidong03</p>
+									<span>최근 접속일:2024-01-01</span>
+								  </li>
+								  <li class="btn">
+									<p>glidong04</p>
+									<span>최근 접속일:2024-01-01</span>
+								  </li>
+								  <li class="btn">
+									<p>glidong05</p>
+									<span>최근 접속일:2024-01-01</span>
+								  </li>
+								</ul>
+							  </div>
+							</div>
+							
+						  </div>
+						</div>
+
+            
+						
+					  </section>
+					
+
+					
+				</div>
+
+
+			</div>
+			<!-- //modal contents -->
+			<!-- modal btn -->
+			<div class="modal-btn btn-wrap">
+				<button type="button" class="btn btn-darkgray-w int-sign-later-btn">다음에하기</button>
+				<button type="button" class="btn btn-primary close-modal">통합하기</button>
+			</div>
+      <div class="t-popup-info-wrap" style="display: none;">
+        <div class="t-popup-info">
+          <img src="../images/main-page/i_info.png" alt="정보">
+          <p>2024.11.30 까지 “마이페이지 > 내 정보 관리” 에서 통합 할 수 있습니다. </p>
+        </div>
+      </div>
+			<!-- //modal btn -->
+			<!-- close button -->
+			<button type="button" class="btn-close close-modal"><span class="none">닫기</span></button>
+			<!-- //close button -->
+		</div>
+	</div>
+	<div class="modal-back in"></div>
+</section>
+<!-- //modal -->
+
+
+
+
+
+
+<!-- 스크립트 : 라이브러리 -->
+<script src="../js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    document.querySelectorAll('.int-sign-list .btn').forEach(item => {
+      item.addEventListener('click', function() {
+        item.classList.toggle('selected');
+      });
+    });
+  document.querySelector('.btn.btn-darkgray-w').addEventListener('click', function() {
+    const popupInfoWrap = document.querySelector('.t-popup-info-wrap');
+    
+    popupInfoWrap.style.display = 'block';
+    
+    setTimeout(function() {
+      popupInfoWrap.style.display = 'none';
+    }, 3000); 
+  });
+
+
+
+
+</script>
+
+</body>
+</html>

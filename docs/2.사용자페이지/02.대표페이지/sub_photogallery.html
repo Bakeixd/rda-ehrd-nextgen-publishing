@@ -54,7 +54,7 @@
                 <div>열린마당</div>
                 <ul class="gnb-2depth">
                   <li><a href="sub_selectNoticeList.html"><span>공지사항</span></a></li>
-                  <li><a href="sub_qnaview.html"><span>질문방</span></a></li>
+                  <li><a href="sub_qnaboardlist.html"><span>질문방</span></a></li>
                   <li><a href="error-view.html"><span>자료실</span></a></li>
                   <li><a href="sub_photogallery.html"><span>포토갤러리</span></a></li>
                 </ul>
@@ -357,9 +357,10 @@
 	<div class="modal-back in"></div>
 
 </section>
+<!-- //modal -->
     <section class="h-visual">
       <div class="h-visual-text-wrap">
-        <p>기관소개</p>
+        <p>알림마당</p>
         <h2>농업 · 농촌의 미래를 선도하는
         <br>인적자원개발센터입니다!
         </h2>
@@ -721,7 +722,74 @@
   </section>
     
   <script type="text/javascript" src="../js/main-common.js"></script>
+<script>
+(function () {
+  const menus = document.querySelectorAll('.menu-wrap .btn');
+  const header = document.querySelector('.header_inner');
 
+  menus.forEach(menu => {
+    const subMenu = menu.querySelector('.gnb-2depth');
+
+    // 클릭 시 유지
+    menu.addEventListener('click', function (e) {
+      e.stopPropagation();
+
+      menus.forEach(item => {
+        if (item !== this) item.classList.remove('active');
+      });
+
+      this.classList.toggle('active');
+    });
+
+    // 서브메뉴 벗어나면 닫기
+    if (subMenu) {
+      subMenu.addEventListener('mouseleave', function () {
+        menu.classList.remove('active');
+      });
+    }
+  });
+
+  // 헤더 바깥 클릭 시 닫기
+  document.addEventListener('click', function (e) {
+    if (!header.contains(e.target)) {
+      menus.forEach(menu => menu.classList.remove('active'));
+    }
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  let lastScroll = 0;
+  const threshold = 10; // 미세 스크롤 무시
+
+  window.addEventListener('scroll', function () {
+    const currentScroll = window.pageYOffset || window.scrollY;
+
+    // 최상단에서는 항상 보이기
+    if (currentScroll <= 0) {
+      header.classList.remove('is-hidden');
+      lastScroll = 0;
+      return;
+    }
+
+    // 아래로 스크롤
+    if (currentScroll > lastScroll + threshold) {
+      header.classList.add('is-hidden');
+    }
+
+    // 위로 스크롤
+    if (currentScroll < lastScroll - threshold) {
+      header.classList.remove('is-hidden');
+    }
+
+    lastScroll = currentScroll;
+  });
+})();
+</script>
   <script>
 
       function showTabContent(tabId, button) {

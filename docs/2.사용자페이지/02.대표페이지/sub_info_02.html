@@ -53,7 +53,7 @@
                 <div>열린마당</div>
                 <ul class="gnb-2depth">
                   <li><a href="sub_selectNoticeList.html"><span>공지사항</span></a></li>
-                  <li><a href="sub_qnaview.html"><span>질문방</span></a></li>
+                  <li><a href="sub_qnaboardlist.html"><span>질문방</span></a></li>
                   <li><a href="error-view.html"><span>자료실</span></a></li>
                   <li><a href="sub_photogallery.html"><span>포토갤러리</span></a></li>
                 </ul>
@@ -356,6 +356,7 @@
 	<div class="modal-back in"></div>
 
 </section>
+<!-- //modal -->
     <section class="h-visual">
       <div class="h-visual-text-wrap">
         <p>기관소개</p>
@@ -709,9 +710,76 @@
 
 
   </section>
-    
+  <!-- 스크립트 : 라이브러리 -->
   <script type="text/javascript" src="../js/main-common.js"></script>
+<script>
+(function () {
+  const menus = document.querySelectorAll('.menu-wrap .btn');
+  const header = document.querySelector('.header_inner');
 
+  menus.forEach(menu => {
+    const subMenu = menu.querySelector('.gnb-2depth');
+
+    // 클릭 시 유지
+    menu.addEventListener('click', function (e) {
+      e.stopPropagation();
+
+      menus.forEach(item => {
+        if (item !== this) item.classList.remove('active');
+      });
+
+      this.classList.toggle('active');
+    });
+
+    // 서브메뉴 벗어나면 닫기
+    if (subMenu) {
+      subMenu.addEventListener('mouseleave', function () {
+        menu.classList.remove('active');
+      });
+    }
+  });
+
+  // 헤더 바깥 클릭 시 닫기
+  document.addEventListener('click', function (e) {
+    if (!header.contains(e.target)) {
+      menus.forEach(menu => menu.classList.remove('active'));
+    }
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  let lastScroll = 0;
+  const threshold = 10; // 미세 스크롤 무시
+
+  window.addEventListener('scroll', function () {
+    const currentScroll = window.pageYOffset || window.scrollY;
+
+    // 최상단에서는 항상 보이기
+    if (currentScroll <= 0) {
+      header.classList.remove('is-hidden');
+      lastScroll = 0;
+      return;
+    }
+
+    // 아래로 스크롤
+    if (currentScroll > lastScroll + threshold) {
+      header.classList.add('is-hidden');
+    }
+
+    // 위로 스크롤
+    if (currentScroll < lastScroll - threshold) {
+      header.classList.remove('is-hidden');
+    }
+
+    lastScroll = currentScroll;
+  });
+})();
+</script>
   <script>
 
       function showTabContent(tabId, button) {
@@ -735,6 +803,158 @@
       button.parentElement.classList.add('active'); 
   }
 
+    /* 테이블 호버 */
+function hoverRow(link) {
+    link.closest("tr").classList.add("hovered-row");
+}
+
+function unhoverRow(link) {
+    link.closest("tr").classList.remove("hovered-row");
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const tab = params.get("tab");
+    if (!tab) return;
+
+    const tabId = "tab--" + tab;
+
+    // tablist 순서 기준으로 active 맞추기
+    const tabItems = document.querySelectorAll(".tablist li");
+    const tabIndex = parseInt(tab.replace("table", ""), 10) - 1;
+    const targetButton = tabItems[tabIndex]?.querySelector("a");
+
+    showTabContent(tabId, targetButton);
+});
+window.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const tab = params.get("tab");
+    if (!tab) return;
+
+    const tabId = "tab--" + tab;
+
+    // table01 -> 0, table02 -> 1
+    const tabIndex = parseInt(tab.replace("table", ""), 10) - 1;
+
+    const tabButtons = document.querySelectorAll(".tablist .btn-tab");
+    const targetButton = tabButtons[tabIndex];
+
+    if (targetButton) {
+        showTabContent(tabId, targetButton);
+    }
+});
+  </script>
+    <script>
+    /*** * modal * ***/
+    const $modalTrigger = document.querySelectorAll('.open-modal');
+    const $modalCloseTrigger = document.querySelectorAll('.close-modal');
+    const $kds_body = document.querySelector('body');
+    const kds_modal = {
+      init: () => {
+        kds_modal.open();
+        kds_modal.close();
+      },
+      open: () => {
+        $modalTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.getAttribute('data-target'); // id 가져오기
+            e.classList.add('modal-opened');
+            e.setAttribute('tabindex', '-1');
+            kds_modal.modalOpen(id); // 모달 열기 함수 호출
+            ele.preventDefault();
+          });
+        });
+      },
+      modalOpen: (id) => {
+        const $idVal = document.getElementById(id); // id에 해당하는 모달 가져오기
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalBack = $idVal.querySelector('.modal-back');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length + 1;
+        $kds_body.classList.add('scroll-no');
+        $idVal.setAttribute('aria-hidden', 'false');
+        $modalBack.classList.add('in'); // 백그라운드 추가
+        $idVal.classList.add('shown'); // 모달 보이기
+        setTimeout(() => {
+          $idVal.classList.add('in'); // 애니메이션을 위한 클래스 추가
+        }, 150);
+
+        // 열린 팝업창 포커스
+        $dialog.setAttribute('tabindex', '0');
+
+        // 모달 여러 개 열린 경우 마지막 모달 z-index 높게 설정
+        if ($modalOpenedLen > 1) {
+          const openedLen = $modalOpenedLen;
+          const zIndexNew = 1010 + openedLen;
+          $idVal.setAttribute('style', 'z-index: ' + zIndexNew);
+        }
+
+        // 레이어 진입 시 포커스
+        setTimeout(() => {
+          $dialog.focus();
+        }, 350);
+      },
+      close: () => {
+        $modalCloseTrigger.forEach(e => {
+          e.addEventListener('click', ele => {
+            const id = e.closest('.modal').getAttribute('id');
+            kds_modal.modalClose(id);
+          });
+          e.addEventListener('keydown', ele => { // 닫기 버튼에서 탭 키 누르면 모달 내 첫번째 포커스로 키보드 이동
+            if (e.classList.contains('btn-close')) {
+              const keyCode = ele.keyCode || ele.which;
+              if (!ele.shiftKey && keyCode == 9) {
+                e.closest('.modal-content').focus(); // 첫 번째 링크로 이동
+                ele.preventDefault();
+              }
+            }
+          });
+        });
+      },
+      modalClose: (id) => {
+        const $idVal = document.getElementById(id);
+        const $dialog = $idVal.querySelector('.modal-content');
+        const $modalOpened = document.querySelectorAll('.modal.in:not(.sample)');
+        const $modalOpenedLen = $modalOpened.length;
+        if ($modalOpenedLen < 2) {
+          $kds_body.classList.remove('scroll-no');
+        }
+
+        $idVal.setAttribute('aria-hidden', 'true');
+        $idVal.classList.remove('in');
+
+        $dialog.removeAttribute('tabindex');
+
+        setTimeout(() => {
+          $idVal.classList.remove('shown');
+        }, 150);
+
+        // 모달 창 연 버튼에 class 삭제 및 tabindex 0으로 조정 (포커스 영역 수정)
+        const $triggerBtn = document.querySelector('.modal-opened');
+        if ($triggerBtn != null) {
+          $triggerBtn.focus();
+          $triggerBtn.setAttribute('tabindex', '0');
+          $triggerBtn.classList.remove('modal-opened');
+        }
+      },
+    };
+
+    // 모달 초기화 실행
+    kds_modal.init();
+
+    /*비밀번호 보이기*/
+    document.querySelectorAll('.ico-pw-visible').forEach(button => {
+      button.addEventListener('click', function () {
+        const inputField = this.previousElementSibling;
+
+        if (inputField.type === 'password') {
+          inputField.type = 'text';
+        } else {
+          inputField.type = 'password';
+          this.classList.remove('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
